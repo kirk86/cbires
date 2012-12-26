@@ -1,18 +1,19 @@
 <?php
 
 /**
- * @author John Mitros
+ * @category  configuration
+ * @author    John Mitros
  * @copyright 2012
  */
  
 // SITE_ROOT contains the full path to the cbires folder
 define('CB_SITE_ROOT', dirname(dirname(__FILE__)));
 // Application directories
-define('CB_CLASSES_DIR', SITE_ROOT.'/classes/');
-define('CB_INCLUDES_DIR', SITE_ROOT.'/includes/');
+define('CB_CLASSES_DIR', CB_SITE_ROOT.'/classes/');
+define('CB_INCLUDES_DIR', CB_SITE_ROOT.'/includes/');
 // Settings needed to configure the cbires
-define('CB_CONFIG_DIR', SITE_ROOT.'/config/');
-define('CB_ERROR_LOGS', SITE_ROOT.'/logs/');
+define('CB_CONFIG_DIR', CB_SITE_ROOT.'/config/');
+define('CB_ERROR_LOGS', CB_SITE_ROOT.'/logs/');
 
 // These should be true while developing the web site
 define('CB_IS_WARNING_FATAL', true);
@@ -40,9 +41,9 @@ define('__BASE_URI__', '/');
 // Database connectivity setup
 define('DB_PERSISTENCY', 'true');
 define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_DATABASE', 'hms_support');
-define('PDO_DSN', 'mysql:host='.DB_SERVER.'; dbname='.DB_DATABASE);
-//define('DSN', 'mysqli://'.DB_USERNAME.':'.DB_PASSWORD.'@'.DB_SERVER.'/'.DB_DATABASE);
+define('DB_USERNAME', 'postgres');
+define('DB_PASSWORD', 'root');
+define('DB_NAME', 'test');
+define('DB_PORT', '5432');
+define('PDO_DSN', 'pgsql:dbname='.DB_NAME.';user='.DB_USERNAME.';password='.DB_PASSWORD.';host='.DB_SERVER.';port='.DB_PORT);
 define('DB_PREFIX', 'tbl_'); // define the databse table prefix

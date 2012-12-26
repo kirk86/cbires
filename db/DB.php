@@ -20,20 +20,16 @@ class DB
         
     }
     
-    public static function getInstance()
+    private static function getInstance()
     {
         if(!isset(self::$instance))
         {
             try
             {
-                self::$instance = new PDO(PDO_DSN, DB_USERNAME, DB_PASSWORD, 
-                                          array(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
-                                                PDO::ATTR_PERSISTENT => DB_PERSISTENCY));
+                self::$instance = new PDO(PDO_DSN);
                 
                 // Configure PDO to throw exceptions
 				self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                
-                self::$instance->query("SET NAMES UTF8");
                 
             }
             catch(PDOException $e)
