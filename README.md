@@ -5,7 +5,7 @@ CBIRES
 
 We have attempted to create an online content based image retrieval system during our graduate degree in CS.
 
-
+ 
 Requirements
 ==============
 
