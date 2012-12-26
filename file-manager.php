@@ -3,10 +3,10 @@
 			<div>
 				<ul class="breadcrumb">
 					<li>
-						<a href="#">Home</a> <span class="divider">/</span>
+						<a href="index.php">Home</a> <span class="divider">/</span>
 					</li>
 					<li>
-						<a href="#">File Manager</a>
+						<a href="file-manager.php">File Manager</a>
 					</li>
 				</ul>
 			</div>
