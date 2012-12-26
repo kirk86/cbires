@@ -1,7 +1,12 @@
 <?php
 
 /**
- * @author John Mitros
+ * Database class, DB.php
+ * Provides a PDO wrapper
+ * around PostgreSQL database.
+ * 
+ * @category  classes
+ * @author    John Mitros
  * @copyright 2012
  */
 
