@@ -44,17 +44,16 @@ class DB
             }
             catch (PDOException $e)
             {
-                // Close the database handler and trigger an error
-                self::Close();
+                // close the database handler and trigger an error
+                self::close();
                 trigger_error($e->getMessage(), E_USER_ERROR);
             }
         }
-
         return self::$instance;
     }
 
     /**
-     * Close db connection
+     * close db connection
      * 
      * @param empty
      * @return empty
@@ -83,13 +82,12 @@ class DB
         }
         catch (PDOException $e)
         {
-            self::Close();
+            self::close();
             trigger_error($e->getMessage(), E_USER_ERROR);
         }
-
         return $statement->rowCount();
     }
-
+    
     /**
      * Wrapper method for PDOStatement::fetchAll()
      * 
@@ -109,13 +107,12 @@ class DB
             $result    = $statement->fetchAll($fetchStyle);
                  
         }
-        catch (PDOException $e) {
-            self::Close();
+        catch (PDOException $e)
+        {
+            self::close();
             trigger_error($e->getMessage(), E_USER_ERROR);
         }
-
         return $result;
-        //return $clean_result;
     }
     
     /**
@@ -129,20 +126,18 @@ class DB
     {
         $result = null;
 
-        try {
-            $db = self::getInstance();
-
+        try
+        {
+            $db        = self::getInstance();
             $statement = $db->prepare($query);
-
             $statement->execute($params);
-
-            $result = $statement->fetch($fetchStyle);
+            $result    = $statement->fetch($fetchStyle);
         }
-        catch (PDOException $e) {
-            self::Close();
+        catch (PDOException $e)
+        {
+            self::close();
             trigger_error($e->getMessage(), E_USER_ERROR);
         }
-
         return $result;
     }
     
@@ -156,20 +151,38 @@ class DB
     {
         $result = null;
 
-        try {
-            $db = self::getInstance();
-
+        try
+        {
+            $db        = self::getInstance();
             $statement = $db->prepare($query);
-
             $statement->execute($params);
-
-            $result = $statement->fetch(PDO::FETCH_NUM);
+            $result    = $statement->fetch(PDO::FETCH_NUM);
         }
-        catch (PDOException $e) {
-            self::Close();
+        catch (PDOException $e)
+        {
+            self::close();
             trigger_error($e->getMessage(), E_USER_ERROR);
         }
-
         return $result;
     }
+    
+    /**
+     * Return last inserted object id in database
+     * 
+     * @param empty
+     * @return integer $id Object id
+     */
+     public static function lastInsertId()
+     {
+        try
+        {
+            $db = self::getInstance();
+        }
+        catch (PDOException $e)
+        {
+            self::close();
+            trigger_error($e->getMessage(), E_USER_ERROR);
+        }
+        return $db->lastInsertId();
+     }
 }

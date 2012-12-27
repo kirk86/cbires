@@ -6,10 +6,9 @@
  * @copyright 2012
  */
  
-// SITE_ROOT contains the full path to the cbires folder
+// CB_SITE_ROOT contains the full path to the cbires folder
 define('CB_SITE_ROOT', dirname(dirname(__FILE__)));
 // Application directories
-define('CB_CLASSES_DIR', CB_SITE_ROOT.'/classes/');
 define('CB_INCLUDES_DIR', CB_SITE_ROOT.'/includes/');
 // Settings needed to configure the cbires
 define('CB_CONFIG_DIR', CB_SITE_ROOT.'/config/');
@@ -25,7 +24,7 @@ define('CB_SEND_ERROR_MAIL', false);
 define('CB_ADMIN_ERROR_MAIL', 'giannismitros@gmail.com');
 define('CB_SENDMAIL_FROM', 'info@cbires.com');
 ini_set('sendmail_from', CB_SENDMAIL_FROM);
-// By default we don't log errors to a file
+// By default we log errors to a file -> if not then turn CB_LOG_ERRORS, false
 define('CB_LOG_ERRORS', true);
 define('CB_LOG_ERRORS_FILE', CB_ERROR_LOGS.'\\error_logs.txt'); // Windows
 // define('LOG_ERRORS_FILE', '/home/username/tshirtshop/errors.log'); // Linux
