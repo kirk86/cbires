@@ -30,14 +30,12 @@
 									<input data-no-uniform="true" type="file" name="file_upload" id="file_upload" />
 								</td>
 							</tr>
-                            <!--
 							<tr>
 								<td><h3>Choose Folder - Upload all at once</h3></td>
 								<td>
-									<input data-no-uniform="true" type="file" name="file_upload2" id="file_upload2" />
+									<input data-no-uniform="true" type="file" name="multiple_upload" id="multiple_upload" />
 								</td>
 							</tr>
-                            -->
 						</table>
 					</div>	
 				</div><!--/span-->
