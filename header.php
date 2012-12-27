@@ -1,3 +1,8 @@
+<?php
+require_once('config/config.php');
+require_once(CB_INCLUDES_DIR . '/ErrorHandler.php');
+ErrorHandler::setHandler();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +14,7 @@
 		http://www.apache.org/licenses/LICENSE-2.0
 	-->
 	<meta charset="utf-8">
-	<title>Free HTML5 Bootstrap Admin Template</title>
+	<title>CBIRES</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="CBIRES, a fully featured, responsive, HTML5, Contenet Based Image Retrieval System.">
 	<meta name="author" content="CBIRES">
