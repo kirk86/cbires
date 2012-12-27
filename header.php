@@ -13,14 +13,14 @@ ErrorHandler::setHandler();
 		Licensed under the Apache License v2.0
 		http://www.apache.org/licenses/LICENSE-2.0
 	-->
-	<meta charset="utf-8">
+	<meta charset="utf-8" />
 	<title>CBIRES</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="CBIRES, a fully featured, responsive, HTML5, Contenet Based Image Retrieval System.">
-	<meta name="author" content="CBIRES">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="CBIRES, a featured, responsive, Contenet Based Image Retrieval System." />
+	<meta name="author" content="CBIRES" />
 
 	<!-- The styles -->
-	<link id="bs-css" href="css/bootstrap-cerulean.css" rel="stylesheet">
+	<link id="bs-css" href="css/bootstrap-cerulean.css" rel="stylesheet" />
 	<style type="text/css">
 	  body {
 		padding-bottom: 40px;
@@ -29,22 +29,22 @@ ErrorHandler::setHandler();
 		padding: 9px 0;
 	  }
 	</style>
-	<link href="css/bootstrap-responsive.css" rel="stylesheet">
-	<link href="css/cbires-app.css" rel="stylesheet">
-	<link href="css/jquery-ui-1.8.21.custom.css" rel="stylesheet">
-	<link href='css/fullcalendar.css' rel='stylesheet'>
-	<link href='css/fullcalendar.print.css' rel='stylesheet'  media='print'>
-	<link href='css/chosen.css' rel='stylesheet'>
-	<link href='css/uniform.default.css' rel='stylesheet'>
-	<link href='css/colorbox.css' rel='stylesheet'>
-	<link href='css/jquery.cleditor.css' rel='stylesheet'>
-	<link href='css/jquery.noty.css' rel='stylesheet'>
-	<link href='css/noty_theme_default.css' rel='stylesheet'>
-	<link href='css/elfinder.min.css' rel='stylesheet'>
-	<link href='css/elfinder.theme.css' rel='stylesheet'>
-	<link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
-	<link href='css/opa-icons.css' rel='stylesheet'>
-	<link href='css/uploadify.css' rel='stylesheet'>
+	<link href="css/bootstrap-responsive.css" rel="stylesheet" />
+	<link href="css/cbires-app.css" rel="stylesheet" />
+	<link href="css/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+	<link href='css/fullcalendar.css' rel='stylesheet' />
+	<link href='css/fullcalendar.print.css' rel='stylesheet'  media='print' />
+	<link href='css/chosen.css' rel='stylesheet' />
+	<link href='css/uniform.default.css' rel='stylesheet' />
+	<link href='css/colorbox.css' rel='stylesheet' />
+	<link href='css/jquery.cleditor.css' rel='stylesheet' />
+	<link href='css/jquery.noty.css' rel='stylesheet' />
+	<link href='css/noty_theme_default.css' rel='stylesheet' />
+	<link href='css/elfinder.min.css' rel='stylesheet' />
+	<link href='css/elfinder.theme.css' rel='stylesheet' />
+	<link href='css/jquery.iphone.toggle.css' rel='stylesheet' />
+	<link href='css/opa-icons.css' rel='stylesheet' />
+	<link href='css/uploadify.css' rel='stylesheet' />
 
 	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -52,7 +52,7 @@ ErrorHandler::setHandler();
 	<![endif]-->
 
 	<!-- The fav icon -->
-	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="shortcut icon" href="img/favicon.ico" />
 		
 </head>
 
@@ -100,7 +100,7 @@ ErrorHandler::setHandler();
 						<li><a class="ajax-link" href="index.php"><i class="icon-home"></i><span class="hidden-tablet"> Dashboard </span></a></li>
                         <li><a class="ajax-link" href="user.php"><i class="icon-user"></i><span class="hidden-tablet"> Members </span></a></li>
 						<li><a class="ajax-link" href="gallery.php"><i class="icon-picture"></i><span class="hidden-tablet"> Gallery</span></a></li>
-                        <li><a class="ajax-link" href="ui.php"><i class="icon-folder-close"></i><span class="hidden-tablet"> File Uploader</span></a></li>
+                        <li><a class="ajax-link" href="upload.php"><i class="icon-folder-close"></i><span class="hidden-tablet"> File Uploader</span></a></li>
 						<li><a class="ajax-link" href="file-manager.php"><i class="icon-folder-open"></i><span class="hidden-tablet"> File Manager</span></a></li>
 					</ul>
 					<label id="for-is-ajax" class="hidden-tablet" for="is-ajax"><input id="is-ajax" type="checkbox"> Ajax on menu</label>

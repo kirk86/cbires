@@ -27,11 +27,13 @@
 						</p>
 						<br/>
 						<ul class="thumbnails gallery">
-							<?php for ($i = 1; $i <= 24; $i++) { ?>
+							<?php for ($i = 1; $i <= 24; $i++) : ?>
 							<li id="image-<?php echo $i ?>" class="thumbnail">
-								<a style="background:url(img/gallery/thumbs/<?php echo $i ?>.jpg)" title="Sample Image <?php echo $i ?>" href="img/gallery/<?php echo $i ?>.jpg"><img class="grayscale" src="img/gallery/thumbs/<?php echo $i ?>.jpg" alt="Sample Image <?php echo $i ?>"></a>
+								<a style="background:url(img/gallery/thumbs/<?php echo $i ?>.jpg)" title="Sample Image <?php echo $i ?>" href="img/gallery/<?php echo $i ?>.jpg">
+                                    <img class="grayscale" src="img/gallery/thumbs/<?php echo $i ?>.jpg" alt="Sample Image <?php echo $i ?>" />
+                                </a>
 							</li>
-							<?php } ?>
+							<?php endfor; ?>
 						</ul>
 					</div>
 				</div><!--/span-->

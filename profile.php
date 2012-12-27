@@ -4,10 +4,10 @@
 			<div>
 				<ul class="breadcrumb">
 					<li>
-						<a href="#">Home</a> <span class="divider">/</span>
+						<a href="index.php">Home</a> <span class="divider">/</span>
 					</li>
 					<li>
-						<a href="#">Forms</a>
+						<a href="profile.php">Profile</a>
 					</li>
 				</ul>
 			</div>
@@ -29,27 +29,27 @@
 							<div class="control-group">
 							  <label class="control-label" for="typeahead">Auto complete </label>
 							  <div class="controls">
-								<input type="text" class="span6 typeahead" id="typeahead"  data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
+								<input type="text" class="span6 typeahead" id="typeahead"  data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]' />
 								<p class="help-block">Start typing to activate auto complete!</p>
 							  </div>
 							</div>
 							<div class="control-group">
 							  <label class="control-label" for="date01">Date input</label>
 							  <div class="controls">
-								<input type="text" class="input-xlarge datepicker" id="date01" value="02/16/12">
+								<input type="text" class="input-xlarge datepicker" id="date01" value="02/16/12" />
 							  </div>
 							</div>
 
 							<div class="control-group">
 							  <label class="control-label" for="fileInput">File input</label>
 							  <div class="controls">
-								<input class="input-file uniform_on" id="fileInput" type="file">
+								<input class="input-file uniform_on" id="fileInput" type="file" />
 							  </div>
 							</div>
 							  <div class="control-group">
 								<label class="control-label" for="focusedInput">Focused input</label>
 								<div class="controls">
-								  <input class="input-xlarge focused" id="focusedInput" type="text" value="This is focused…">
+								  <input class="input-xlarge focused" id="focusedInput" type="text" value="This is focused…" />
 								</div>
 							  </div>
 							  <div class="control-group">
@@ -61,14 +61,14 @@
 							  <div class="control-group">
 								<label class="control-label" for="disabledInput">Disabled input</label>
 								<div class="controls">
-								  <input class="input-xlarge disabled" id="disabledInput" type="text" placeholder="Disabled input here…" disabled="">
+								  <input class="input-xlarge disabled" id="disabledInput" type="text" placeholder="Disabled input here…" disabled="" />
 								</div>
 							  </div>
 							  <div class="control-group">
 								<label class="control-label" for="optionsCheckbox2">Disabled checkbox</label>
 								<div class="controls">
 								  <label class="checkbox">
-									<input type="checkbox" id="optionsCheckbox2" value="option1" disabled="">
+									<input type="checkbox" id="optionsCheckbox2" value="option1" disabled="" />
 									This is a disabled checkbox
 								  </label>
 								</div>

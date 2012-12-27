@@ -7,7 +7,7 @@
 						<a href="index.php">Home</a> <span class="divider">/</span>
 					</li>
 					<li>
-						<a href="ui.php">File Uploader</a>
+						<a href="upload.php">File Uploader</a>
 					</li>
 				</ul>
 			</div>
@@ -30,12 +30,14 @@
 									<input data-no-uniform="true" type="file" name="file_upload" id="file_upload" />
 								</td>
 							</tr>
+                            <!--
 							<tr>
 								<td><h3>Choose Folder - Upload all at once</h3></td>
 								<td>
 									<input data-no-uniform="true" type="file" name="file_upload2" id="file_upload2" />
 								</td>
 							</tr>
+                            -->
 						</table>
 					</div>	
 				</div><!--/span-->

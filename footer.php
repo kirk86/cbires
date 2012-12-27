@@ -5,8 +5,9 @@
 		</div><!--/fluid-row-->
 		<?php if(!isset($no_visible_elements) || !$no_visible_elements)	{ ?>
 		
-		<hr>
-
+		<hr />
+        
+        <!-- START OF: Configure Settings MessageBox -->
 		<div class="modal hide fade" id="myModal">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal">×</button>
@@ -20,7 +21,8 @@
 				<a href="#" class="btn btn-primary">Save changes</a>
 			</div>
 		</div>
-
+        <!-- END OF: Configure Settings MessageBox -->
+        
 		<footer>
 			<p class="pull-left">&copy; <a href="http://mycompany.com.gr/cbires" target="_blank">CBIRES</a> <?php echo date('Y') ?></p>
 		</footer>
@@ -106,7 +108,7 @@
 		if($_SERVER['HTTP_HOST']=='cbires.com') { ?>
 		<script>
 			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-26532312-1']); // Chage the UA-2653.... code to yours
+			_gaq.push(['_setAccount', 'UA-26532312-1']); // Chage the UA-2653.... according to your will
 			_gaq.push(['_trackPageview']);
 			(function() {
 			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;

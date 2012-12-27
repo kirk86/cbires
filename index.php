@@ -53,9 +53,7 @@
 					<div class="box-content">
 						<h1>CBIRES <small>free, open-source, online, content based image retrieval system.</small></h1>
 						<p>It's a live demo of the CBIRES, which was created due to an assignement during our graduate degree in CS. :)</p>
-                        <?php //show the following to users that are playing around with the live demo?>
 						<p><b>At the moment you cannot delete images from the databse, you can only insert new ones !</b></p>
-						<?php //end of message ?>
 						<p class="center">
 							<a href="https://github.com/kirk86/cbires" class="btn btn-large"><i class="icon-download-alt"></i> Download Page</a>
 						</p>
