@@ -1,0 +1,726 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.2.1
+-- Dumped by pg_dump version 9.2.1
+-- Started on 2012-12-28 03:42:50
+
+SET statement_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+
+--
+-- TOC entry 185 (class 3079 OID 11727)
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- TOC entry 2003 (class 0 OID 0)
+-- Dependencies: 185
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 174 (class 1259 OID 16571)
+-- Name: tbl_color_histogram; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE tbl_color_histogram (
+    id_color_histogram integer NOT NULL,
+    first integer,
+    second integer,
+    third integer
+);
+
+
+ALTER TABLE public.tbl_color_histogram OWNER TO postgres;
+
+--
+-- TOC entry 173 (class 1259 OID 16569)
+-- Name: tbl_color_histogram_id_color_histogram_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE tbl_color_histogram_id_color_histogram_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.tbl_color_histogram_id_color_histogram_seq OWNER TO postgres;
+
+--
+-- TOC entry 2004 (class 0 OID 0)
+-- Dependencies: 173
+-- Name: tbl_color_histogram_id_color_histogram_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE tbl_color_histogram_id_color_histogram_seq OWNED BY tbl_color_histogram.id_color_histogram;
+
+
+--
+-- TOC entry 2005 (class 0 OID 0)
+-- Dependencies: 173
+-- Name: tbl_color_histogram_id_color_histogram_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('tbl_color_histogram_id_color_histogram_seq', 1, false);
+
+
+--
+-- TOC entry 176 (class 1259 OID 16579)
+-- Name: tbl_image; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE tbl_image (
+    id_image integer NOT NULL,
+    filename character varying(255),
+    filepath character varying(255),
+    filemime character varying(255),
+    filesize integer,
+    status integer,
+    "timestamp" timestamp with time zone
+);
+
+
+ALTER TABLE public.tbl_image OWNER TO postgres;
+
+--
+-- TOC entry 175 (class 1259 OID 16577)
+-- Name: tbl_image_id_image_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE tbl_image_id_image_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.tbl_image_id_image_seq OWNER TO postgres;
+
+--
+-- TOC entry 2006 (class 0 OID 0)
+-- Dependencies: 175
+-- Name: tbl_image_id_image_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE tbl_image_id_image_seq OWNED BY tbl_image.id_image;
+
+
+--
+-- TOC entry 2007 (class 0 OID 0)
+-- Dependencies: 175
+-- Name: tbl_image_id_image_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('tbl_image_id_image_seq', 1, false);
+
+
+--
+-- TOC entry 182 (class 1259 OID 16606)
+-- Name: tbl_relevance_feedback; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE tbl_relevance_feedback (
+    id_relevance_feedback integer NOT NULL,
+    first integer,
+    second integer,
+    third integer
+);
+
+
+ALTER TABLE public.tbl_relevance_feedback OWNER TO postgres;
+
+--
+-- TOC entry 181 (class 1259 OID 16604)
+-- Name: tbl_relevance_feedback_id_relevance_feedback_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE tbl_relevance_feedback_id_relevance_feedback_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.tbl_relevance_feedback_id_relevance_feedback_seq OWNER TO postgres;
+
+--
+-- TOC entry 2008 (class 0 OID 0)
+-- Dependencies: 181
+-- Name: tbl_relevance_feedback_id_relevance_feedback_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE tbl_relevance_feedback_id_relevance_feedback_seq OWNED BY tbl_relevance_feedback.id_relevance_feedback;
+
+
+--
+-- TOC entry 2009 (class 0 OID 0)
+-- Dependencies: 181
+-- Name: tbl_relevance_feedback_id_relevance_feedback_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('tbl_relevance_feedback_id_relevance_feedback_seq', 1, false);
+
+
+--
+-- TOC entry 184 (class 1259 OID 16614)
+-- Name: tbl_score; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE tbl_score (
+    id_score integer NOT NULL,
+    negative integer,
+    positive integer,
+    neutral integer
+);
+
+
+ALTER TABLE public.tbl_score OWNER TO postgres;
+
+--
+-- TOC entry 183 (class 1259 OID 16612)
+-- Name: tbl_score_id_score_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE tbl_score_id_score_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.tbl_score_id_score_seq OWNER TO postgres;
+
+--
+-- TOC entry 2010 (class 0 OID 0)
+-- Dependencies: 183
+-- Name: tbl_score_id_score_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE tbl_score_id_score_seq OWNED BY tbl_score.id_score;
+
+
+--
+-- TOC entry 2011 (class 0 OID 0)
+-- Dependencies: 183
+-- Name: tbl_score_id_score_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('tbl_score_id_score_seq', 1, false);
+
+
+--
+-- TOC entry 180 (class 1259 OID 16598)
+-- Name: tbl_shape; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE tbl_shape (
+    id_shape integer NOT NULL,
+    first integer,
+    second integer,
+    third integer
+);
+
+
+ALTER TABLE public.tbl_shape OWNER TO postgres;
+
+--
+-- TOC entry 179 (class 1259 OID 16596)
+-- Name: tbl_shape_id_shape_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE tbl_shape_id_shape_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.tbl_shape_id_shape_seq OWNER TO postgres;
+
+--
+-- TOC entry 2012 (class 0 OID 0)
+-- Dependencies: 179
+-- Name: tbl_shape_id_shape_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE tbl_shape_id_shape_seq OWNED BY tbl_shape.id_shape;
+
+
+--
+-- TOC entry 2013 (class 0 OID 0)
+-- Dependencies: 179
+-- Name: tbl_shape_id_shape_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('tbl_shape_id_shape_seq', 1, false);
+
+
+--
+-- TOC entry 178 (class 1259 OID 16590)
+-- Name: tbl_texture; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE tbl_texture (
+    id_texture integer NOT NULL,
+    first integer,
+    second integer,
+    third integer
+);
+
+
+ALTER TABLE public.tbl_texture OWNER TO postgres;
+
+--
+-- TOC entry 2014 (class 0 OID 0)
+-- Dependencies: 178
+-- Name: COLUMN tbl_texture.first; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN tbl_texture.first IS '
+';
+
+
+--
+-- TOC entry 177 (class 1259 OID 16588)
+-- Name: tbl_texture_id_texture_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE tbl_texture_id_texture_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.tbl_texture_id_texture_seq OWNER TO postgres;
+
+--
+-- TOC entry 2015 (class 0 OID 0)
+-- Dependencies: 177
+-- Name: tbl_texture_id_texture_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE tbl_texture_id_texture_seq OWNED BY tbl_texture.id_texture;
+
+
+--
+-- TOC entry 2016 (class 0 OID 0)
+-- Dependencies: 177
+-- Name: tbl_texture_id_texture_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('tbl_texture_id_texture_seq', 1, false);
+
+
+--
+-- TOC entry 170 (class 1259 OID 16546)
+-- Name: tbl_user; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE tbl_user (
+    id_user integer NOT NULL,
+    username character varying(255),
+    password character varying(255),
+    id_user_role integer NOT NULL,
+    status character varying(255),
+    date_registered date
+);
+
+
+ALTER TABLE public.tbl_user OWNER TO postgres;
+
+--
+-- TOC entry 172 (class 1259 OID 16558)
+-- Name: tbl_user_role; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE tbl_user_role (
+    id_user_role integer NOT NULL,
+    role character varying(255)
+);
+
+
+ALTER TABLE public.tbl_user_role OWNER TO postgres;
+
+--
+-- TOC entry 171 (class 1259 OID 16556)
+-- Name: tbl_user_role_id_user_role_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE tbl_user_role_id_user_role_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.tbl_user_role_id_user_role_seq OWNER TO postgres;
+
+--
+-- TOC entry 2017 (class 0 OID 0)
+-- Dependencies: 171
+-- Name: tbl_user_role_id_user_role_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE tbl_user_role_id_user_role_seq OWNED BY tbl_user_role.id_user_role;
+
+
+--
+-- TOC entry 2018 (class 0 OID 0)
+-- Dependencies: 171
+-- Name: tbl_user_role_id_user_role_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('tbl_user_role_id_user_role_seq', 3, true);
+
+
+--
+-- TOC entry 169 (class 1259 OID 16544)
+-- Name: user_id_user_role_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE user_id_user_role_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.user_id_user_role_seq OWNER TO postgres;
+
+--
+-- TOC entry 2019 (class 0 OID 0)
+-- Dependencies: 169
+-- Name: user_id_user_role_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE user_id_user_role_seq OWNED BY tbl_user.id_user_role;
+
+
+--
+-- TOC entry 2020 (class 0 OID 0)
+-- Dependencies: 169
+-- Name: user_id_user_role_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('user_id_user_role_seq', 1, false);
+
+
+--
+-- TOC entry 168 (class 1259 OID 16542)
+-- Name: user_id_user_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE user_id_user_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.user_id_user_seq OWNER TO postgres;
+
+--
+-- TOC entry 2021 (class 0 OID 0)
+-- Dependencies: 168
+-- Name: user_id_user_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE user_id_user_seq OWNED BY tbl_user.id_user;
+
+
+--
+-- TOC entry 2022 (class 0 OID 0)
+-- Dependencies: 168
+-- Name: user_id_user_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('user_id_user_seq', 6, true);
+
+
+--
+-- TOC entry 1965 (class 2604 OID 16574)
+-- Name: id_color_histogram; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY tbl_color_histogram ALTER COLUMN id_color_histogram SET DEFAULT nextval('tbl_color_histogram_id_color_histogram_seq'::regclass);
+
+
+--
+-- TOC entry 1966 (class 2604 OID 16582)
+-- Name: id_image; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY tbl_image ALTER COLUMN id_image SET DEFAULT nextval('tbl_image_id_image_seq'::regclass);
+
+
+--
+-- TOC entry 1969 (class 2604 OID 16609)
+-- Name: id_relevance_feedback; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY tbl_relevance_feedback ALTER COLUMN id_relevance_feedback SET DEFAULT nextval('tbl_relevance_feedback_id_relevance_feedback_seq'::regclass);
+
+
+--
+-- TOC entry 1970 (class 2604 OID 16617)
+-- Name: id_score; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY tbl_score ALTER COLUMN id_score SET DEFAULT nextval('tbl_score_id_score_seq'::regclass);
+
+
+--
+-- TOC entry 1968 (class 2604 OID 16601)
+-- Name: id_shape; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY tbl_shape ALTER COLUMN id_shape SET DEFAULT nextval('tbl_shape_id_shape_seq'::regclass);
+
+
+--
+-- TOC entry 1967 (class 2604 OID 16593)
+-- Name: id_texture; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY tbl_texture ALTER COLUMN id_texture SET DEFAULT nextval('tbl_texture_id_texture_seq'::regclass);
+
+
+--
+-- TOC entry 1962 (class 2604 OID 16549)
+-- Name: id_user; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY tbl_user ALTER COLUMN id_user SET DEFAULT nextval('user_id_user_seq'::regclass);
+
+
+--
+-- TOC entry 1963 (class 2604 OID 16550)
+-- Name: id_user_role; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY tbl_user ALTER COLUMN id_user_role SET DEFAULT nextval('user_id_user_role_seq'::regclass);
+
+
+--
+-- TOC entry 1964 (class 2604 OID 16561)
+-- Name: id_user_role; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY tbl_user_role ALTER COLUMN id_user_role SET DEFAULT nextval('tbl_user_role_id_user_role_seq'::regclass);
+
+
+--
+-- TOC entry 1990 (class 0 OID 16571)
+-- Dependencies: 174
+-- Data for Name: tbl_color_histogram; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY tbl_color_histogram (id_color_histogram, first, second, third) FROM stdin;
+\.
+
+
+--
+-- TOC entry 1991 (class 0 OID 16579)
+-- Dependencies: 176
+-- Data for Name: tbl_image; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY tbl_image (id_image, filename, filepath, filemime, filesize, status, "timestamp") FROM stdin;
+\.
+
+
+--
+-- TOC entry 1994 (class 0 OID 16606)
+-- Dependencies: 182
+-- Data for Name: tbl_relevance_feedback; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY tbl_relevance_feedback (id_relevance_feedback, first, second, third) FROM stdin;
+\.
+
+
+--
+-- TOC entry 1995 (class 0 OID 16614)
+-- Dependencies: 184
+-- Data for Name: tbl_score; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY tbl_score (id_score, negative, positive, neutral) FROM stdin;
+\.
+
+
+--
+-- TOC entry 1993 (class 0 OID 16598)
+-- Dependencies: 180
+-- Data for Name: tbl_shape; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY tbl_shape (id_shape, first, second, third) FROM stdin;
+\.
+
+
+--
+-- TOC entry 1992 (class 0 OID 16590)
+-- Dependencies: 178
+-- Data for Name: tbl_texture; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY tbl_texture (id_texture, first, second, third) FROM stdin;
+\.
+
+
+--
+-- TOC entry 1988 (class 0 OID 16546)
+-- Dependencies: 170
+-- Data for Name: tbl_user; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY tbl_user (id_user, username, password, id_user_role, status, date_registered) FROM stdin;
+2	mario	admin1234	1	active	2012-12-28
+3	john	admin1234	1	active	2012-12-28
+4	jack	admin1234	2	pending	2012-12-28
+5	jeny	admin1234	3	banned	2012-12-28
+6	george	admin1234	2	inactive	2012-12-28
+\.
+
+
+--
+-- TOC entry 1989 (class 0 OID 16558)
+-- Dependencies: 172
+-- Data for Name: tbl_user_role; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY tbl_user_role (id_user_role, role) FROM stdin;
+1	admin
+2	member
+3	staff
+\.
+
+
+--
+-- TOC entry 1976 (class 2606 OID 16576)
+-- Name: color_histogram_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY tbl_color_histogram
+    ADD CONSTRAINT color_histogram_pkey PRIMARY KEY (id_color_histogram);
+
+
+--
+-- TOC entry 1978 (class 2606 OID 16587)
+-- Name: image_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY tbl_image
+    ADD CONSTRAINT image_pkey PRIMARY KEY (id_image);
+
+
+--
+-- TOC entry 1984 (class 2606 OID 16611)
+-- Name: relevance_feedback_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY tbl_relevance_feedback
+    ADD CONSTRAINT relevance_feedback_pkey PRIMARY KEY (id_relevance_feedback);
+
+
+--
+-- TOC entry 1986 (class 2606 OID 16619)
+-- Name: score_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY tbl_score
+    ADD CONSTRAINT score_pkey PRIMARY KEY (id_score);
+
+
+--
+-- TOC entry 1982 (class 2606 OID 16603)
+-- Name: shape_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY tbl_shape
+    ADD CONSTRAINT shape_pkey PRIMARY KEY (id_shape);
+
+
+--
+-- TOC entry 1980 (class 2606 OID 16595)
+-- Name: texture_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY tbl_texture
+    ADD CONSTRAINT texture_pkey PRIMARY KEY (id_texture);
+
+
+--
+-- TOC entry 1972 (class 2606 OID 16555)
+-- Name: user_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY tbl_user
+    ADD CONSTRAINT user_pkey PRIMARY KEY (id_user);
+
+
+--
+-- TOC entry 1974 (class 2606 OID 16563)
+-- Name: user_role_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY tbl_user_role
+    ADD CONSTRAINT user_role_pkey PRIMARY KEY (id_user_role);
+
+
+--
+-- TOC entry 1987 (class 2606 OID 16564)
+-- Name: user_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY tbl_user
+    ADD CONSTRAINT user_fkey FOREIGN KEY (id_user_role) REFERENCES tbl_user_role(id_user_role);
+
+
+--
+-- TOC entry 2002 (class 0 OID 0)
+-- Dependencies: 5
+-- Name: public; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM postgres;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+-- Completed on 2012-12-28 03:42:50
+
+--
+-- PostgreSQL database dump complete
+--
+
