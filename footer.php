@@ -14,7 +14,67 @@
 				<h3>Settings</h3>
 			</div>
 			<div class="modal-body">
-				<p>Here settings can be configured...</p>
+				<p>General settings for image retrieval query...</p>
+                <form class="form-horizontal">
+                    <fieldset>
+                        <div class="control-group">
+                          <label class="control-label">Number of images in database</label>
+                          <div class="controls">
+                            <span class="input-xlarge uneditable-input">10.000</span>
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label" for="focusedInput">Nummer of results shown</label>
+                          <div class="controls">
+                            <input class="input-xlarge focused" id="focusedInput" type="text" value="10" />
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label" for="selectError3">Scoring</label>
+                          <div class="controls">
+                            <select id="selectError3">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label" for="selectError3">Distance function</label>
+                          <div class="controls">
+                            <select id="selectError3">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label">Search by</label>
+                          <div class="controls">
+                            <label class="checkbox inline">
+                              <input type="checkbox" id="inlineCheckbox1" value="option1"> Histogram
+                            </label>
+                            <label class="checkbox inline">
+                              <input type="checkbox" id="inlineCheckbox2" value="option2"> Shape
+                            </label>
+                            <label class="checkbox inline">
+                              <input type="checkbox" id="inlineCheckbox3" value="option3"> Texture
+                            </label>
+                          </div>
+                        </div>
+                        <!--
+                        <div class="form-actions">
+                          <button type="submit" class="btn btn-primary">Save changes</button>
+                          <button class="btn">Cancel</button>
+                        </div>
+                        -->
+                    </fieldset>
+                </form>
 			</div>
 			<div class="modal-footer">
 				<a href="#" class="btn" data-dismiss="modal">Close</a>

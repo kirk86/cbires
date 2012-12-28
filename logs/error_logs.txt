@@ -279,3 +279,21 @@ LOCATION: C:\wamp\www\cbires\index.php, line 146, at December 28, 2012, 1:33 am
 Showing backtrace:
 
 
+
+ERRNO: 2
+TEXT: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Europe/Helsinki' for '2.0/no DST' instead
+LOCATION: C:\wamp\www\cbires\footer.php, line 87, at December 28, 2012, 7:05 pm
+Showing backtrace:
+date("Y") # line   87, file: C:\wamp\www\cbires\footer.php
+require_once("C:\wamp\www\cbires\footer.php") # line  110, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 2
+TEXT: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Europe/Helsinki' for '2.0/no DST' instead
+LOCATION: C:\wamp\www\cbires\footer.php, line 87, at December 28, 2012, 7:32 pm
+Showing backtrace:
+date("Y") # line   87, file: C:\wamp\www\cbires\footer.php
+require_once("C:\wamp\www\cbires\footer.php") # line  110, file: C:\wamp\www\cbires\gallery.php
+
+
