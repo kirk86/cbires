@@ -10,12 +10,23 @@
 					</li>
 				</ul>
 			</div>
+           <?php $sql_total_members = "SELECT count(*) AS count_member
+                                      FROM public.tbl_user, public.tbl_user_role
+                                      WHERE tbl_user_role.id_user_role = tbl_user.id_user_role";
+                 $total_members = DB::getOne($sql_total_members);
+                 $member_info = DB::getAll($sql_total_members); 
+                 $sql_new_members = "SELECT count(*) AS new_member
+                                     FROM public.tbl_user, public.tbl_user_role
+                                     WHERE tbl_user_role.id_user_role = tbl_user.id_user_role
+                                     AND date_registered = now()::date";
+                 $new_members = DB::getOne($sql_new_members);
+           ?>
 			<div class="sortable row-fluid">
-				<a data-rel="tooltip" title="6 new members." class="well span3 top-block" href="#">
+				<a data-rel="tooltip" title="<?php echo $new_members[0]['new_member']; ?> new members." class="well span3 top-block" href="#">
 					<span class="icon32 icon-red icon-user"></span>
 					<div>Total Members</div>
-					<div>507</div>
-					<span class="notification">6</span>
+					<div><?php echo $total_members[0]['count_member']; ?></div>
+					<span class="notification"><?php echo $new_members[0]['new_member']; ?></span>
 				</a>
 
 				<a data-rel="tooltip" title="4 new image categories." class="well span3 top-block" href="#">
@@ -108,41 +119,35 @@
 							<a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
 						</div>
 					</div>
+                    <?php $sql_member_info = "SELECT *
+                                             FROM public.tbl_user, public.tbl_user_role
+                                             WHERE tbl_user_role.id_user_role = tbl_user.id_user_role
+                                             ORDER BY date_registered DESC
+                                             LIMIT 4";
+                          $member_info = DB::getAll($sql_member_info);
+                    ?>
 					<div class="box-content">
 						<div class="box-content">
 							<ul class="dashboard-list">
+                            <?php foreach ($member_info as $key => $value) : ?>
 								<li>
 									<a href="#">
-										<img class="dashboard-avatar" alt="John Doe" src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "kirk86@walla.com" ) ) ); ?>.png?s=50"></a>
-										<strong>Name:</strong> <a href="#">John Doe
-									</a><br>
-									<strong>Since:</strong> 17/05/2012<br>
-									<strong>Status:</strong> <span class="label label-success">Approved</span>                                  
+										<img class="dashboard-avatar" alt="<?php echo $member_info[$key]['username']; ?>" src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "kirk86@walla.com" ) ) ); ?>.png?s=50" /></a>
+										<strong>Name:</strong> <a href="#"><?php echo ucfirst($member_info[$key]['username']); ?>
+									</a><br />
+									<strong>Since:</strong> <?php echo $member_info[$key]['date_registered']; ?> <br />
+									<strong>Status:</strong> <span class="<?php if ($member_info[$key]['status'] == 'active') echo 'label label-success';
+                                                       elseif ($member_info[$key]['status'] == 'pending') echo 'label label-warning';
+                                                       elseif ($member_info[$key]['status'] == 'banned') echo 'label label-important';
+                                                       elseif ($member_info[$key]['status'] == 'inactive') echo 'label'; ?>">
+                                                       <?php if ($member_info[$key]['status'] == 'active') echo 'Active';
+                                                       elseif ($member_info[$key]['status'] == 'pending') echo 'Pending';
+                                                       elseif ($member_info[$key]['status'] == 'banned') echo 'Banned';
+                                                       elseif ($member_info[$key]['status'] == 'inactive') echo 'Inactive'; ?>
+                                                            </span>                                  
 								</li>
-								<li>
-									<a href="#">
-										<img class="dashboard-avatar" alt="Jack" src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "kirk86@walla.com" ) ) ); ?>.png?s=50"></a>
-										<strong>Name:</strong> <a href="#">Jack
-									</a><br>
-									<strong>Since:</strong> 17/05/2012<br>
-									<strong>Status:</strong> <span class="label label-warning">Pending</span>                                 
-								</li>
-								<li>
-									<a href="#">
-										<img class="dashboard-avatar" alt="Gravatar" src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "kirk86@walla.com" ) ) ); ?>.png?s=50"></a>
-										<strong>Name:</strong> <a href="#">Maria
-									</a><br>
-									<strong>Since:</strong> 25/05/2012<br>
-									<strong>Status:</strong> <span class="label label-important">Banned</span>                                  
-								</li>
-								<li>
-									<a href="#">
-										<img class="dashboard-avatar" alt="Shanon" src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "kirk86@walla.com" ) ) ); ?>.png?s=50"></a>
-										<strong>Name:</strong> <a href="#">Shanon
-									</a><br>
-									<strong>Since:</strong> 17/05/2012<br>
-									<strong>Status:</strong> <span class="label label-info">Updates</span>                                  
-								</li>
+                            <?php endforeach; ?>
+                            
 							</ul>
 						</div>
 					</div>

@@ -1,0 +1,281 @@
+
+ERRNO: 8
+TEXT: Use of undefined constant CCB_DB_DIR - assumed 'CCB_DB_DIR'
+LOCATION: C:\wamp\www\cbires\header.php, line 6, at December 28, 2012, 12:05 am
+Showing backtrace:
+require_once("C:\wamp\www\cbires\header.php") # line    1, file: C:\wamp\www\cbires\index.php
+
+
+
+ERRNO: 8
+TEXT: Undefined index: date
+LOCATION: C:\wamp\www\cbires\user.php, line 44, at December 28, 2012, 12:39 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: date
+LOCATION: C:\wamp\www\cbires\user.php, line 44, at December 28, 2012, 12:39 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: date
+LOCATION: C:\wamp\www\cbires\user.php, line 44, at December 28, 2012, 12:39 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: date
+LOCATION: C:\wamp\www\cbires\user.php, line 44, at December 28, 2012, 12:39 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: date
+LOCATION: C:\wamp\www\cbires\user.php, line 44, at December 28, 2012, 12:39 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: key
+LOCATION: C:\wamp\www\cbires\index.php, line 20, at December 28, 2012, 12:55 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: 
+LOCATION: C:\wamp\www\cbires\index.php, line 20, at December 28, 2012, 12:55 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 139, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 140, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 141, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 142, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 143, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 144, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 145, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 146, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 139, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 140, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 141, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 142, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 143, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 144, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 145, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 146, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 139, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 140, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 141, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 142, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 143, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 144, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 145, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 146, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 139, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 140, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 141, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 142, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 143, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 144, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 145, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\wamp\www\cbires\index.php, line 146, at December 28, 2012, 1:33 am
+Showing backtrace:
+
+

@@ -1,6 +1,7 @@
 <?php
 require_once('config/config.php');
-require_once(CB_INCLUDES_DIR . '/ErrorHandler.php');
+require_once(CB_DB_DIR . 'DB.php');
+require_once(CB_INCLUDES_DIR . 'ErrorHandler.php');
 ErrorHandler::setHandler();
 ?>
 <!DOCTYPE html>
