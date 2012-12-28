@@ -25,33 +25,27 @@
 					<div class="box-content">
 						<form class="form-horizontal">
 							<fieldset>
-                            <legend>Form indicating the possible layout of profile page</legend>
+                            <legend>Edit your profile settings</legend>
 							<div class="control-group">
-							  <label class="control-label" for="typeahead">Auto complete </label>
-							  <div class="controls">
-								<input type="text" class="span6 typeahead" id="typeahead"  data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]' />
-								<p class="help-block">Start typing to activate auto complete!</p>
-							  </div>
-							</div>
-							<div class="control-group">
-							  <label class="control-label" for="date01">Date input</label>
-							  <div class="controls">
-								<input type="text" class="input-xlarge datepicker" id="date01" value="02/16/12" />
-							  </div>
-							</div>
-
-							<div class="control-group">
-							  <label class="control-label" for="fileInput">File input</label>
-							  <div class="controls">
-								<input class="input-file uniform_on" id="fileInput" type="file" />
-							  </div>
-							</div>
-							  <div class="control-group">
-								<label class="control-label" for="focusedInput">Focused input</label>
+								<label class="control-label" for="focusedInput">Username</label>
 								<div class="controls">
-								  <input class="input-xlarge focused" id="focusedInput" type="text" value="This is focused…" />
+								  <input class="input-xlarge focused" id="focusedInput" type="text" value="Username…" />
 								</div>
+							</div>
+                            <div class="control-group">
+								<label class="control-label" for="focusedInput">Password</label>
+								<div class="controls">
+								  <input class="input-xlarge focused" id="focusedInput" type="text" value="Password…" />
+								</div>
+							</div>
+							<div class="control-group">
+							  <label class="control-label" for="date01">Date registered </label>
+							  <div class="controls">
+								<input type="text" class="input-xlarge datepicker" id="date01" value="26/12/2012" />
 							  </div>
+							</div>
+                            
+                            <!--
 							  <div class="control-group">
 								<label class="control-label">Uneditable input</label>
 								<div class="controls">
@@ -64,15 +58,8 @@
 								  <input class="input-xlarge disabled" id="disabledInput" type="text" placeholder="Disabled input here…" disabled="" />
 								</div>
 							  </div>
-							  <div class="control-group">
-								<label class="control-label" for="optionsCheckbox2">Disabled checkbox</label>
-								<div class="controls">
-								  <label class="checkbox">
-									<input type="checkbox" id="optionsCheckbox2" value="option1" disabled="" />
-									This is a disabled checkbox
-								  </label>
-								</div>
-							  </div>
+                              -->
+                              <!--
 							  <div class="control-group warning">
 								<label class="control-label" for="inputWarning">Input with warning</label>
 								<div class="controls">
@@ -94,95 +81,29 @@
 								  <span class="help-inline">Woohoo!</span>
 								</div>
 							  </div>
+                              -->
 							  <div class="control-group">
-								<label class="control-label" for="selectError3">Plain Select</label>
+								<label class="control-label">Role</label>
 								<div class="controls">
-								  <select id="selectError3">
-									<option>Option 1</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-									<option>Option 4</option>
-									<option>Option 5</option>
-								  </select>
+								  <label class="radio">
+									<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" /> Admin
+								  </label>
+								  <label class="radio">
+									<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" />	Member
+								  </label>
+                                  <label class="radio">
+									<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" /> Staff
+								  </label>
 								</div>
 							  </div>
 							  <div class="control-group">
-								<label class="control-label" for="selectError">Modern Select</label>
+								<label class="control-label" for="selectError">Status</label>
 								<div class="controls">
 								  <select id="selectError" data-rel="chosen">
-									<option>Option 1</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-									<option>Option 4</option>
-									<option>Option 5</option>
-								  </select>
-								</div>
-							  </div>
-							  <div class="control-group">
-								<label class="control-label" for="selectError1">Multiple Select / Tags</label>
-								<div class="controls">
-								  <select id="selectError1" multiple data-rel="chosen">
-									<option>Option 1</option>
-									<option selected>Option 2</option>
-									<option>Option 3</option>
-									<option>Option 4</option>
-									<option>Option 5</option>
-								  </select>
-								</div>
-							  </div>
-							  <div class="control-group">
-								<label class="control-label" for="selectError2">Group Select</label>
-								<div class="controls">
-									<select data-placeholder="Your Favorite Football Team" id="selectError2" data-rel="chosen">
-										<option value=""></option>
-										<optgroup label="NFC EAST">
-										  <option>Dallas Cowboys</option>
-										  <option>New York Giants</option>
-										  <option>Philadelphia Eagles</option>
-										  <option>Washington Redskins</option>
-										</optgroup>
-										<optgroup label="NFC NORTH">
-										  <option>Chicago Bears</option>
-										  <option>Detroit Lions</option>
-										  <option>Green Bay Packers</option>
-										  <option>Minnesota Vikings</option>
-										</optgroup>
-										<optgroup label="NFC SOUTH">
-										  <option>Atlanta Falcons</option>
-										  <option>Carolina Panthers</option>
-										  <option>New Orleans Saints</option>
-										  <option>Tampa Bay Buccaneers</option>
-										</optgroup>
-										<optgroup label="NFC WEST">
-										  <option>Arizona Cardinals</option>
-										  <option>St. Louis Rams</option>
-										  <option>San Francisco 49ers</option>
-										  <option>Seattle Seahawks</option>
-										</optgroup>
-										<optgroup label="AFC EAST">
-										  <option>Buffalo Bills</option>
-										  <option>Miami Dolphins</option>
-										  <option>New England Patriots</option>
-										  <option>New York Jets</option>
-										</optgroup>
-										<optgroup label="AFC NORTH">
-										  <option>Baltimore Ravens</option>
-										  <option>Cincinnati Bengals</option>
-										  <option>Cleveland Browns</option>
-										  <option>Pittsburgh Steelers</option>
-										</optgroup>
-										<optgroup label="AFC SOUTH">
-										  <option>Houston Texans</option>
-										  <option>Indianapolis Colts</option>
-										  <option>Jacksonville Jaguars</option>
-										  <option>Tennessee Titans</option>
-										</optgroup>
-										<optgroup label="AFC WEST">
-										  <option>Denver Broncos</option>
-										  <option>Kansas City Chiefs</option>
-										  <option>Oakland Raiders</option>
-										  <option>San Diego Chargers</option>
-										</optgroup>
+									<option>Active</option>
+									<option>Inactive</option>
+									<option>Pending</option>
+									<option>Banned 4</option>
 								  </select>
 								</div>
 							  </div>
