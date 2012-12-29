@@ -82,8 +82,8 @@
         							<?php endfor; ?>
         						</ul>
                             <p style="text-align: center;">
-                                    <button type="submit" class="btn btn-primary">more results</button>&nbsp;
-                                    <button type="submit" class="btn btn-primary">requery</button>
+                                    <button type="submit" class="btn btn-warning btn-round">more results</button>&nbsp;
+                                    <button type="submit" class="btn btn-success btn-round">requery</button>
                                 </p>
 						  </fieldset>
 						</form>
@@ -108,7 +108,7 @@
 						<form class="form-horizontal">
 						  <fieldset>
 							  <div class="controls">
-								<p style="text-align: right;"> <button type="submit" class="btn btn-primary">more random images</button></p>
+								<p style="text-align: right;"> <button class="btn btn-small btn-info btn-round" type="submit">more random images</button></p>
 							  </div>
 						  </fieldset>
 						</form>   
@@ -129,7 +129,7 @@
 							<div class="control-group">
 								<p class="center">File input: &nbsp;
                                     <input class="input-file uniform_on" id="fileInput" type="file" /> &nbsp;
-                                    <button type="submit" class="btn btn-primary">Query :-)</button>
+                                    <button class="btn btn-small btn-danger btn-round" type="submit">Query :-)</button>
                                 </p>
 							</div>
 						  </fieldset>
