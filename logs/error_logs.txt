@@ -297,3 +297,55 @@ date("Y") # line   87, file: C:\wamp\www\cbires\footer.php
 require_once("C:\wamp\www\cbires\footer.php") # line  110, file: C:\wamp\www\cbires\gallery.php
 
 
+
+ERRNO: 256
+TEXT: SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 5432?
+LOCATION: C:\wamp\www\cbires\db\DB.php, line 49, at December 29, 2012, 7:56 am
+Showing backtrace:
+trigger_error("SQLSTATE[08006] [7] could not connect to server: Connection refu...", "256") # line   49, file: C:\wamp\www\cbires\db\DB.php
+DB.getInstance() # line  156, file: C:\wamp\www\cbires\db\DB.php
+DB.getOne("SELECT count(*) AS count_member
+                                ...") # line   16, file: C:\wamp\www\cbires\index.php
+
+
+
+ERRNO: 256
+TEXT: SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 5432?
+LOCATION: C:\wamp\www\cbires\db\DB.php, line 49, at December 29, 2012, 7:56 am
+Showing backtrace:
+trigger_error("SQLSTATE[08006] [7] could not connect to server: Connection refu...", "256") # line   49, file: C:\wamp\www\cbires\db\DB.php
+DB.getInstance() # line  156, file: C:\wamp\www\cbires\db\DB.php
+DB.getOne("SELECT count(*) AS count_member
+                                ...") # line   16, file: C:\wamp\www\cbires\index.php
+
+
+
+ERRNO: 256
+TEXT: SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 5432?
+LOCATION: C:\wamp\www\cbires\db\DB.php, line 49, at December 29, 2012, 7:56 am
+Showing backtrace:
+trigger_error("SQLSTATE[08006] [7] could not connect to server: Connection refu...", "256") # line   49, file: C:\wamp\www\cbires\db\DB.php
+DB.getInstance() # line  156, file: C:\wamp\www\cbires\db\DB.php
+DB.getOne("SELECT count(*) AS count_member
+                                ...") # line   16, file: C:\wamp\www\cbires\index.php
+
+
+
+ERRNO: 256
+TEXT: SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 5432?
+LOCATION: C:\wamp\www\cbires\db\DB.php, line 49, at December 29, 2012, 7:56 am
+Showing backtrace:
+trigger_error("SQLSTATE[08006] [7] could not connect to server: Connection refu...", "256") # line   49, file: C:\wamp\www\cbires\db\DB.php
+DB.getInstance() # line  156, file: C:\wamp\www\cbires\db\DB.php
+DB.getOne("SELECT count(*) AS count_member
+                                ...") # line   16, file: C:\wamp\www\cbires\index.php
+
+

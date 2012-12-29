@@ -102,7 +102,6 @@ ErrorHandler::setHandler();
                         <li><a class="ajax-link" href="user.php"><i class="icon-user"></i><span class="hidden-tablet"> Members </span></a></li>
 						<li><a class="ajax-link" href="gallery.php"><i class="icon-picture"></i><span class="hidden-tablet"> Gallery</span></a></li>
                         <li><a class="ajax-link" href="upload.php"><i class="icon-folder-close"></i><span class="hidden-tablet"> File Uploader</span></a></li>
-						<li><a class="ajax-link" href="file-manager.php"><i class="icon-folder-open"></i><span class="hidden-tablet"> File Manager</span></a></li>
 					</ul>
 					<label id="for-is-ajax" class="hidden-tablet" for="is-ajax"><input id="is-ajax" type="checkbox"> Ajax on menu</label>
 				</div><!--/.well -->
