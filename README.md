@@ -13,7 +13,6 @@ Requirements
 2. PostgreSQL
 3. PDO
 4. GD
-5. Gmagick [This is optional in early development stages]
 
 
 Contributions
