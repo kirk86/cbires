@@ -92,7 +92,7 @@ class Tools
 
 		if (is_string($ret) === true)
 			$ret = urldecode(preg_replace('/((\%5C0+)|(\%00+))/i', '', urlencode($ret)));
-		return !is_string($ret)? $ret : stripslashes($ret);
+		return !is_string($ret) ? $ret : stripslashes($ret);
 	}
 
 	public static function getIsset($key)
@@ -195,10 +195,7 @@ class Tools
 	*/
 	public static function isSubmit($submit)
 	{
-		return (
-			isset($_POST[$submit]) || isset($_POST[$submit]) || isset($_POST[$submit])
-			|| isset($_GET[$submit]) || isset($_GET[$submit]) || isset($_GET[$submit])
-		);
+		return ( isset($_POST[$submit]) || isset($_GET[$submit]) );
 	}
 
 	/**
@@ -328,6 +325,7 @@ class Tools
      * @param m-dimensional array $array populated with data
      * @param integer $preserve_keys (0=>never, 1=>strings, 2=>always)
      * @param array &$newArray new array passed by reference
+     * @return array $newArray flattened array to 1-D
      */
      public static function arrayFlatten($array, $preserve_keys = 1, &$newArray = array())
      {
@@ -342,4 +340,31 @@ class Tools
         }
         return $newArray;
      }
+     
+     /**
+      * A simple function for converting a PHP array to PostgresSQL array.
+      * 
+      * @param scalar or php array $set
+      * @return array $result postgress sql array compliant
+      */
+      public static function phpArray2PostgressSQL($set)
+      {
+        settype($set, 'array'); // can be called with a scalar or array
+        $result = array();
+        foreach ($set as $t)
+        {
+            if (is_array($t))
+            {
+                $result[] = phpArray2PostgressSQL($t);
+            }
+            else
+            {
+                $t = str_replace('"', '\\"', $t); // escape double quote
+                if (! is_numeric($t)) // quote only non-numeric values
+                $t = '"' . $t . '"';
+                $result[] = $t;
+            }
+        }
+        return '{' . implode(",", $result) . '}'; // format
+      }
 }

@@ -23,63 +23,109 @@
 					</div>
 					<div class="box-content">
                     <!-- START OF: fullscreen button -->
+                    <!--
+						<p class="center">
+							<button id="toggle-fullscreen" class="btn btn-large btn-primary visible-desktop" data-toggle="button">Toggle Fullscreen</button>
+						</p>
+                    -->
+                    <!-- END OF: fullscreen button -->
+						<!--<br />-->
+                    <?php
+                    if (Tools::isSubmit('submit') && Tools::getIsset('submit'))
+                    {
+                        $targetFolder = '/cbires/img/gallery/thumbs/query_image.jpg';
+                        $galleryFolder = '/cbires/img/gallery/query_image.jpg';
+                        
+                        if ( !empty( $_FILES['fileInput']['name'] ) && 
+                             !empty( $_FILES['fileInput']['type'] ) && 
+                             !empty( $_FILES['fileInput']['tmp_name'] ) )
+                        {
+                            $tempFile = $_FILES['fileInput']['tmp_name'];
+                            $targetPath = $_SERVER['DOCUMENT_ROOT'] . $targetFolder;
+                            $galleryPath = $_SERVER['DOCUMENT_ROOT'] . $galleryFolder;
+                            
+                            // Validate the file type
+                            $fileTypes = array('jpg','jpeg','gif','png'); // File extensions
+                            $fileParts = pathinfo($_FILES['fileInput']['name']);
+                            
+                            if ( in_array( Tools::strtolower( $fileParts['extension'] ), $fileTypes ) )
+                            {
+                                $img = new Image($tempFile);
+                                $img->save($galleryPath, false);
+                                //copy($tempFile, $galleryPath);
+                                $img->resize(300, 0); // Lower quality image created using width ratio otherwise $img->resize(300, 0, false); for quality not speed
+                                $img->save($targetPath);
+                                $resized_img = $img->file_name;
+                                
+                                //$filemime = 'image/'.$fileParts['extension'];
+                                $histoObj    = new Histogram($resized_img);
+                                $histoRGB    = $histoObj->generateHistogram();
+                                $normHistRGB = DistanceMetrics::computeHistogram($histoRGB, 64, min($histoRGB), max($histoRGB));
+                                $meanRGB     = DistanceMetrics::mean($normHistRGB);
+                                $stdRGB      = DistanceMetrics::std($normHistRGB);
+                                $pg_arrayRGB = Tools::phpArray2PostgressSQL($normHistRGB);
+                                
+                                $sql = "SELECT id_image, filename, filepath, filemime, filename_hash,
+                                               array_to_json(color_histogram) AS rgb_histogram 
+                                        FROM tbl_image";
+                                $qresult = DB::getAll($sql);
+                                $distArrayRGB = array();
+                                $img_ids = array();
+                                $img_filename = array();
+                                foreach ($qresult as $key => $value)
+                                {
+                                    $distRGB = DistanceMetrics::euclidean($normHistRGB, json_decode($qresult[$key]['rgb_histogram']));
+                                    $distArrayRGB[] = $distRGB;
+                                    $img_ids[]      = $qresult[$key]['id_image'];
+                                    $img_filename[] = $qresult[$key]['filename_hash'];
+                                }
+                                $combRGB = array_combine($distArrayRGB, $img_filename);
+                                $ok = ksort($combRGB);
+                                unset($img); unset($histoObj); unset($histoRGB);
+                                unset($normHistRGB); unset($pg_arrayRGB);
+                            
+                    ?>
+                    <!-- START OF: fullscreen button -->
 						<p class="center">
 							<button id="toggle-fullscreen" class="btn btn-large btn-primary visible-desktop" data-toggle="button">Toggle Fullscreen</button>
 						</p>
                     <!-- END OF: fullscreen button -->
-						<br />
+						<!--<br />-->
                     <!-- START OF: info message 1 -->    
                         <div class="alert alert-info">
 							<h2><p class="center">Retrieval Results</p></h2>
 						</div>
                     <!-- END OF: info message 1 -->
-                    <!--
-                        <legend class="center"></legend>
-                        <div class="box-content">
-						<table class="table table-striped table-bordered bootstrap-datatable datatable">
-						  <thead>
-							  <tr>
-								  <th> </th>
-								  <th> </th>
-								  <th> </th>
-								  <th> </th>
-								  <th> </th>
-                                  <th> </th>
-                                  <th> </th>
-							  </tr>
-						  </thead>   
-						  <tbody>
-                          <ul class="thumbnails gallery">
-                          -->
-                          <?php //for ($i = 0; $i <= 10; $i++) { ?>
-						  <!--<tr>-->
-                            <?php //for ($j = 1; $j <= 7; $j++) { ?>
-								<!--
-                                <td class="center">
-                                Image<?php //echo $counter2; ?> <hr />
-                                Relevance<?php //echo $counter2+$j; ?> <hr />
-                                Score<?php //echo $counter2+$j; ?> <hr />
-                                </td>
-                                -->
-                            <?php //} ?>
-							<!--</tr>-->
-                            <?php //} ?>
-                            <!--
-                            </ul>
-						  </tbody>
-					  </table>            
-					</div>
-                    -->
+                    
                     <form class="form-horizontal">
         				<fieldset>
         						<ul class="thumbnails gallery">
-        							<?php for ($i = 1; $i <= 24; $i++) : ?>
-        							<li id="image-<?php echo $i ?>" class="thumbnail">
-        								<a style="background:url(img/gallery/thumbs/<?php echo $i ?>.jpg)" title="Sample Image <?php echo $i ?>" href="img/gallery/<?php echo $i ?>.jpg">
-                                            <img class="grayscale" src="img/gallery/thumbs/<?php echo $i ?>.jpg" alt="Sample Image <?php echo $i ?>" />
+                                <!-- Query image -->
+                                <!--
+                                    <li id="image-query" class="thumbnail">
+        								<a style="background:url(img/gallery/thumbs/query_image.jpg)" title="Sample Image Query" href="img/gallery/query_image.jpg">
+                                            <img class="grayscale" src="img/gallery/thumbs/query_image.jpg" alt="Sample Image Query" />
                                         </a>
         							</li>
-        							<?php endfor; ?>
+                                    -->
+                                <!-- Query image -->
+        							<?php                                    
+                                    $threshold = 14;
+                                    $counter = 0;
+                                    foreach ($combRGB as $key => $value) :
+                                        if ($counter < $threshold)
+                                        {
+                                    ?>
+        							<li id="image-<?php echo $counter + 1; ?>" class="thumbnail">
+        								<a style="background:url(img/gallery/thumbs/<?php echo $value; ?>)" title="Sample Image <?php echo $value; ?>" href="img/gallery/<?php echo $value; ?>">
+                                            <img class="grayscale" src="img/gallery/thumbs/<?php echo $value; ?>" alt="Sample Image <?php echo $value; ?>" />
+                                        </a>
+        							</li>
+        							<?php
+                                        }
+                                        $counter++;
+                                    endforeach;
+                                    ?>
         						</ul>
                             <p style="text-align: center;">
                                     <button type="submit" class="btn btn-warning btn-round">more results</button>&nbsp;
@@ -87,34 +133,22 @@
                                 </p>
 						  </fieldset>
 						</form>
-                        
-                        <legend class="center"></legend>
-                        
-                    <!-- START OF: info message 2 -->
-                        <div class="alert alert-info">
-							<h2><p class="center">Random Images - Click one to start a query</p></h2>
-						</div>
-                        <ul class="thumbnails gallery">
-							<?php for ($i = 1; $i <= 7; $i++) : ?>
-							<li id="image-<?php echo $i ?>" class="thumbnail">
-								<a style="background:url(img/gallery/thumbs/<?php echo $i ?>.jpg)" title="Sample Image <?php echo $i ?>" href="img/gallery/<?php echo $i ?>.jpg">
-                                    <img class="grayscale" src="img/gallery/thumbs/<?php echo $i ?>.jpg" alt="Sample Image <?php echo $i ?>" />
-                                </a>
-							</li>
-							<?php endfor; ?>
-						</ul>
-                        
-                        <div class="box-content">
-						<form class="form-horizontal">
-						  <fieldset>
-							  <div class="controls">
-								<p style="text-align: right;"> <button class="btn btn-small btn-info btn-round" type="submit">more random images</button></p>
-							  </div>
-						  </fieldset>
-						</form>   
-
-					</div>
-                    <!-- END OF: info message 2 -->
+                        <?php
+                           }
+                        	else
+                            {
+                        ?>
+                            <div class="box-content alerts">
+        						<div class="alert alert-error">
+        							<button type="button" class="close" data-dismiss="alert">×</button>
+        							<strong class="center">Oh snap!</strong> Invalid file type.
+        						</div>
+    					  </div>
+                        <?php        
+                            }
+                        }
+                        ?>
+            <?php } ?> 
                     
                     <legend class="center"></legend>
                     
@@ -124,12 +158,13 @@
 						</div>
                         
                         <div class="box-content">
-						<form class="form-horizontal">
+						<form class="form-horizontal" action="gallery.php" method="post" target="_self" enctype="multipart/form-data">
 						  <fieldset>
 							<div class="control-group">
 								<p class="center">File input: &nbsp;
-                                    <input class="input-file uniform_on" id="fileInput" type="file" /> &nbsp;
-                                    <button class="btn btn-small btn-danger btn-round" type="submit">Query :-)</button>
+                                    <!--<input type="hidden" name="submit-value" id="submit-value" value="submited" />-->
+                                    <input class="input-file uniform_on" type="file" id="fileInput" name="fileInput" /> &nbsp;
+                                    <button class="btn btn-small btn-danger btn-round" type="submit" id="submit" name="submit">Query :-)</button>
                                 </p>
 							</div>
 						  </fieldset>

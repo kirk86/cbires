@@ -1,6 +1,12 @@
 <?php
 require_once('config/config.php');
 require_once(CB_DB_DIR . 'DB.php');
+require_once(CB_CORE_DIR . 'ColorSpaceConversion.php');
+require_once(CB_CORE_DIR . 'Histogram.php');
+require_once(CB_CORE_DIR . 'DistanceMetrics.php');
+require_once(CB_CORE_DIR . 'Image.php');
+require_once(CB_INCLUDES_DIR . 'Tools.php');
+require_once(CB_INCLUDES_DIR . 'Validate.php');
 require_once(CB_INCLUDES_DIR . 'ErrorHandler.php');
 ErrorHandler::setHandler();
 ?>

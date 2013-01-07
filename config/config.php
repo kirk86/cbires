@@ -10,6 +10,7 @@
 define('CB_SITE_ROOT', dirname(dirname(__FILE__)));
 // Application directories
 define('CB_INCLUDES_DIR', CB_SITE_ROOT.'/includes/');
+define('CB_CORE_DIR', CB_SITE_ROOT.'/core/');
 define('CB_DB_DIR', CB_SITE_ROOT.'/db/');
 // Settings needed to configure the cbires
 define('CB_CONFIG_DIR', CB_SITE_ROOT.'/config/');
@@ -47,3 +48,6 @@ define('DB_NAME', 'cbires');
 define('DB_PORT', '5432');
 define('PDO_DSN', 'pgsql:dbname='.DB_NAME.';user='.DB_USERNAME.';password='.DB_PASSWORD.';host='.DB_SERVER.';port='.DB_PORT);
 define('DB_PREFIX', 'tbl_'); // define the databse table prefix
+
+// Timezone for date() function
+date_default_timezone_set("Europe/Athens");

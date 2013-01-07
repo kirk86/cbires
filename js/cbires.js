@@ -164,24 +164,31 @@ function docReady(){
 
 	//uploadify - multiple uploads
 	$('#file_upload').uploadify({
-        'fileTypeDesc' : 'Image Files',
-        'fileTypeExts' : '*.gif; *.jpg; *.png',
-        'method'       : 'post', 
-		'swf'          : 'misc/uploadify.swf',
-		'uploader'     : 'misc/uploadify.php',
-		// Put your options here
-        'onUploadSuccess' : function (file, data, response) {
-            alert(data);
+        'fileTypeDesc'  : 'Image Files',
+        'fileTypeExts'  : '*.gif; *.jpg; *.png',
+        'method'        : 'post',
+        'checkExisting' : '/uploadify/check-exists.php',
+		'swf'           : 'misc/uploadify.swf',
+		'uploader'      : 'misc/uploadify.php',
+        'onUploadError' : function(file, errorCode, errorMsg, errorString) {
+            alert('The file ' + file.name + ' could not be uploaded: ' + errorString);
+        },
+        'onSelectError' : function() {
+            alert('The file ' + file.name + ' returned an error and was not added to the queue.');
         }
+		// Put your options here
+        //'onUploadSuccess' : function (file, data, response) {
+        //    alert(data);
+        //}
 	});
-    
+
     $('#multiple_upload').uploadify({
-        //'fileTypeDesc' : 'Any old file you want...',
-        'buttonText'    : 'Browse...',
+        'fileTypeDesc'  : 'Select image folder...',
+        'buttonText'    : 'BROWSE...',
         'method'        : 'post',
         'checkExisting' : '/uploadify/check-exists.php',
         'swf'           : 'misc/uploadify.swf',
-        'uploader'      : 'misc/uploadify.php',
+        'uploader'      : 'misc/uploadify.php'
         // Put your options here
     });
 

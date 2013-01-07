@@ -6,7 +6,7 @@
  * all errors in the file error_logs.txt
  * located in directory logs.
  * 
- * @category  classes
+ * @category  classes, class ErrorHandler
  * @author    John Mitros
  * @copyright 2012
  */
