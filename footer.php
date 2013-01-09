@@ -19,7 +19,7 @@
             ?>
 			<div class="modal-body">
 				<p>General settings for image retrieval query...</p>
-                <form class="form-horizontal">
+                <form class="form-horizontal" id="gallerySettingsForm" action="gallery.php" method="post">
                     <fieldset>
                         <div class="control-group">
                           <label class="control-label">Number of images in database</label>
@@ -30,25 +30,13 @@
                         <div class="control-group">
                           <label class="control-label" for="focusedInput">Nummer of results shown</label>
                           <div class="controls">
-                            <input class="input-xlarge focused" id="focusedInput" type="text" value="14" />
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="selectError3">Scoring</label>
-                          <div class="controls">
-                            <select id="selectError3">
-                              <option>Option 1</option>
-                              <option>Option 2</option>
-                              <option>Option 3</option>
-                              <option>Option 4</option>
-                              <option>Option 5</option>
-                            </select>
+                            <input class="input-xlarge focused" id="focusedInput" name="topk" type="text" value="14" />
                           </div>
                         </div>
                         <div class="control-group">
                           <label class="control-label" for="selectError3">Distance function</label>
                           <div class="controls">
-                            <select id="selectError3">
+                            <select id="selectError3" name="distanceFunction">
                               <option>L2</option>
                               <option>L1</option>
                               <option>JDV</option>
@@ -63,11 +51,11 @@
                           <label class="control-label">Color Space</label>
 						   <div class="controls">
 						     <label class="radio">
-							   <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""> RGB
+							   <input type="radio" name="colorSpace" id="colorSpace" value="RGB" checked="yes"> RGB
 				             </label>
 				             <div style="clear:both"></div>
                              <label class="radio">
-								<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> HSV
+								<input type="radio" name="colorSpace" id="colorSpace" value="HSV"> HSV
 						     </label>
                            </div>
 					    </div>
@@ -75,32 +63,26 @@
                           <label class="control-label">Search by</label>
                           <div class="controls">
                             <label class="checkbox inline">
-                              <input type="checkbox" id="inlineCheckbox1" value="option1" checked=""> Histogram
+                              <input type="checkbox" id="inlineCheckbox1" name="histogram" value="Histogram" checked=""> Histogram
                             </label>
                             <label class="checkbox inline">
-                              <input type="checkbox" id="inlineCheckbox2" value="option2" disabled=""> Shape
+                              <input type="checkbox" id="inlineCheckbox2" name="shape" value="Shape" disabled=""> Shape
                             </label>
                             <label class="checkbox inline">
-                              <input type="checkbox" id="inlineCheckbox3" value="option3" disabled=""> Texture
+                              <input type="checkbox" id="inlineCheckbox3" name="texture" value="Texture" disabled=""> Texture
                             </label>
                           </div>
                         </div>
-                        <!--
-                        <div class="form-actions">
-                          <button type="submit" class="btn btn-primary">Save changes</button>
-                          <button class="btn">Cancel</button>
+                        <div class="modal-footer">
+                            <a href="#" class="btn" data-dismiss="modal">Close</a>
+                            <button type="submit" class="btn btn-primary">Save changes</button>
+                            <!--<a href="#" class="btn btn-primary" id="btn-save-changes">Save changes</a>-->
                         </div>
-                        -->
                     </fieldset>
                 </form>
 			</div>
-			<div class="modal-footer">
-				<a href="#" class="btn" data-dismiss="modal">Close</a>
-				<a href="#" class="btn btn-primary">Save changes</a>
-			</div>
 		</div>
         <!-- END OF: Configure Settings MessageBox -->
-        
 		<footer>
 			<p class="pull-left">&copy; <a href="http://mycompany.com.gr/cbires" target="_blank">CBIRES</a> <?php echo date('Y') ?></p>
 		</footer>

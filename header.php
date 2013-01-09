@@ -9,6 +9,7 @@ require_once(CB_INCLUDES_DIR . 'Tools.php');
 require_once(CB_INCLUDES_DIR . 'Validate.php');
 require_once(CB_INCLUDES_DIR . 'ErrorHandler.php');
 ErrorHandler::setHandler();
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">

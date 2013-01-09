@@ -290,7 +290,7 @@ function docReady(){
 			"sLengthMenu": "_MENU_ records per page"
 			}
 		} );
-	$('.btn-close').click(function(e){
+    $('.btn-close').click(function(e){
 		e.preventDefault();
 		$(this).parent().parent().parent().fadeOut();
 	});
@@ -630,6 +630,10 @@ function docReady(){
 
 		update();
 	}
+    
+    // Settings for distance functions
+    //postSettings();
+
 }
 
 
@@ -721,3 +725,38 @@ $.extend( $.fn.dataTableExt.oPagination, {
 		}
 	}
 });
+
+// Settings post function
+function postSettings()
+{
+    $(function() {
+        $("#btn-save-changes").click( function(e) {
+            e.preventDefault();
+                    
+            $.ajax({
+            type: "POST",
+            url: "gallery.php",
+            data: $("#gallerySettingsForm").serialize(),
+            dataType: "html",
+            beforeSend: function () {
+                $('.alerts').hide();            
+            },
+            success: function(data)
+            {         
+                if( $('#focusedInput').val() < 1 )
+                {
+                    alert('Please provide a positive integer value for top-k field!');
+                }
+                else
+                {
+                    $('#myModal').modal('hide');
+                    $('.alerts').fadeIn();
+                    window.location.reload();
+                }
+              
+            }
+            });
+                 
+        });
+    });
+}

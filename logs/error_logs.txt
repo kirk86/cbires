@@ -4260,3 +4260,1909 @@ LOCATION: C:\wamp\www\cbires\gallery.php, line 51, at January 7, 2013, 1:48 am
 Showing backtrace:
 
 
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 7:34 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 7:51 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 7:54 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 7:55 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 7:55 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 7:56 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:01 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:01 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:01 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:02 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:03 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:03 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:03 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:04 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:05 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:05 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:05 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:05 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:05 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:05 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:05 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:05 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:05 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:05 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:05 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:05 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:05 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:05 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:05 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:06 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:06 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:06 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:06 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:06 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:07 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:08 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:09 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:09 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:10 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:11 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:14 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:16 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:16 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: topk
+LOCATION: C:\wamp\www\cbires\gallery.php, line 41, at January 8, 2013, 8:18 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: showMsg
+LOCATION: C:\wamp\www\cbires\gallery.php, line 47, at January 8, 2013, 10:30 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: showMsg
+LOCATION: C:\wamp\www\cbires\gallery.php, line 47, at January 8, 2013, 10:30 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: showMsg
+LOCATION: C:\wamp\www\cbires\gallery.php, line 47, at January 8, 2013, 10:31 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at January 9, 2013, 12:16 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: distanceFunction
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at January 9, 2013, 12:16 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: colorSpace
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at January 9, 2013, 12:16 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at January 9, 2013, 12:19 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: distanceFunction
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at January 9, 2013, 12:19 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: colorSpace
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at January 9, 2013, 12:19 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: globals
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at January 9, 2013, 12:22 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: globals
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at January 9, 2013, 12:22 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: globals
+LOCATION: C:\wamp\www\cbires\gallery.php, line 61, at January 9, 2013, 12:22 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 61, at January 9, 2013, 12:25 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: distanceFunction
+LOCATION: C:\wamp\www\cbires\gallery.php, line 62, at January 9, 2013, 12:25 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: colorSpace
+LOCATION: C:\wamp\www\cbires\gallery.php, line 63, at January 9, 2013, 12:25 am
+Showing backtrace:
+
+
+
+ERRNO: 2
+TEXT: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cookie - headers already sent by (output started at C:\wamp\www\cbires\header.php:67)
+LOCATION: C:\wamp\www\cbires\gallery.php, line 44, at January 9, 2013, 12:58 am
+Showing backtrace:
+session_start() # line   44, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 166, at January 9, 2013, 1:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 56, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: distanceFunction
+LOCATION: C:\wamp\www\cbires\gallery.php, line 57, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: colorSpace
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:12 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 283, at January 9, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 2
+TEXT: session_destroy() [<a href='function.session-destroy'>function.session-destroy</a>]: Trying to destroy uninitialized session
+LOCATION: C:\wamp\www\cbires\gallery.php, line 315, at January 9, 2013, 2:15 am
+Showing backtrace:
+session_destroy() # line  315, file: C:\wamp\www\cbires\gallery.php
+
+

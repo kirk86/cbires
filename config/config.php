@@ -51,3 +51,31 @@ define('DB_PREFIX', 'tbl_'); // define the databse table prefix
 
 // Timezone for date() function
 date_default_timezone_set("Europe/Athens");
+
+// Error and Success Messages
+$MESSAGE_INVALID_FILE_TYPE = "<div class='box-content alerts'>
+                                <div class='alert alert-error'>
+                                    <button type='button' class='close' data-dismiss='alert'>×</button>
+                                    <strong class='center'>Oh snap!</strong> Invalid file type.
+                                </div>
+                            </div>";
+
+define('MESSAGE_INVALID_FILE_TYPE', $MESSAGE_INVALID_FILE_TYPE);
+
+$MESSAGE_INVALID_TOPK = "<div class='box-content alerts'>
+           				    <div class='alert alert-error'>
+                                <button type='button' class='close' data-dismiss='alert'>×</button>
+                                <strong class='center'>Oh snap!</strong> Invalid number of results. Adjust top-k image number.
+                            </div>
+                        </div>";
+
+define('MESSAGE_INVALID_TOPK', $MESSAGE_INVALID_TOPK);
+
+$MESSAGE_SUCCESS_SETTINGS = "<div class='box-content alerts show'>
+    						  <div class='alert alert-success'>
+                                <button type='button' class='close' data-dismiss='alert'>×</button>
+                                <strong>Well done!</strong> Settings saved successfully.
+                              </div>
+    					   </div>";
+
+define('MESSAGE_SUCCESS_SETTINGS', $MESSAGE_SUCCESS_SETTINGS);
