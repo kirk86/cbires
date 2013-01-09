@@ -126,7 +126,7 @@
                                         unset($objRGB); unset($histoRGB); unset($normHistRGB);
                                         unset($qresult); unset($distArrayRGB); unset($img_ids);
                                         unset($img_filename);
-                                        
+                                        break;
                                         
                                         case 'HSV':
                                         
@@ -169,6 +169,7 @@
                                         unset($objHSV); unset($histoHSV); unset($binHistHSV);
                                         unset($normHistHSV); unset($qresult); unset($distArrayHSV);
                                         unset($img_ids); unset($img_filename);
+                                        break;
                                     }
                                 }
                                 else
@@ -251,6 +252,7 @@
                                                     }
                                                     $counter++;
                                                  }
+                                                 break;
                                                  
                                                  case 'HSV':
                                                  
@@ -269,11 +271,10 @@
                                                     }
                                                     $counter++;
                                                  }
+                                                 break;
                                             }
-                                            unset($_SESSION['threshold']);
-                                            unset($_SESSION['distanceFunction']);
-                                            unset($_SESSION['colorSpace']);
-                                            session_destroy();
+                                            //session_unset();
+                                            //session_destroy();
                                      }
                                      else
                                      {
@@ -310,6 +311,7 @@
                             }
                         }
                  }
+                 //session_unset();
                  ?> 
                     
                     <legend class="center"></legend>

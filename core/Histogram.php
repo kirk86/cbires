@@ -126,7 +126,7 @@ class Histogram extends ColorSpaceConversion
                 if ($convertToHsv == true)
                 {
                     $hsv = $this->rgb2hsv($r, $g, $b);
-                    $value = (16 * $hsv['H'] + 4 * $hsv['S'] + 4 * $hsv['V']);
+                    $value = (8 * $hsv['H'] + 4 * $hsv['S'] + 4 * $hsv['V']);
                 }
                 else
                 {

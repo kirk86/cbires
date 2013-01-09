@@ -6166,3 +6166,158 @@ Showing backtrace:
 session_destroy() # line  315, file: C:\wamp\www\cbires\gallery.php
 
 
+
+ERRNO: 2
+TEXT: session_destroy() [<a href='function.session-destroy'>function.session-destroy</a>]: Trying to destroy uninitialized session
+LOCATION: C:\wamp\www\cbires\gallery.php, line 316, at January 9, 2013, 2:45 am
+Showing backtrace:
+session_destroy() # line  316, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 56, at January 9, 2013, 2:50 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: distanceFunction
+LOCATION: C:\wamp\www\cbires\gallery.php, line 57, at January 9, 2013, 2:50 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: colorSpace
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at January 9, 2013, 2:50 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at January 9, 2013, 3:37 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: distanceFunction
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at January 9, 2013, 3:37 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: colorSpace
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at January 9, 2013, 3:37 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at January 9, 2013, 3:38 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: distanceFunction
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at January 9, 2013, 3:38 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: colorSpace
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at January 9, 2013, 3:38 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at January 9, 2013, 1:23 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: distanceFunction
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at January 9, 2013, 1:23 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: colorSpace
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at January 9, 2013, 1:23 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at January 9, 2013, 1:26 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: distanceFunction
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at January 9, 2013, 1:26 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: colorSpace
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at January 9, 2013, 1:26 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at January 9, 2013, 1:32 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: distanceFunction
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at January 9, 2013, 1:32 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: colorSpace
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at January 9, 2013, 1:32 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: threshold
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at January 9, 2013, 1:32 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: distanceFunction
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at January 9, 2013, 1:32 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: colorSpace
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at January 9, 2013, 1:32 pm
+Showing backtrace:
+
+

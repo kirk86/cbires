@@ -1,6 +1,9 @@
 <?php
 $no_visible_elements = true;
-require_once('header.php'); ?>
+require_once('header.php');
+session_unset();
+session_destroy();
+?>
 
 			<div class="row-fluid">
 				<div class="span12 center login-header">
