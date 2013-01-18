@@ -79,3 +79,12 @@ $MESSAGE_SUCCESS_SETTINGS = "<div class='box-content alerts show'>
     					   </div>";
 
 define('MESSAGE_SUCCESS_SETTINGS', $MESSAGE_SUCCESS_SETTINGS);
+
+$MESSAGE_NO_RELEVANCE_FEEDBACK_SELECTED = "<div class='box-content alerts'>
+                                            <div class='alert alert-error'>
+                                                <button type='button' class='close' data-dismiss='alert'>×</button>
+                                                <strong class='center'>Oh snap!</strong> Please provide some relevance feedback.
+                                            </div>
+                                        </div>";
+
+define('MESSAGE_NO_RELEVANCE_FEEDBACK_SELECTED', $MESSAGE_NO_RELEVANCE_FEEDBACK_SELECTED);

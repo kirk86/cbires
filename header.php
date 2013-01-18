@@ -7,6 +7,7 @@ require_once(CB_CORE_DIR . 'DistanceMetrics.php');
 require_once(CB_CORE_DIR . 'Image.php');
 require_once(CB_INCLUDES_DIR . 'Tools.php');
 require_once(CB_INCLUDES_DIR . 'Validate.php');
+require_once(CB_INCLUDES_DIR . 'PopulateImages.php');
 require_once(CB_INCLUDES_DIR . 'ErrorHandler.php');
 ErrorHandler::setHandler();
 session_start();

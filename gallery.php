@@ -29,8 +29,8 @@
 						</p>
                     -->
                     <!-- END OF: fullscreen button -->
-						<!--<br />-->
-                    <?php                    
+                    <?php
+                    //var_dump($_POST);
                     if ( Tools::getIsset('topk')             && 
                          Tools::getIsset('distanceFunction') && 
                          Tools::getIsset('colorSpace')       && 
@@ -50,6 +50,12 @@
                             session_write_close();
                             echo MESSAGE_SUCCESS_SETTINGS;
                         }
+                    }
+                    if ( Tools::isSubmit('requery') && 
+                         Tools::getIsset('requery') && 
+                         Tools::getValue('requery') == 'relevance_feedback' )
+                    {
+                        echo "teste";
                     }
                     if (Tools::isSubmit('submit') && Tools::getIsset('submit'))
                     {
@@ -73,11 +79,11 @@
                             {
                                 $img = new Image($tempFile);
                                 $img->save($galleryPath, false);
-                                //copy($tempFile, $galleryPath);
                                 $img->resize(300, 0); // Lower quality image created using width ratio otherwise $img->resize(300, 0, false); for quality not speed
                                 $img->save($targetPath);
                                 $resized_img = $img->file_name;
-                                
+                                $_SESSION['resized_img'] = $resized_img;
+                                 
                                 //$filemime = 'image/'.$fileParts['extension'];
                                 if ( isset($_SESSION['colorSpace'])       && !empty($_SESSION['colorSpace'])       &&
                                      isset($_SESSION['distanceFunction']) && !empty($_SESSION['distanceFunction']) &&
@@ -87,136 +93,28 @@
                                     switch ($_SESSION['colorSpace'])
                                     {
                                         case 'RGB':
-                                        
-                                        $objRGB      = new Histogram($resized_img);
-                                        $histoRGB    = $objRGB->generateHistogram();
-                                        $normHistRGB = DistanceMetrics::computeHistogram($histoRGB, 64, min($histoRGB), max($histoRGB));
-                                        $meanRGB     = DistanceMetrics::mean($normHistRGB);
-                                        $stdRGB      = DistanceMetrics::std($normHistRGB);
-                                        $sql         = "SELECT id_image, filename, filepath, filemime, filename_hash,
-                                                       array_to_json(color_histogram) AS rgb_histogram 
-                                                       FROM tbl_image";
-                                        $qresult = DB::getAll($sql);
-                                        $distArrayRGB = array();
-                                        $img_ids      = array();
-                                        $img_filename = array();
-                                        foreach ($qresult as $key => $value)
-                                        {
-                                            if ($_SESSION['distanceFunction'] == 'L1')
-                                                $distRGB = DistanceMetrics::manhattan($normHistRGB, json_decode($qresult[$key]['rgb_histogram']));
-                                            if ($_SESSION['distanceFunction'] == 'L2')
-                                                $distRGB = DistanceMetrics::euclidean($normHistRGB, json_decode($qresult[$key]['rgb_histogram']));
-                                            if ($_SESSION['distanceFunction'] == 'JDV')
-                                                $distRGB = DistanceMetrics::jeffrey($normHistRGB, json_decode($qresult[$key]['rgb_histogram']));
-                                            if ($_SESSION['distanceFunction'] == 'ChiSquare')
-                                                $distRGB = DistanceMetrics::chiSquare($normHistRGB, json_decode($qresult[$key]['rgb_histogram']));
-                                            if ($_SESSION['distanceFunction'] == 'Chebychev')
-                                                $distRGB = DistanceMetrics::chebychev($normHistRGB, json_decode($qresult[$key]['rgb_histogram']));
-                                            if ($_SESSION['distanceFunction'] == 'Tanimoto')
-                                                $distRGB = DistanceMetrics::tanimoto($normHistRGB, json_decode($qresult[$key]['rgb_histogram']));
-                                            if ($_SESSION['distanceFunction'] == 'Cosine')
-                                                $distRGB = DistanceMetrics::cosineCoefficient($normHistRGB, json_decode($qresult[$key]['rgb_histogram']));
-                                            
-                                            $distArrayRGB[] = $distRGB;
-                                            $img_ids[]      = $qresult[$key]['id_image'];
-                                            $img_filename[] = $qresult[$key]['filename_hash'];
-                                        }
-                                        $combRGB = array_combine($distArrayRGB, $img_filename);
-                                        $ok = ksort($combRGB);
-                                        unset($objRGB); unset($histoRGB); unset($normHistRGB);
-                                        unset($qresult); unset($distArrayRGB); unset($img_ids);
-                                        unset($img_filename);
+                                        $combRGB = PopulateImages::computeRgbImages($resized_img);
                                         break;
                                         
                                         case 'HSV':
-                                        
-                                        $objHSV      = new Histogram($resized_img);
-                                        $histoHSV    = $objHSV->generateHistogram(true);
-                                        $binHistHSV  = DistanceMetrics::computeHistogram($histoHSV, 64, min($histoHSV), max($histoHSV), false);
-                                        $normHistHSV = DistanceMetrics::normalize($binHistHSV);
-                                        $meanHSV     = DistanceMetrics::mean($normHistHSV);
-                                        $stdHSV      = DistanceMetrics::std($normHistHSV);
-                                        $sql         = "SELECT id_image, filename, filepath, filemime, filename_hash,
-                                                       array_to_json(hsv_histogram) AS hsv_histogram 
-                                                       FROM tbl_image";
-                                        $qresult = DB::getAll($sql);
-                                        $distArrayHSV = array();
-                                        $img_ids      = array();
-                                        $img_filename = array();
-                                        foreach ($qresult as $key => $value)
-                                        {
-                                            if ($_SESSION['distanceFunction'] == 'L1')
-                                                $distHSV = DistanceMetrics::manhattan($normHistHSV, json_decode($qresult[$key]['hsv_histogram']));
-                                            if ($_SESSION['distanceFunction'] == 'L2')
-                                                $distHSV = DistanceMetrics::euclidean($normHistHSV, json_decode($qresult[$key]['hsv_histogram']));
-                                            if ($_SESSION['distanceFunction'] == 'JDV')
-                                                $distHSV = DistanceMetrics::jeffrey($normHistHSV, json_decode($qresult[$key]['hsv_histogram']));
-                                            if ($_SESSION['distanceFunction'] == 'ChiSquare')
-                                                $distHSV = DistanceMetrics::chiSquare($normHistHSV, json_decode($qresult[$key]['hsv_histogram']));
-                                            if ($_SESSION['distanceFunction'] == 'Chebychev')
-                                                $distHSV = DistanceMetrics::chebychev($normHistHSV, json_decode($qresult[$key]['hsv_histogram']));
-                                            if ($_SESSION['distanceFunction'] == 'Tanimoto')
-                                                $distHSV = DistanceMetrics::tanimoto($normHistHSV, json_decode($qresult[$key]['hsv_histogram']));
-                                            if ($_SESSION['distanceFunction'] == 'Cosine')
-                                                $distHSV = DistanceMetrics::cosineCoefficient($normHistHSV, json_decode($qresult[$key]['hsv_histogram']));
-                                            
-                                            $distArrayHSV[] = $distHSV;
-                                            $img_ids[]      = $qresult[$key]['id_image'];
-                                            $img_filename[] = $qresult[$key]['filename_hash'];
-                                        }
-                                        $combHSV = array_combine($distArrayHSV, $img_filename);
-                                        $ok = ksort($combHSV);
-                                        unset($objHSV); unset($histoHSV); unset($binHistHSV);
-                                        unset($normHistHSV); unset($qresult); unset($distArrayHSV);
-                                        unset($img_ids); unset($img_filename);
+                                        $combHSV = PopulateImages::computeHsvImages($resized_img);
                                         break;
                                     }
                                 }
-                                else
-                                {
-                                    $objRGB      = new Histogram($resized_img);
-                                    $histoRGB    = $objRGB->generateHistogram();
-                                    $normHistRGB = DistanceMetrics::computeHistogram($histoRGB, 64, min($histoRGB), max($histoRGB));
-                                    $meanRGB     = DistanceMetrics::mean($normHistRGB);
-                                    $stdRGB      = DistanceMetrics::std($normHistRGB);
-                                    $sql         = "SELECT id_image, filename, filepath, filemime, filename_hash,
-                                                    array_to_json(color_histogram) AS rgb_histogram 
-                                                    FROM tbl_image";
-                                    $qresult = DB::getAll($sql);
-                                    $distArrayRGB = array();
-                                    $img_ids      = array();
-                                    $img_filename = array();
-                                    foreach ($qresult as $key => $value)
-                                    {
-                                        $distRGB = DistanceMetrics::euclidean($normHistRGB, json_decode($qresult[$key]['rgb_histogram']));
-                                        $distArrayRGB[] = $distRGB;
-                                        $img_ids[]      = $qresult[$key]['id_image'];
-                                        $img_filename[] = $qresult[$key]['filename_hash'];
-                                    }
-                                    
-                                    $combRGB = array_combine($distArrayRGB, $img_filename);
-                                    $ok = ksort($combRGB);
-                                    unset($objRGB); unset($histoRGB); unset($normHistRGB);
-                                    unset($qresult); unset($distArrayRGB); unset($img_ids);
-                                    unset($img_filename);
-                                }
-                                
+                                else { $combRGB = PopulateImages::computeRgbImages($resized_img, true); } 
                                 unset($img);
-                            
                     ?>
                     <!-- START OF: fullscreen button -->
 						<p class="center">
 							<button id="toggle-fullscreen" class="btn btn-large btn-primary visible-desktop" data-toggle="button">Toggle Fullscreen</button>
 						</p>
                     <!-- END OF: fullscreen button -->
-						<!--<br />-->
                     <!-- START OF: info message 1 -->    
                         <div class="alert alert-info">
-							<h2><p class="center">Retrieval Results</p></h2>
+							<p class="center" style="color: blue; font-size: x-large;">Retrieval Results</p>
 						</div>
                     <!-- END OF: info message 1 -->
-                    
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" action="gallery.php" method="post">
         				<fieldset>
         						<ul class="thumbnails gallery">
                                 <!-- Query image -->
@@ -228,6 +126,8 @@
         							</li>
                                     -->
                                 <!-- Query image -->
+                                    <table>
+                                        <tr>
         							<?php
                                     if ( isset($_SESSION['threshold']) && !empty($_SESSION['threshold']) && 
                                          isset($_SESSION['colorSpace']) && !empty($_SESSION['colorSpace'])
@@ -236,79 +136,29 @@
                                             switch ($_SESSION['colorSpace'])
                                             {
                                                 case 'RGB':
-                                                
-                                                $counter = 0;
-                                                foreach ($combRGB as $key => $value)
-                                                {
-                                                    if ($counter < $_SESSION['threshold'])
-                                                    {
-                                      ?>
-                    							<li id="image-<?php echo $counter + 1; ?>" class="thumbnail">
-                    								<a style="background:url(img/gallery/thumbs/<?php echo $value; ?>)" title="Sample Image <?php echo $value; ?>" href="img/gallery/<?php echo $value; ?>">
-                                                        <img class="grayscale" src="img/gallery/thumbs/<?php echo $value; ?>" alt="Sample Image <?php echo $value; ?>" />
-                                                    </a>
-                    							</li>
-        							  <?php
-                                                    }
-                                                    $counter++;
-                                                 }
-                                                 break;
+                                                PopulateImages::populateColorSpaceImages($combRGB);
+                                                break;
                                                  
-                                                 case 'HSV':
-                                                 
-                                                 $counter = 0;
-                                                 foreach ($combHSV as $key => $value)
-                                                 {
-                                                    if ($counter < $_SESSION['threshold'])
-                                                    {
-                                      ?>
-                    							<li id="image-<?php echo $counter + 1; ?>" class="thumbnail">
-                    								<a style="background:url(img/gallery/thumbs/<?php echo $value; ?>)" title="Sample Image <?php echo $value; ?>" href="img/gallery/<?php echo $value; ?>">
-                                                        <img class="grayscale" src="img/gallery/thumbs/<?php echo $value; ?>" alt="Sample Image <?php echo $value; ?>" />
-                                                    </a>
-                    							</li>
-        							  <?php
-                                                    }
-                                                    $counter++;
-                                                 }
-                                                 break;
+                                                case 'HSV':
+                                                PopulateImages::populateColorSpaceImages($combHSV);
+                                                break;
                                             }
                                             //session_unset();
                                             //session_destroy();
                                      }
-                                     else
-                                     {
-                                        $threshold = 14;
-                                        $counter = 0;
-                                        foreach ($combRGB as $key => $value)
-                                        {
-                                            if ($counter < $threshold)
-                                            {
-                                      ?>
-                    						<li id="image-<?php echo $counter + 1; ?>" class="thumbnail">
-                    							<a style="background:url(img/gallery/thumbs/<?php echo $value; ?>)" title="Sample Image <?php echo $value; ?>" href="img/gallery/<?php echo $value; ?>">
-                                                     <img class="grayscale" src="img/gallery/thumbs/<?php echo $value; ?>" alt="Sample Image <?php echo $value; ?>" />
-                                                 </a>
-                    						</li>
-        							  <?php
-                                             }
-                                            $counter++;
-                                        }
-                                     }
-                                        ?>
+                                     else { PopulateImages::populateColorSpaceImages($combRGB, 14); }
+                                    ?>
+                                    </table>
         						</ul>
-                            <p style="text-align: center;">
-                                    <button type="submit" class="btn btn-warning btn-round">more results</button>&nbsp;
-                                    <button type="submit" class="btn btn-success btn-round">requery</button>
+                                </table>
+                                <p style="text-align: center;">
+                                    <button class="btn btn-warning btn-round" type="submit" name="requery" value="relevance_feedback">Requery</button>
                                 </p>
 						  </fieldset>
 						</form>
                         <?php
                            }
-                        	else
-                            {
-                                echo MESSAGE_INVALID_FILE_TYPE;
-                            }
+                        	else { echo MESSAGE_INVALID_FILE_TYPE; }
                         }
                  }
                  //session_unset();
@@ -318,7 +168,7 @@
                     
                     <!-- START OF: info message 3 -->    
                         <div class="alert alert-info">
-							<h2><p class="center">Upload - Use query image from your file system</p></h2>
+							<p class="center" style="color: blue; font-size: x-large;">Upload - Use query image from your file system</p>
 						</div>
                         
                         <div class="box-content">

@@ -51,11 +51,11 @@
                           <label class="control-label">Color Space</label>
 						   <div class="controls">
 						     <label class="radio">
-							   <input type="radio" name="colorSpace" id="colorSpace" value="RGB" checked="yes"> RGB
+							   <input type="radio" name="colorSpace" id="colorSpace" value="RGB" checked="" /> RGB
 				             </label>
 				             <div style="clear:both"></div>
                              <label class="radio">
-								<input type="radio" name="colorSpace" id="colorSpace" value="HSV"> HSV
+								<input type="radio" name="colorSpace" id="colorSpace" value="HSV" /> HSV
 						     </label>
                            </div>
 					    </div>

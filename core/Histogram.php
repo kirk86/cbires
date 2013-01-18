@@ -116,7 +116,7 @@ class Histogram extends ColorSpaceConversion
                 // extract each value for r, g, b
                 $r = ($rgb >> 16) & 0xFF;
                 $g = ($rgb >> 8)  & 0xFF;
-                $b = ($rgb >> 0)  & 0xFF;
+                $b =  $rgb        & 0xFF;
                 
                 // maybe used later for statistical purposes
                 $this->_Image['red'][$r]['count']++;
