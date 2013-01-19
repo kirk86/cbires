@@ -1,0 +1,691 @@
+
+ERRNO: 2
+TEXT: fread(): Length parameter must be greater than 0
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\index.php, line 50, at January 19, 2013, 1:38 pm
+Showing backtrace:
+fread("Resource id #14", "0") # line   50, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\index.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: key
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 80, at January 19, 2013, 2:34 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: query_image_histogram_sum
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 149, at January 19, 2013, 2:36 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: original_image_histogram
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 141, at January 19, 2013, 2:46 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: original_image_histogram
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 143, at January 19, 2013, 2:47 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 1
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 2
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 3
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 4
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 5
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 6
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 7
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 8
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 9
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 10
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 11
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 12
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 13
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 14
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 15
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 16
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 17
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 18
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 19
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 20
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 21
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 22
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 23
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 24
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 25
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 26
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 27
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 28
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 29
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 30
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 31
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 32
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 33
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 34
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 35
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 36
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 37
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 38
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 39
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 40
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 41
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 42
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 43
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 44
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 45
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 46
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 47
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 48
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 49
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 50
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 51
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 52
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 53
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 54
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 55
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 56
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 57
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 58
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 59
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 60
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 61
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 62
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 63
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 336, at January 19, 2013, 3:01 pm
+Showing backtrace:
+difference_arrays(Array[64], Array[1]) # line  149, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 284, at January 19, 2013, 3:11 pm
+Showing backtrace:
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 27, at January 19, 2013, 3:11 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null) # line  284, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 256
+TEXT: The two histograms must be of equal size in: fcn -> euclidean()!
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\core\DistanceMetrics.php, line 94, at January 19, 2013, 3:12 pm
+Showing backtrace:
+trigger_error("The two histograms must be of equal size in: fcn -&gt; euclidean()!", "256") # line   94, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.euclidean(Array[1], Array[64]) # line  181, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php
+PopulateImages.computeRgbImages(Array[1]) # line  155, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 239, at January 19, 2013, 3:16 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 291, at January 19, 2013, 3:16 pm
+Showing backtrace:
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 27, at January 19, 2013, 3:16 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null) # line  291, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: normHistRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 239, at January 19, 2013, 3:18 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 291, at January 19, 2013, 3:18 pm
+Showing backtrace:
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 27, at January 19, 2013, 3:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null) # line  291, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 239, at January 19, 2013, 3:20 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 291, at January 19, 2013, 3:20 pm
+Showing backtrace:
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 27, at January 19, 2013, 3:20 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null) # line  291, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 256
+TEXT: The two histograms must be of equal size in: fcn -> euclidean()!
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\core\DistanceMetrics.php, line 94, at January 19, 2013, 3:21 pm
+Showing backtrace:
+trigger_error("The two histograms must be of equal size in: fcn -&gt; euclidean()!", "256") # line   94, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.euclidean(Array[1], Array[64]) # line  181, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php
+PopulateImages.computeRgbImages(Array[1]) # line  155, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 256
+TEXT: The two histograms must be of equal size in: fcn -> euclidean()!
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\core\DistanceMetrics.php, line 94, at January 19, 2013, 3:27 pm
+Showing backtrace:
+trigger_error("The two histograms must be of equal size in: fcn -&gt; euclidean()!", "256") # line   94, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.euclidean(Array[1], Array[64]) # line  181, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php
+PopulateImages.computeRgbImages(Array[1]) # line  165, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 291, at January 19, 2013, 3:28 pm
+Showing backtrace:
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 27, at January 19, 2013, 3:28 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null) # line  291, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 291, at January 19, 2013, 3:29 pm
+Showing backtrace:
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 27, at January 19, 2013, 3:29 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null) # line  291, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 256
+TEXT: The two histograms must be of equal size in: fcn -> euclidean()!
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\core\DistanceMetrics.php, line 94, at January 19, 2013, 3:44 pm
+Showing backtrace:
+trigger_error("The two histograms must be of equal size in: fcn -&gt; euclidean()!", "256") # line   94, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.euclidean(Array[1], Array[64]) # line  181, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php
+PopulateImages.computeRgbImages(Array[1]) # line  239, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+

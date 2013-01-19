@@ -1,5 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Shojumaru);
 
+#results_images_table{
+width:100%;
+}
+#results_images_table td, #results_images_table li{
+text-align:center;
+margin:auto;
+}
+#results_images_table input{
+padding:1px;
+margin:1px;
+}
+
+
 select{
 background-color:#fff;
 }
@@ -248,6 +261,8 @@ background-color:white;
 z-index:2;
 position:relative;
 margin-bottom:40px !important;
+width:100px;
+height:100px;
 }
 .thumbnails > li{
 margin-left:15px;

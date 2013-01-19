@@ -10,16 +10,45 @@
 					</li>
 				</ul>
 			</div>
-           <?php $sql_total_members = "SELECT count(*) AS count_member
+           <?php
+				// member
+				$sql_total_members = "SELECT count(*) AS count_member
                                       FROM public.tbl_user, public.tbl_user_role
                                       WHERE tbl_user_role.id_user_role = tbl_user.id_user_role";
-                 $total_members = DB::getOne($sql_total_members);
-                 $member_info = DB::getAll($sql_total_members); 
-                 $sql_new_members = "SELECT count(*) AS new_member
-                                     FROM public.tbl_user, public.tbl_user_role
-                                     WHERE tbl_user_role.id_user_role = tbl_user.id_user_role
-                                     AND date_registered = now()::date";
-                 $new_members = DB::getOne($sql_new_members);
+				$total_members = DB::getOne($sql_total_members);
+				$member_info = DB::getAll($sql_total_members); 
+				$sql_new_members = "SELECT count(*) AS new_member
+                                    FROM public.tbl_user, public.tbl_user_role
+                                    WHERE tbl_user_role.id_user_role = tbl_user.id_user_role
+                                    AND date_registered = now()::date - 1";
+				$new_members = DB::getOne($sql_new_members);
+				
+				// categories
+				$sql_total_categories = "SELECT count(*) AS count_categories
+										FROM public.tbl_categories";
+				$total_categories = DB::getOne($sql_total_categories);
+                $categories_info = DB::getAll($sql_total_categories); 
+                $sql_new_categories = "SELECT count(*) AS new_categories
+										FROM public.tbl_categories
+										WHERE date_created > now()::date - 1";
+                $new_categories = DB::getOne($sql_new_categories);
+				
+				// images
+				$sql_total_images = "SELECT count(*) AS count_image
+										FROM public.tbl_image";
+				$total_images = DB::getOne($sql_total_images);
+                $image_info = DB::getAll($sql_total_images); 
+                $sql_new_images = "SELECT count(*) AS new_image
+										FROM public.tbl_image
+										WHERE timestamp > now()::date - 1";
+                $new_images = DB::getOne($sql_new_images);
+				
+				// logs				
+				// get contents of a file into a string
+				$filename = "logs/error_logs.txt";
+				$handle = fopen($filename, "r");
+				$contents = fread($handle, filesize($filename));
+				fclose($handle);
            ?>
 			<div class="sortable row-fluid">
 				<a data-rel="tooltip" title="<?php echo $new_members[0]['new_member']; ?> new members." class="well span3 top-block" href="#">
@@ -28,26 +57,26 @@
 					<div><?php echo $total_members[0]['count_member']; ?></div>
 					<span class="notification"><?php echo $new_members[0]['new_member']; ?></span>
 				</a>
-
-				<a data-rel="tooltip" title="4 new image categories." class="well span3 top-block" href="#">
+				<a data-rel="tooltip" title="<?php echo $new_categories[0]; ?> new image categories." class="well span3 top-block" href="#">
 					<span class="icon32 icon-color icon-star-on"></span>
 					<div>Image Categories</div>
-					<div>228</div>
-					<span class="notification green">4</span>
+					<div><?php echo $total_categories[0];?></div>
+					<span class="notification green"><?php echo $new_categories[0]; ?></span>
 				</a>
-
-				<a data-rel="tooltip" title="34 new images." class="well span3 top-block" href="#">
+				<a data-rel="tooltip" title="<?php echo $new_images[0]; ?> new images." class="well span3 top-block" href="#">
 					<span class="icon32 icon-color icon-image"></span>
 					<div>Total Images</div>
-					<div>13320</div>
-					<span class="notification yellow">34</span>
+					<div><?php echo $total_images[0]; ?></div>
+					<span class="notification yellow"><?php echo $new_images[0]; ?></span>
 				</a>
 				
 				<a data-rel="tooltip" title="12 new logs." class="well span3 top-block" href="#">
 					<span class="icon32 icon-color icon-book"></span>
 					<div>Logs</div>
-					<div>25</div>
+					<div><?php echo substr_count($contents, 'ERRNO');?></div>
+					<!--
 					<span class="notification red">12</span>
+					-->
 				</a>
 			</div>
 			
@@ -162,37 +191,25 @@
 							<a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
 						</div>
 					</div>
+					<?php $sql_category_info = "SELECT *
+                                             FROM public.tbl_categories
+                                             ORDER BY RANDOM()
+                                             LIMIT 4";
+                          $category_info = DB::getAll($sql_category_info);
+                    ?>
 					<div class="box-content">
 						<div class="box-content">
 							<ul class="dashboard-list">
+								<?php foreach ($category_info as $key => $value) : ?>
 								<li>
 									<a href="#">
-										<img class="dashboard-avatar" alt="Africa" src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "kirk86@walla.com" ) ) ); ?>.png?s=50"></a>
-										<strong>Category:</strong> Africa <br />
-									<strong>Subcategory:</strong> Natives <br />
-                                    <strong>Date:</strong> 17/05/2012<br />                                  
+										<img class="dashboard-avatar" alt="<?php echo ucfirst($category_info[$key]['category_name']); ?>" src="img/categories/<?php echo ucfirst($category_info[$key]['category_image']);?>" /></a>
+										<strong>Name:</strong> <a href="#"><?php echo ucfirst($category_info[$key]['category_name']); ?>
+									</a><br />
+									<strong>Created:</strong> <?php echo $category_info[$key]['date_created']; ?> <br />                                  
+									<div style="clear:both;"></div>
 								</li>
-								<li>
-									<a href="#">
-										<img class="dashboard-avatar" alt="Beach" src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "kirk86@walla.com" ) ) ); ?>.png?s=50"></a>
-										<strong>Category:</strong> Beach <br/>
-                                    <strong>Subcategory:</strong> California <br />
-									<strong>Date:</strong> 17/05/2012 <br />                                 
-								</li>
-								<li>
-									<a href="#">
-										<img class="dashboard-avatar" alt="Monuments" src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "kirk86@walla.com" ) ) ); ?>.png?s=50"></a>
-										<strong>Category:</strong> Monuments <br />
-									<strong>Subcategory:</strong> Coloseum <br />
-                                    <strong>Date:</strong> 25/05/2012 <br />                                  
-								</li>
-								<li>
-									<a href="#">
-										<img class="dashboard-avatar" alt="Buses" src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "kirk86@walla.com" ) ) ); ?>.png?s=50"></a>
-										<strong>Category:</strong> Buses <br />
-									<strong>Sucategory:</strong> Public Trans <br />
-                                    <strong>Date:</strong> 17/05/2012 <br />                                  
-								</li>
+                            <?php endforeach; ?>
 							</ul>
 						</div>
 					</div>

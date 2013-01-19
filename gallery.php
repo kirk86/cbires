@@ -1,5 +1,14 @@
 <?php require_once('header.php'); ?>
 
+<?php
+/*
+echo "<pre>";
+print_r($_POST);
+echo "--------------";
+//print_r($_SESSION);
+echo "</pre>";
+*/
+?>
 			<div>
 				<ul class="breadcrumb">
 					<li>
@@ -51,15 +60,102 @@
                             echo MESSAGE_SUCCESS_SETTINGS;
                         }
                     }
+					
+					/*
                     if ( Tools::isSubmit('requery') && 
                          Tools::getIsset('requery') && 
                          Tools::getValue('requery') == 'relevance_feedback' )
                     {
                         echo "teste";
                     }
+					*/
+					
                     if (Tools::isSubmit('submit') && Tools::getIsset('submit'))
                     {
-                        
+						/* rocchio algorimthm start */
+
+						$sum_nr = 0;
+						$difference_nr = 0;
+						$sum_image_histogram_sum = 0;
+						$difference_image_histogram_sum = 0;
+
+						foreach ($_POST as $key => $id) :
+							if($key != "submit")
+							{
+								//echo $key." = ".$id."<br />";
+								$sql_image = "SELECT array_to_json(color_histogram) AS rgb_histogram 
+											  FROM tbl_image
+											  WHERE id_image = ".$key;
+								$qresult_image = DB::getAll($sql_image);
+								
+								$image_histogram = json_decode($qresult_image[0]['rgb_histogram']);
+								
+								//echo "<pre>";
+								//print_r($image_histogram);
+								//echo "</pre>";
+																
+								if($id == 1)
+								{
+									$sum_image_histogram_sum = sum_arrays($image_histogram, $sum_image_histogram_sum);
+									$sum_nr++;
+								}
+								elseif($id == -1)
+								{
+									$difference_image_histogram_sum = sum_arrays($image_histogram, $difference_image_histogram_sum);
+									$difference_nr++;
+								}
+
+							}
+						endforeach;
+												
+						if($sum_image_histogram_sum != 0)
+						{
+							for ($i=0;$i<count($sum_image_histogram_sum);$i++)
+							{
+								$sum_image_histogram_sum[$i] = $sum_image_histogram_sum[$i] / $sum_nr * 0.75;
+							}
+						}
+						
+						//echo "<pre>";
+						//print_r($sum_image_histogram_sum);
+						//echo "</pre>";
+						//echo $sum_nr;
+						
+						if($difference_image_histogram_sum != 0)
+						{
+							for ($i=0;$i<count($difference_image_histogram_sum);$i++)
+							{
+								$difference_image_histogram_sum[$i] = $difference_image_histogram_sum[$i] / $difference_nr * 0.25;
+							}
+						}
+						
+						//echo "<pre>";
+						//print_r($difference_image_histogram_sum);
+						//echo "</pre>";
+						//echo $difference_nr;
+
+						if(isset($_SESSION['rgb_histogram']))
+						{
+							$original_image_histogram = $_SESSION['rgb_histogram'];
+						}
+						
+						//echo "<pre>";
+						//print_r($_SESSION['rgb_histogram']);
+						//echo "</pre>";
+						
+						$query_image_histogram_sum = 0;
+						$query_image_histogram_sum = sum_arrays($original_image_histogram, $query_image_histogram_sum);
+						$query_image_histogram_sum = sum_arrays($sum_image_histogram_sum, $query_image_histogram_sum);
+						$query_image_histogram_sum = difference_arrays($difference_image_histogram_sum, $query_image_histogram_sum);
+						
+						//echo "<pre>query_histogram";
+						//print_r($query_image_histogram_sum);
+						//echo "</pre>";
+						
+						//$combRGB = PopulateImages::computeRgbImages($query_image_histogram_sum);
+						
+						/* rocchio algorimthm end */
+						
                         $targetFolder = '/cbires/img/gallery/thumbs/query_image.jpg';
                         $galleryFolder = '/cbires/img/gallery/query_image.jpg';
                         
@@ -93,74 +189,157 @@
                                     switch ($_SESSION['colorSpace'])
                                     {
                                         case 'RGB':
-                                        $combRGB = PopulateImages::computeRgbImages($resized_img);
-                                        break;
+										{
+											$objRGB      = new Histogram($resized_img);
+											$histoRGB    = $objRGB->generateHistogram();
+											$normHistRGB = DistanceMetrics::computeHistogram($histoRGB, 64, min($histoRGB), max($histoRGB));
+											$_SESSION['rgb_histogram'] = $normHistRGB;
+											$meanRGB     = DistanceMetrics::mean($normHistRGB);
+											$stdRGB      = DistanceMetrics::std($normHistRGB);
+											
+											$combRGB = PopulateImages::computeRgbImages($normHistRGB);
+											break;
+										}
                                         
                                         case 'HSV':
-                                        $combHSV = PopulateImages::computeHsvImages($resized_img);
-                                        break;
+										{
+											$objHSV      = new Histogram($resized_img);
+											$histoHSV    = $objHSV->generateHistogram(true);
+											$binHistHSV  = DistanceMetrics::computeHistogram($histoHSV, 64, min($histoHSV), max($histoHSV), false);
+											$normHistHSV = DistanceMetrics::normalize($binHistHSV);
+											$_SESSION['hsv_histogram'] = $normHistHSV;
+											$meanHSV     = DistanceMetrics::mean($normHistHSV);
+											$stdHSV      = DistanceMetrics::std($normHistHSV);
+											
+											$combHSV = PopulateImages::computeHsvImages($normHistHSV);
+											break;
+										}
                                     }
                                 }
-                                else { $combRGB = PopulateImages::computeRgbImages($resized_img, true); } 
+                                else 
+								{
+									$objRGB      = new Histogram($resized_img);
+									$histoRGB    = $objRGB->generateHistogram();
+									$normHistRGB = DistanceMetrics::computeHistogram($histoRGB, 64, min($histoRGB), max($histoRGB));
+									$_SESSION['rgb_histogram'] = $normHistRGB;
+									$meanRGB     = DistanceMetrics::mean($normHistRGB);
+									$stdRGB      = DistanceMetrics::std($normHistRGB);
+									
+									$combRGB = PopulateImages::computeRgbImages($normHistRGB, true);
+								}
                                 unset($img);
-                    ?>
-                    <!-- START OF: fullscreen button -->
-						<p class="center">
-							<button id="toggle-fullscreen" class="btn btn-large btn-primary visible-desktop" data-toggle="button">Toggle Fullscreen</button>
-						</p>
-                    <!-- END OF: fullscreen button -->
-                    <!-- START OF: info message 1 -->    
-                        <div class="alert alert-info">
-							<p class="center" style="color: blue; font-size: x-large;">Retrieval Results</p>
-						</div>
-                    <!-- END OF: info message 1 -->
-                    <form class="form-horizontal" action="gallery.php" method="post">
-        				<fieldset>
-        						<ul class="thumbnails gallery">
-                                <!-- Query image -->
-                                <!--
-                                    <li id="image-query" class="thumbnail">
-        								<a style="background:url(img/gallery/thumbs/query_image.jpg)" title="Sample Image Query" href="img/gallery/query_image.jpg">
-                                            <img class="grayscale" src="img/gallery/thumbs/query_image.jpg" alt="Sample Image Query" />
-                                        </a>
-        							</li>
-                                    -->
-                                <!-- Query image -->
-                                    <table>
-                                        <tr>
-        							<?php
-                                    if ( isset($_SESSION['threshold']) && !empty($_SESSION['threshold']) && 
-                                         isset($_SESSION['colorSpace']) && !empty($_SESSION['colorSpace'])
-                                       )
-                                    {
-                                            switch ($_SESSION['colorSpace'])
-                                            {
-                                                case 'RGB':
-                                                PopulateImages::populateColorSpaceImages($combRGB);
-                                                break;
-                                                 
-                                                case 'HSV':
-                                                PopulateImages::populateColorSpaceImages($combHSV);
-                                                break;
-                                            }
-                                            //session_unset();
-                                            //session_destroy();
-                                     }
-                                     else { PopulateImages::populateColorSpaceImages($combRGB, 14); }
-                                    ?>
-                                    </table>
-        						</ul>
-                                </table>
-                                <p style="text-align: center;">
-                                    <button class="btn btn-warning btn-round" type="submit" name="requery" value="relevance_feedback">Requery</button>
-                                </p>
-						  </fieldset>
-						</form>
-                        <?php
-                           }
-                        	else { echo MESSAGE_INVALID_FILE_TYPE; }
+							}
+                        	else
+							{
+								echo MESSAGE_INVALID_FILE_TYPE;
+							}
                         }
-                 }
+						else
+						{
+							//$combRGB = PopulateImages::computeRgbImages($query_image_histogram_sum);
+							if ( isset($_SESSION['colorSpace'])       && !empty($_SESSION['colorSpace'])       &&
+                                     isset($_SESSION['distanceFunction']) && !empty($_SESSION['distanceFunction']) &&
+                                     isset($_SESSION['threshold'])        && !empty($_SESSION['threshold'])
+                                   )
+							{
+								switch ($_SESSION['colorSpace'])
+								{
+									case 'RGB':
+									{
+										$combRGB = PopulateImages::computeRgbImages($query_image_histogram_sum);
+										break;
+									}
+									
+									case 'HSV':
+									{
+										$normHistHSV = DistanceMetrics::normalize($query_image_histogram_sum);
+										$combHSV = PopulateImages::computeHsvImages($normHistHSV);
+										break;
+									}
+								}
+							}
+							else 
+							{
+								$combRGB = PopulateImages::computeRgbImages($query_image_histogram_sum, true);
+							}
+						}
+						
+						//echo "<pre>comborgb";
+						//print_r($combRGB);
+						//echo "</pre>";
+						
+						?>
+						
+						<!-- START OF: fullscreen button -->
+							<p class="center">
+								<button id="toggle-fullscreen" class="btn btn-large btn-primary visible-desktop" data-toggle="button">Toggle Fullscreen</button>
+							</p>
+						<!-- END OF: fullscreen button -->
+						
+						<!-- START OF: query message 1 -->    
+							<div class="alert alert-info">
+								<h2><p class="center">Query Image</p></h2>
+							</div>
+						<!-- END OF: query message 1 -->
+						
+							<ul class="thumbnails gallery">
+								<li id="image-query" class="thumbnail">
+									<a style="background:url(img/gallery/thumbs/query_image.jpg);background-size:100px 100px;background-repeat:no-repeat;" title="Sample Image query_image.jpg" href="img/gallery/query_image.jpg">
+										<img src="img/gallery/thumbs/query_image.jpg" alt="Sample Image query_image.jpg" />
+									</a>
+								</li>
+							</ul>
+							
+						<!-- START OF: info message 1 -->    
+							<div class="alert alert-info">
+								<p class="center" style="color: blue; font-size: x-large;">Retrieval Results</p>
+							</div>
+						<!-- END OF: info message 1 -->
+						<form class="form-horizontal" action="gallery.php" method="post">
+							<fieldset>
+									<ul class="thumbnails gallery">
+									<!-- Query image -->
+									<!--
+										<li id="image-query" class="thumbnail">
+											<a style="background:url(img/gallery/thumbs/query_image.jpg)" title="Sample Image Query" href="img/gallery/query_image.jpg">
+												<img src="img/gallery/thumbs/query_image.jpg" alt="Sample Image Query" />
+											</a>
+										</li>
+										-->
+									<!-- Query image -->
+										<table id="results_images_table">
+											<tr>
+										<?php
+										if ( isset($_SESSION['threshold']) && !empty($_SESSION['threshold']) && 
+											 isset($_SESSION['colorSpace']) && !empty($_SESSION['colorSpace'])
+										   )
+										{
+												switch ($_SESSION['colorSpace'])
+												{
+													case 'RGB':
+													PopulateImages::populateColorSpaceImages($combRGB);
+													break;
+													 
+													case 'HSV':
+													PopulateImages::populateColorSpaceImages($combHSV);
+													break;
+												}
+												//session_unset();
+												//session_destroy();
+										 }
+										 else { PopulateImages::populateColorSpaceImages($combRGB, 14); }
+										?>
+										</table>
+									</ul>
+									</table>
+									<p style="text-align: center;">
+										<button class="btn btn-warning btn-round" type="submit" name="submit" value="relevance_feedback">Requery</button>
+									</p>
+							  </fieldset>
+						</form>
+						<?php
+						
+					}
                  //session_unset();
                  ?> 
                     
@@ -191,3 +370,24 @@
 			</div><!--/row-->
     
 <?php require_once('footer.php'); ?>
+
+<?php
+// functions
+function sum_arrays($array1, $array2)
+{
+	for ($i = 0; $i <= (count($array1) -1); $i++)
+	{
+		$temp[$i] = $array1[$i] + $array2[$i];
+	}
+	return $temp;
+}
+
+function difference_arrays($array1, $array2)
+{
+	for ($i = 0; $i <= (count($array1) -1); $i++)
+	{
+		$temp[$i] = $array1[$i] - $array2[$i];
+	}
+	return $temp;
+}
+?>

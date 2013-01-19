@@ -74,11 +74,11 @@ class PopulateImages
                     {
                         echo "<td>
                                 <label class='radio'>
-                                   <input type='radio' name='{$sorted_ids[$temp]}' id='positive_feedback{$temp}' value='positive_feedback' />
+                                   <input type='radio' name='{$sorted_ids[$temp]}' id='positive_feedback{$temp}' value='1' />
                                    <span class='icon icon-color icon-add'></span>
                              	 </label>
                                  <label class='radio'>
-                              	   <input type='radio' name='{$sorted_ids[$temp]}' id='negative_feedback{$temp}' value='negative_feedback' />
+                              	   <input type='radio' name='{$sorted_ids[$temp]}' id='negative_feedback{$temp}' value='-1' />
                                    <span class='icon icon-color icon-remove'></span>
                                   </label>
                                </td>";
@@ -91,8 +91,8 @@ class PopulateImages
                 $image_id = $counter + 1;
                 echo "<td>
                         <li id='image-{$image_id}' class='thumbnail'>
- 							<a style='background:url(img/gallery/thumbs/{$value})' title='Sample Image {$value}' href='img/gallery/{$value}'>
-                            <img class='grayscale' src='img/gallery/thumbs/{$value}' alt='Sample Image {$value}' />
+ 							<a style='background:url(img/gallery/thumbs/{$value});background-size:100px 100px;background-repeat:no-repeat;' title='Sample Image {$value}' href='img/gallery/{$value}' >
+                            <img src='img/gallery/thumbs/{$value}' alt='Sample Image {$value}' />
                             </a>
                         </li>
                       </td>";
@@ -104,11 +104,11 @@ class PopulateImages
                     {
                         echo "<td>
                                 <label class='radio'>
-                                   <input type='radio' name='{$sorted_ids[$temp]}' id='positive_feedback{$temp}' value='positive_feedback' />
+                                   <input type='radio' name='{$sorted_ids[$temp]}' id='positive_feedback{$temp}' value='1' />
                                    <span class='icon icon-color icon-add'></span>
                              	 </label>
                                  <label class='radio'>
-                              	   <input type='radio' name='{$sorted_ids[$temp]}' id='negative_feedback{$temp}' value='negative_feedback' />
+                              	   <input type='radio' name='{$sorted_ids[$temp]}' id='negative_feedback{$temp}' value='-1' />
                                    <span class='icon icon-color icon-remove'></span>
                                   </label>
                                </td>";
@@ -124,11 +124,11 @@ class PopulateImages
                     {
                         echo "<td>
                                 <label class='radio'>
-                                   <input type='radio' name='{$sorted_ids[$temp]}' id='positive_feedback{$temp}' value='positive_feedback' />
+                                   <input type='radio' name='{$sorted_ids[$temp]}' id='positive_feedback{$temp}' value='1' />
                                    <span class='icon icon-color icon-add'></span>
                              	 </label>
                                  <label class='radio'>
-                              	   <input type='radio' name='{$sorted_ids[$temp]}' id='negative_feedback{$temp}' value='negative_feedback' />
+                              	   <input type='radio' name='{$sorted_ids[$temp]}' id='negative_feedback{$temp}' value='-1' />
                                    <span class='icon icon-color icon-remove'></span>
                                   </label>
                                </td>";
@@ -153,15 +153,18 @@ class PopulateImages
         echo "</tr>";
     }
     
-    public static function computeRgbImages($resized_img, $default = false)
+    public static function computeRgbImages($normHistRGB, $default = false)
     {
+		/*
         $objRGB      = new Histogram($resized_img);
         $histoRGB    = $objRGB->generateHistogram();
         $normHistRGB = DistanceMetrics::computeHistogram($histoRGB, 64, min($histoRGB), max($histoRGB));
         $_SESSION['rgb_histogram'] = $normHistRGB;
         $meanRGB     = DistanceMetrics::mean($normHistRGB);
         $stdRGB      = DistanceMetrics::std($normHistRGB);
-        $sql         = "SELECT id_image, filename, filepath, filemime, filename_hash,
+        */
+		
+		$sql         = "SELECT id_image, filename, filepath, filemime, filename_hash,
                         array_to_json(color_histogram) AS rgb_histogram 
                         FROM tbl_image";
         $qresult = DB::getAll($sql);
@@ -212,8 +215,9 @@ class PopulateImages
         return $combRGB;
     }
     
-    public static function computeHsvImages($resized_img)
+    public static function computeHsvImages($normHistHSV)
     {
+		/*
         $objHSV      = new Histogram($resized_img);
         $histoHSV    = $objHSV->generateHistogram(true);
         $binHistHSV  = DistanceMetrics::computeHistogram($histoHSV, 64, min($histoHSV), max($histoHSV), false);
@@ -221,6 +225,8 @@ class PopulateImages
         $_SESSION['hsv_histogram'] = $normHistHSV;
         $meanHSV     = DistanceMetrics::mean($normHistHSV);
         $stdHSV      = DistanceMetrics::std($normHistHSV);
+		*/
+		
         $sql         = "SELECT id_image, filename, filepath, filemime, filename_hash,
                         array_to_json(hsv_histogram) AS hsv_histogram 
                         FROM tbl_image";
