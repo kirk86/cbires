@@ -48,8 +48,8 @@
 
 						$sum_nr = 0;
 						$difference_nr = 0;
-						$sum_image_histogram_sum = 0;
-						$difference_image_histogram_sum = 0;
+						$sum_image_histogram_sum = array_fill(0, 64, '0');
+						$difference_image_histogram_sum = array_fill(0, 64, '0');
 
 						foreach ($_POST as $key => $id) :
 							if($key != "submit")
@@ -80,7 +80,7 @@
 							}
 						endforeach;
 												
-						if($sum_image_histogram_sum != 0)
+						if($sum_nr != 0)
 						{
 							for ($i=0;$i<count($sum_image_histogram_sum);$i++)
 							{
@@ -88,12 +88,12 @@
 							}
 						}
 						
-						//echo "<pre>";
+						//echo "<pre>sum_image_histogram_sum<br />";
 						//print_r($sum_image_histogram_sum);
 						//echo "</pre>";
 						//echo $sum_nr;
 						
-						if($difference_image_histogram_sum != 0)
+						if($difference_nr != 0)
 						{
 							for ($i=0;$i<count($difference_image_histogram_sum);$i++)
 							{
@@ -101,7 +101,7 @@
 							}
 						}
 						
-						//echo "<pre>";
+						//echo "<pre>difference_image_histogram_sum<br />";
 						//print_r($difference_image_histogram_sum);
 						//echo "</pre>";
 						//echo $difference_nr;
@@ -109,23 +109,23 @@
 						if(isset($_SESSION['rgb_histogram']))
 						{
 							$original_image_histogram = $_SESSION['rgb_histogram'];
+							
+							//echo "<pre>original_image_histogram<br />";
+							//print_r($original_image_histogram);
+							//echo "</pre>";
+							
+							$query_image_histogram_sum = 0;
+							$query_image_histogram_sum = sum_arrays($original_image_histogram, $query_image_histogram_sum);
+							$query_image_histogram_sum = sum_arrays($sum_image_histogram_sum, $query_image_histogram_sum);
+							$query_image_histogram_sum = difference_arrays($query_image_histogram_sum, $difference_image_histogram_sum);
+							
+							//echo "<pre>query_histogram<br />";
+							//print_r($query_image_histogram_sum);
+							//echo "</pre>";
+
+							// uncoment this if you want to requery multiple times
+							$_SESSION['rgb_histogram'] = $query_image_histogram_sum;
 						}
-						
-						//echo "<pre>";
-						//print_r($_SESSION['rgb_histogram']);
-						//echo "</pre>";
-						
-						$query_image_histogram_sum = 0;
-						$query_image_histogram_sum = sum_arrays($original_image_histogram, $query_image_histogram_sum);
-						$query_image_histogram_sum = sum_arrays($sum_image_histogram_sum, $query_image_histogram_sum);
-						$query_image_histogram_sum = difference_arrays($difference_image_histogram_sum, $query_image_histogram_sum);
-						
-						//echo "<pre>query_histogram";
-						//print_r($query_image_histogram_sum);
-						//echo "</pre>";
-						
-						//$combRGB = PopulateImages::computeRgbImages($query_image_histogram_sum);
-						
 						/* rocchio algorimthm end */
 						
                         $targetFolder = '/cbires/img/gallery/thumbs/query_image.jpg';

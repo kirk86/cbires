@@ -690,6 +690,7 @@ PopulateImages.computeRgbImages(Array[1]) # line  239, file: C:\Program Files\Po
 
 
 
+<<<<<<< HEAD
 ERRNO: 256
 TEXT: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "public.tbl_categories" does not exist
 LINE 2:           FROM public.tbl_categories
@@ -699,33 +700,99 @@ Showing backtrace:
 trigger_error("SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation &quot;public.tbl...", "256") # line  164, file: C:\wamp\www\cbires_rocchio\db\DB.php
 DB.getOne("SELECT count(*) AS count_categories
 										FROM public.tbl_c...") # line   29, file: C:\wamp\www\cbires_rocchio\index.php
-
-
-
+=======
 ERRNO: 8
 TEXT: Undefined variable: original_image_histogram
-LOCATION: C:\wamp\www\cbires_rocchio\gallery.php, line 147, at January 20, 2013, 12:23 pm
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 147, at January 20, 2013, 7:45 pm
 Showing backtrace:
 
 
 
 ERRNO: 8
 TEXT: Undefined variable: temp
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 382, at January 20, 2013, 7:45 pm
+Showing backtrace:
+sum_arrays(null, "0") # line  147, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+>>>>>>> c4c9638196d6571d866707770a556cd479d5acc9
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: original_image_histogram
+<<<<<<< HEAD
+LOCATION: C:\wamp\www\cbires_rocchio\gallery.php, line 147, at January 20, 2013, 12:23 pm
+=======
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 147, at January 20, 2013, 7:48 pm
+>>>>>>> c4c9638196d6571d866707770a556cd479d5acc9
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: temp
+<<<<<<< HEAD
 LOCATION: C:\wamp\www\cbires_rocchio\gallery.php, line 382, at January 20, 2013, 12:23 pm
 Showing backtrace:
 sum_arrays(null, "0") # line  147, file: C:\wamp\www\cbires_rocchio\gallery.php
+=======
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 382, at January 20, 2013, 7:48 pm
+Showing backtrace:
+sum_arrays(null, "0") # line  147, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 256
+TEXT: The two histograms must be of equal size in: fcn -> euclidean()!
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\core\DistanceMetrics.php, line 94, at January 20, 2013, 7:51 pm
+Showing backtrace:
+trigger_error("The two histograms must be of equal size in: fcn -&gt; euclidean()!", "256") # line   94, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.euclidean(Array[1], Array[64]) # line  202, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php
+PopulateImages.computeRgbImages(Array[1], true) # line  263, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 256
+TEXT: The two histograms must be of equal size in: fcn -> euclidean()!
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\core\DistanceMetrics.php, line 94, at January 20, 2013, 8:08 pm
+Showing backtrace:
+trigger_error("The two histograms must be of equal size in: fcn -&gt; euclidean()!", "256") # line   94, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.euclidean(Array[1], Array[64]) # line  202, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php
+PopulateImages.computeRgbImages(Array[1], true) # line  263, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 256
+TEXT: The two histograms must be of equal size in: fcn -> euclidean()!
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\core\DistanceMetrics.php, line 94, at January 20, 2013, 8:15 pm
+Showing backtrace:
+trigger_error("The two histograms must be of equal size in: fcn -&gt; euclidean()!", "256") # line   94, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.euclidean(Array[1], Array[64]) # line  202, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php
+PopulateImages.computeRgbImages(Array[1], true) # line  263, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 2
+TEXT: Division by zero
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 115, at January 20, 2013, 8:18 pm
+Showing backtrace:
+>>>>>>> c4c9638196d6571d866707770a556cd479d5acc9
 
 
 
 ERRNO: 8
 TEXT: Undefined variable: original_image_histogram
+<<<<<<< HEAD
 LOCATION: C:\wamp\www\cbires_rocchio\gallery.php, line 119, at January 20, 2013, 12:37 pm
+=======
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 147, at January 20, 2013, 9:03 pm
+>>>>>>> c4c9638196d6571d866707770a556cd479d5acc9
 Showing backtrace:
 
 
 
 ERRNO: 8
 TEXT: Undefined variable: temp
+<<<<<<< HEAD
 LOCATION: C:\wamp\www\cbires_rocchio\gallery.php, line 354, at January 20, 2013, 12:37 pm
 Showing backtrace:
 sum_arrays(null, "0") # line  119, file: C:\wamp\www\cbires_rocchio\gallery.php
@@ -739,5 +806,17 @@ Showing backtrace:
 trigger_error("The two histograms must be of equal size in: fcn -&gt; euclidean()!", "256") # line   94, file: C:\wamp\www\cbires_rocchio\core\DistanceMetrics.php
 DistanceMetrics.euclidean(Array[1], Array[64]) # line  202, file: C:\wamp\www\cbires_rocchio\includes\PopulateImages.php
 PopulateImages.computeRgbImages(Array[1], true) # line  235, file: C:\wamp\www\cbires_rocchio\gallery.php
+=======
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 383, at January 20, 2013, 9:03 pm
+Showing backtrace:
+sum_arrays(null, "0") # line  147, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: query_image_histogram_sum
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 157, at January 20, 2013, 9:06 pm
+Showing backtrace:
+>>>>>>> c4c9638196d6571d866707770a556cd479d5acc9
 
 
