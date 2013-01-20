@@ -1,14 +1,4 @@
 <?php require_once('header.php'); ?>
-
-<?php
-/*
-echo "<pre>";
-print_r($_POST);
-echo "--------------";
-//print_r($_SESSION);
-echo "</pre>";
-*/
-?>
 			<div>
 				<ul class="breadcrumb">
 					<li>
@@ -31,15 +21,7 @@ echo "</pre>";
 						</div>
 					</div>
 					<div class="box-content">
-                    <!-- START OF: fullscreen button -->
-                    <!--
-						<p class="center">
-							<button id="toggle-fullscreen" class="btn btn-large btn-primary visible-desktop" data-toggle="button">Toggle Fullscreen</button>
-						</p>
-                    -->
-                    <!-- END OF: fullscreen button -->
                     <?php
-                    //var_dump($_POST);
                     if ( Tools::getIsset('topk')             && 
                          Tools::getIsset('distanceFunction') && 
                          Tools::getIsset('colorSpace')       && 
@@ -59,17 +41,7 @@ echo "</pre>";
                             session_write_close();
                             echo MESSAGE_SUCCESS_SETTINGS;
                         }
-                    }
-					
-					/*
-                    if ( Tools::isSubmit('requery') && 
-                         Tools::getIsset('requery') && 
-                         Tools::getValue('requery') == 'relevance_feedback' )
-                    {
-                        echo "teste";
-                    }
-					*/
-					
+                    }					
                     if (Tools::isSubmit('submit') && Tools::getIsset('submit'))
                     {
 						/* rocchio algorimthm start */

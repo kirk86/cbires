@@ -689,3 +689,55 @@ DistanceMetrics.euclidean(Array[1], Array[64]) # line  181, file: C:\Program Fil
 PopulateImages.computeRgbImages(Array[1]) # line  239, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
 
 
+
+ERRNO: 256
+TEXT: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "public.tbl_categories" does not exist
+LINE 2:           FROM public.tbl_categories
+                       ^
+LOCATION: C:\wamp\www\cbires_rocchio\db\DB.php, line 164, at January 20, 2013, 12:18 pm
+Showing backtrace:
+trigger_error("SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation &quot;public.tbl...", "256") # line  164, file: C:\wamp\www\cbires_rocchio\db\DB.php
+DB.getOne("SELECT count(*) AS count_categories
+										FROM public.tbl_c...") # line   29, file: C:\wamp\www\cbires_rocchio\index.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: original_image_histogram
+LOCATION: C:\wamp\www\cbires_rocchio\gallery.php, line 147, at January 20, 2013, 12:23 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: temp
+LOCATION: C:\wamp\www\cbires_rocchio\gallery.php, line 382, at January 20, 2013, 12:23 pm
+Showing backtrace:
+sum_arrays(null, "0") # line  147, file: C:\wamp\www\cbires_rocchio\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: original_image_histogram
+LOCATION: C:\wamp\www\cbires_rocchio\gallery.php, line 119, at January 20, 2013, 12:37 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: temp
+LOCATION: C:\wamp\www\cbires_rocchio\gallery.php, line 354, at January 20, 2013, 12:37 pm
+Showing backtrace:
+sum_arrays(null, "0") # line  119, file: C:\wamp\www\cbires_rocchio\gallery.php
+
+
+
+ERRNO: 256
+TEXT: The two histograms must be of equal size in: fcn -> euclidean()!
+LOCATION: C:\wamp\www\cbires_rocchio\core\DistanceMetrics.php, line 94, at January 20, 2013, 12:42 pm
+Showing backtrace:
+trigger_error("The two histograms must be of equal size in: fcn -&gt; euclidean()!", "256") # line   94, file: C:\wamp\www\cbires_rocchio\core\DistanceMetrics.php
+DistanceMetrics.euclidean(Array[1], Array[64]) # line  202, file: C:\wamp\www\cbires_rocchio\includes\PopulateImages.php
+PopulateImages.computeRgbImages(Array[1], true) # line  235, file: C:\wamp\www\cbires_rocchio\gallery.php
+
+
