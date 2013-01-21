@@ -5,6 +5,7 @@ require_once(CB_CORE_DIR . 'ColorSpaceConversion.php');
 require_once(CB_CORE_DIR . 'Histogram.php');
 require_once(CB_CORE_DIR . 'DistanceMetrics.php');
 require_once(CB_CORE_DIR . 'Image.php');
+require_once(CB_CORE_DIR . 'Crawler.php');
 require_once(CB_INCLUDES_DIR . 'Tools.php');
 require_once(CB_INCLUDES_DIR . 'Validate.php');
 require_once(CB_INCLUDES_DIR . 'PopulateImages.php');
@@ -85,8 +86,8 @@ session_start();
 						<span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu">
-						<li><a href="profile.php">Profile</a></li>
-						<li class="divider"></li>
+						<!--<li><a href="profile.php">Profile</a></li>
+						<li class="divider"></li>-->
 						<li><a href="login.php">Logout</a></li>
 					</ul>
 				</div>
@@ -110,6 +111,7 @@ session_start();
                         <li><a class="ajax-link" href="user.php"><i class="icon-user"></i><span class="hidden-tablet"> Members </span></a></li>
 						<li><a class="ajax-link" href="gallery.php"><i class="icon-picture"></i><span class="hidden-tablet"> Gallery</span></a></li>
                         <li><a class="ajax-link" href="upload.php"><i class="icon-folder-close"></i><span class="hidden-tablet"> File Uploader</span></a></li>
+                        <li><a class="ajax-link" href="crawler.php"><i class="icon-globe"></i><span class="hidden-tablet"> Web Crawler</span></a></li>
 					</ul>
 					<label id="for-is-ajax" class="hidden-tablet" for="is-ajax"><input id="is-ajax" type="checkbox"> Ajax on menu</label>
 				</div><!--/.well -->

@@ -102,7 +102,7 @@
 									<option>Active</option>
 									<option>Inactive</option>
 									<option>Pending</option>
-									<option>Banned 4</option>
+									<option>Banned</option>
 								  </select>
 								</div>
 							  </div>

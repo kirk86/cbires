@@ -50,10 +50,13 @@
 						$difference_nr = 0;
 						$sum_image_histogram_sum = array_fill(0, 64, '0');
 						$difference_image_histogram_sum = array_fill(0, 64, '0');
+                        
+                        //var_dump($_POST);
 
 						foreach ($_POST as $key => $id) :
 							if($key != "submit")
 							{
+							 //var_dump($_POST);
 								//echo $key." = ".$id."<br />";
 								$sql_image = "SELECT array_to_json(color_histogram) AS rgb_histogram 
 											  FROM tbl_image
@@ -303,7 +306,6 @@
 										?>
 										</table>
 									</ul>
-									</table>
 									<p style="text-align: center;">
 										<button class="btn btn-warning btn-round" type="submit" name="submit" value="relevance_feedback">Requery</button>
 									</p>
