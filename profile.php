@@ -1,6 +1,5 @@
 <?php require_once('header.php'); ?>
 
-
 			<div>
 				<ul class="breadcrumb">
 					<li>
@@ -11,7 +10,16 @@
 					</li>
 				</ul>
 			</div>
-
+			
+			<?php
+			if(isset($_GET['id']))
+			{
+				$sql = "SELECT * FROM public.tbl_user
+						WHERE tbl_user.id_user = ".$_GET['id'];
+				$result = DB::getAll($sql);
+			}
+			?>
+			
 			<div class="row-fluid sortable">
 				<div class="box span12">
 					<div class="box-header well" data-original-title>
@@ -22,100 +30,103 @@
 						</div>
 					</div>
 					<div class="box-content">
-						<form class="form-horizontal">
+						<form class="form-horizontal" action="user.php" method="post">
 							<fieldset>
-                            <legend>Edit your profile settings</legend>
-							<div class="control-group">
-								<label class="control-label" for="focusedInput">Username</label>
-								<div class="controls">
-								  <input class="input-xlarge focused" id="focusedInput" type="text" value="Username…" />
+								<legend>Edit your profile settings</legend>
+								<div class="control-group">
+									<label class="control-label" for="username">Username</label>
+									<div class="controls">
+										<input id="userid" name="userid" type="hidden" value="<?php echo $result[0]['id_user'];?>" />
+										<input class="input-xlarge focused" id="username" name="username" type="text" value="<?php echo $result[0]['username'];?>" />
+									</div>
 								</div>
-							</div>
-                            <div class="control-group">
-								<label class="control-label" for="focusedInput">Password</label>
-								<div class="controls">
-								  <input class="input-xlarge focused" id="focusedInput" type="text" value="Password…" />
+								<div class="control-group">
+									<label class="control-label" for="password">Password</label>
+									<div class="controls">
+										<input class="input-xlarge focused" id="password" name="password" type="text" value="<?php echo $result[0]['password'];?>" />
+									</div>
 								</div>
-							</div>
-							<div class="control-group">
-							  <label class="control-label" for="date01">Date registered </label>
-							  <div class="controls">
-								<input type="text" class="input-xlarge datepicker" id="date01" value="26/12/2012" />
-							  </div>
-							</div>
+								<div class="control-group">
+									<label class="control-label" for="date01">Date registered </label>
+									<div class="controls">
+										<?php 
+										$timestamp = strtotime($result[0]['date_registered']);
+										$date = date("d/m/Y", $timestamp);
+										?>
+										<input type="text" class="input-xlarge datepicker" id="date01" name="date01" value="<?php echo $date;?>" />
+									</div>
+								</div>
                             
-                            <!--
-							  <div class="control-group">
-								<label class="control-label">Uneditable input</label>
-								<div class="controls">
-								  <span class="input-xlarge uneditable-input">Some value here</span>
+								<!--
+								<div class="control-group">
+									<label class="control-label">Uneditable input</label>
+									<div class="controls">
+										<span class="input-xlarge uneditable-input">Some value here</span>
+									</div>
 								</div>
-							  </div>
-							  <div class="control-group">
-								<label class="control-label" for="disabledInput">Disabled input</label>
-								<div class="controls">
-								  <input class="input-xlarge disabled" id="disabledInput" type="text" placeholder="Disabled input here…" disabled="" />
+								<div class="control-group">
+									<label class="control-label" for="disabledInput">Disabled input</label>
+									<div class="controls">
+										<input class="input-xlarge disabled" id="disabledInput" type="text" placeholder="Disabled input here…" disabled="" />
+									</div>
 								</div>
-							  </div>
-                              -->
-                              <!--
-							  <div class="control-group warning">
-								<label class="control-label" for="inputWarning">Input with warning</label>
-								<div class="controls">
-								  <input type="text" id="inputWarning">
-								  <span class="help-inline">Something may have gone wrong</span>
+								-->
+								<!--
+								<div class="control-group warning">
+									<label class="control-label" for="inputWarning">Input with warning</label>
+									<div class="controls">
+										<input type="text" id="inputWarning">
+										<span class="help-inline">Something may have gone wrong</span>
+									</div>
 								</div>
-							  </div>
-							  <div class="control-group error">
-								<label class="control-label" for="inputError">Input with error</label>
-								<div class="controls">
-								  <input type="text" id="inputError">
-								  <span class="help-inline">Please correct the error</span>
+								<div class="control-group error">
+									<label class="control-label" for="inputError">Input with error</label>
+									<div class="controls">
+										<input type="text" id="inputError">
+										<span class="help-inline">Please correct the error</span>
+									</div>
 								</div>
-							  </div>
-							  <div class="control-group success">
-								<label class="control-label" for="inputSuccess">Input with success</label>
-								<div class="controls">
-								  <input type="text" id="inputSuccess">
-								  <span class="help-inline">Woohoo!</span>
+								<div class="control-group success">
+									<label class="control-label" for="inputSuccess">Input with success</label>
+									<div class="controls">
+										<input type="text" id="inputSuccess">
+										<span class="help-inline">Woohoo!</span>
+									</div>
 								</div>
-							  </div>
-                              -->
-							  <div class="control-group">
-								<label class="control-label">Role</label>
-								<div class="controls">
-								  <label class="radio">
-									<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" /> Admin
-								  </label>
-								  <label class="radio">
-									<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" />	Member
-								  </label>
-                                  <label class="radio">
-									<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" /> Staff
-								  </label>
+								-->
+								<div class="control-group">
+									<label class="control-label">Role</label>
+									<div class="controls">
+										<label class="radio">
+											<input type="radio" name="optionsRadios" id="optionsRadios1" value="1" <?php echo $result[0]['id_user_role']==1 ? 'checked="checked"' : '';?> /> Admin
+										</label>
+										<label class="radio">
+											<input type="radio" name="optionsRadios" id="optionsRadios2" value="2" <?php echo $result[0]['id_user_role']==2 ? 'checked="checked"' : '';?> />	Member
+										</label>
+										<label class="radio">
+											<input type="radio" name="optionsRadios" id="optionsRadios3" value="3" <?php echo $result[0]['id_user_role']==3 ? 'checked="checked"' : '';?> /> Staff
+										</label>
+									</div>
 								</div>
-							  </div>
-							  <div class="control-group">
-								<label class="control-label" for="selectError">Status</label>
-								<div class="controls">
-								  <select id="selectError" data-rel="chosen">
-									<option>Active</option>
-									<option>Inactive</option>
-									<option>Pending</option>
-									<option>Banned</option>
-								  </select>
+								<div class="control-group">
+									<label class="control-label" for="selectStaus">Status</label>
+									<div class="controls">
+										<select id="selectStaus" name="selectStaus" data-rel="chosen">
+											<option value="active" <?php echo $result[0]['status']=='active' ? 'selected="selected"' : '';?>>Active</option>
+											<option value="inactive" <?php echo $result[0]['status']=='inactive' ? 'selected="selected"' : '';?>>Inactive</option>
+											<option value="pending" <?php echo $result[0]['status']=='pending' ? 'selected="selected"' : '';?>>Pending</option>
+											<option value="banned" <?php echo $result[0]['status']=='banned' ? 'selected="selected"' : '';?>>Banned</option>
+										</select>
+									</div>
 								</div>
-							  </div>
-							  <div class="form-actions">
-								<button type="submit" class="btn btn-primary">Save changes</button>
-								<button class="btn">Cancel</button>
-							  </div>
+								<div class="form-actions">
+									<button type="submit" id="savebtn" name="savebtn" class="btn btn-primary">Save changes</button>
+									<button class="btn">Cancel</button>
+								</div>
 							</fieldset>
-						  </form>
-					
+						</form>
 					</div>
 				</div><!--/span-->
-			
 			</div><!--/row-->
-    
+
 <?php require_once('footer.php'); ?>

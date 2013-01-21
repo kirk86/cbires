@@ -856,3 +856,187 @@ Showing backtrace:
 PopulateImages.populateColorSpaceImages(null) # line  299, file: C:\wamp\www\cbires\gallery.php
 
 
+
+ERRNO: 8
+TEXT: Undefined index: username
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 39, at January 21, 2013, 9:36 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: username
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 40, at January 21, 2013, 9:36 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: username
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 40, at January 21, 2013, 9:37 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: username
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 41, at January 21, 2013, 9:37 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: str
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 55, at January 21, 2013, 9:40 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: A non well formed numeric value encountered
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 55, at January 21, 2013, 9:40 pm
+Showing backtrace:
+getdate("2012-12-28") # line   55, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php
+
+
+
+ERRNO: 8
+TEXT: Undefined index: id
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 16, at January 21, 2013, 10:02 pm
+Showing backtrace:
+
+
+
+ERRNO: 256
+TEXT: SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at end of input
+LINE 2:      WHERE tbl_user.id_user = 
+                                      ^
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\db\DB.php, line 113, at January 21, 2013, 10:02 pm
+Showing backtrace:
+trigger_error("SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at end of ...", "256") # line  113, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\db\DB.php
+DB.getAll("SELECT * FROM public.tbl_user
+					WHERE tbl_user.id_user = ") # line   17, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php
+
+
+
+ERRNO: 8
+TEXT: Undefined index: id
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 17, at January 21, 2013, 10:06 pm
+Showing backtrace:
+
+
+
+ERRNO: 256
+TEXT: SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at end of input
+LINE 2:      WHERE tbl_user.id_user = 
+                                      ^
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\db\DB.php, line 113, at January 21, 2013, 10:06 pm
+Showing backtrace:
+trigger_error("SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at end of ...", "256") # line  113, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\db\DB.php
+DB.getAll("SELECT * FROM public.tbl_user
+					WHERE tbl_user.id_user = ") # line   18, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php
+
+
+
+ERRNO: 8
+TEXT: Undefined index: id
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 24, at January 21, 2013, 10:08 pm
+Showing backtrace:
+
+
+
+ERRNO: 256
+TEXT: SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at end of input
+LINE 2:      WHERE tbl_user.id_user = 
+                                      ^
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\db\DB.php, line 113, at January 21, 2013, 10:08 pm
+Showing backtrace:
+trigger_error("SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at end of ...", "256") # line  113, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\db\DB.php
+DB.getAll("SELECT * FROM public.tbl_user
+					WHERE tbl_user.id_user = ") # line   25, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 47, at January 21, 2013, 10:09 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 53, at January 21, 2013, 10:09 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 60, at January 21, 2013, 10:09 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 108, at January 21, 2013, 10:09 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 111, at January 21, 2013, 10:09 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 114, at January 21, 2013, 10:09 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 122, at January 21, 2013, 10:09 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 123, at January 21, 2013, 10:09 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 124, at January 21, 2013, 10:09 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: result
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\profile.php, line 125, at January 21, 2013, 10:09 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: 
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\user.php, line 6, at January 21, 2013, 11:29 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: 
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\user.php, line 6, at January 21, 2013, 11:31 pm
+Showing backtrace:
+
+

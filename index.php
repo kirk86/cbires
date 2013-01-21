@@ -20,7 +20,7 @@
 				$sql_new_members = "SELECT count(*) AS new_member
                                     FROM public.tbl_user, public.tbl_user_role
                                     WHERE tbl_user_role.id_user_role = tbl_user.id_user_role
-                                    AND date_registered = now()::date - 1";
+                                    AND date_registered > now()::date - 1";
 				$new_members = DB::getOne($sql_new_members);
 				
 				// categories

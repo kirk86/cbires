@@ -81,6 +81,15 @@ $(document).ready(function(){
 		$clink.parent('li').addClass('active');	
 	});
 	
+	//delete user
+	$('a.btn-danger').click(function(e){
+		e.preventDefault(); 
+		if (confirm("Are you sure you want to delete this user?"))
+		{
+			document.location = $(this).attr('href');
+		}
+	});
+	
 	//animating menus on hover
 	$('ul.main-menu li:not(.nav-header)').hover(function(){
 		$(this).animate({'margin-left':'+=5'},300);
