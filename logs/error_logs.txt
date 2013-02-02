@@ -14253,3 +14253,96 @@ Showing backtrace:
 PopulateImages.populateColorSpaceImages(null) # line  299, file: C:\wamp\www\cbires\gallery.php
 
 
+
+ERRNO: 256
+TEXT: SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time field value out of range: "28/12/2012"
+LINE 1: ..._role = 1, status = 'inactive', date_registered = '28/12/201...
+                                                             ^
+HINT:  Perhaps you need a different "datestyle" setting.
+LOCATION: C:\wamp\www\cbires\db\DB.php, line 86, at February 2, 2013, 12:13 pm
+Showing backtrace:
+trigger_error("SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time fi...", "256") # line   86, file: C:\wamp\www\cbires\db\DB.php
+DB.execute("UPDATE tbl_user SET username = 'george', password = 'admin1234',...") # line    7, file: C:\wamp\www\cbires\user.php
+
+
+
+ERRNO: 256
+TEXT: SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time field value out of range: "28/12/2012"
+LINE 1: ...er_role = 1, status = 'active', date_registered = '28/12/201...
+                                                             ^
+HINT:  Perhaps you need a different "datestyle" setting.
+LOCATION: C:\wamp\www\cbires\db\DB.php, line 86, at February 2, 2013, 12:23 pm
+Showing backtrace:
+trigger_error("SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time fi...", "256") # line   86, file: C:\wamp\www\cbires\db\DB.php
+DB.execute("UPDATE tbl_user SET username = 'jeny', password = 'admin1234', i...") # line    6, file: C:\wamp\www\cbires\user.php
+
+
+
+ERRNO: 256
+TEXT: SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time field value out of range: "28/12/2012"
+LINE 1: ...r_role = 1, status = 'pending', date_registered = '28/12/201...
+                                                             ^
+HINT:  Perhaps you need a different "datestyle" setting.
+LOCATION: C:\wamp\www\cbires\db\DB.php, line 86, at February 2, 2013, 12:34 pm
+Showing backtrace:
+trigger_error("SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time fi...", "256") # line   86, file: C:\wamp\www\cbires\db\DB.php
+DB.execute("UPDATE tbl_user SET username = 'george', password = 'admin1234',...") # line    6, file: C:\wamp\www\cbires\user.php
+
+
+
+ERRNO: 256
+TEXT: SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time field value out of range: "14/11/2012"
+LINE 1: ..._role = 2, status = 'inactive', date_registered = '14/11/201...
+                                                             ^
+HINT:  Perhaps you need a different "datestyle" setting.
+LOCATION: C:\wamp\www\cbires\db\DB.php, line 86, at February 2, 2013, 12:35 pm
+Showing backtrace:
+trigger_error("SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time fi...", "256") # line   86, file: C:\wamp\www\cbires\db\DB.php
+DB.execute("UPDATE tbl_user SET username = 'george', password = 'admin1234',...") # line    6, file: C:\wamp\www\cbires\user.php
+
+
+
+ERRNO: 256
+TEXT: SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time field value out of range: "28/12/2012"
+LINE 1: ..._role = 1, status = 'inactive', date_registered = '28/12/201...
+                                                             ^
+HINT:  Perhaps you need a different "datestyle" setting.
+LOCATION: C:\wamp\www\cbires\db\DB.php, line 86, at February 2, 2013, 12:50 pm
+Showing backtrace:
+trigger_error("SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time fi...", "256") # line   86, file: C:\wamp\www\cbires\db\DB.php
+DB.execute("UPDATE tbl_user SET username = 'george', password = 'admin1234',...") # line    6, file: C:\wamp\www\cbires\user.php
+
+
+
+ERRNO: 256
+TEXT: SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time field value out of range: "28/12/2012"
+LINE 1: ..._role = 1, status = 'inactive', date_registered = '28/12/201...
+                                                             ^
+HINT:  Perhaps you need a different "datestyle" setting.
+LOCATION: C:\wamp\www\cbires\db\DB.php, line 86, at February 2, 2013, 12:50 pm
+Showing backtrace:
+trigger_error("SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time fi...", "256") # line   86, file: C:\wamp\www\cbires\db\DB.php
+DB.execute("UPDATE tbl_user SET username = 'george', password = 'admin1234',...") # line    6, file: C:\wamp\www\cbires\user.php
+
+
+
+ERRNO: 256
+TEXT: SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time field value out of range: "28/12/2012"
+LINE 1: ... = 1, status = 'inactive', date_registered = date('28/12/201...
+                                                             ^
+HINT:  Perhaps you need a different "datestyle" setting.
+LOCATION: C:\wamp\www\cbires\db\DB.php, line 86, at February 2, 2013, 12:52 pm
+Showing backtrace:
+trigger_error("SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time fi...", "256") # line   86, file: C:\wamp\www\cbires\db\DB.php
+DB.execute("UPDATE tbl_user SET username = 'george', password = 'admin1234',...") # line    6, file: C:\wamp\www\cbires\user.php
+
+
+
+ERRNO: 2
+TEXT: file_put_contents(../cbires/img/crawler/4DF5F298FBDC827ADDA3F9E887D68F8D.jpg) [<a href='function.file-put-contents'>function.file-put-contents</a>]: failed to open stream: No such file or directory
+LOCATION: C:\wamp\www\cbires\misc\download_from_url.php, line 47, at February 2, 2013, 1:46 pm
+Showing backtrace:
+file_put_contents("../cbires/img/crawler/4DF5F298FBDC827ADDA3F9E887D68F8D.jpg", "ÿØÿà JFIF  ` `  ÿÛ C 	...") # line   47, file: C:\wamp\www\cbires\misc\download_from_url.php
+download_img("http://www.skai.gr/files/temp//4DF5F298FBDC827ADDA3F9E887D68F8D....") # line   65, file: C:\wamp\www\cbires\crawler.php
+
+

@@ -1,10 +1,10 @@
-<?php require_once('header.php'); ?>
+<?php require_once('header.php');
 
-<?php
 if(isset($_POST['savebtn']))
 {
-	$sql = "UPDATE tbl_user SET username = '".$_POST['username']."', password = '".$_POST['password']."', id_user_role = ".$_POST['optionsRadios'].", status = '".$_POST['selectStaus']."', date_registered = '".$_POST['date01']."' WHERE id_user = ".$_POST['userid'];
-	$result = DB::execute($sql);
+    $date_registered = implode("-", array_reverse( explode("/", $_POST['date01']) ) );
+	$sql = "UPDATE tbl_user SET username = '".$_POST['username']."', password = '".$_POST['password']."', id_user_role = ".$_POST['optionsRadios'].", status = '".$_POST['selectStaus']."', date_registered = '".$date_registered."' WHERE id_user = ".$_POST['userid'];
+	$result = DB::execute($sql);   
 }
 elseif(isset($_GET['id']))
 {
@@ -12,7 +12,6 @@ elseif(isset($_GET['id']))
 	$result = DB::execute($sql);
 }
 ?>
-
 			<div>
 				<ul class="breadcrumb">
 					<li>
