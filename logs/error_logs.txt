@@ -14013,3 +14013,228 @@ Showing backtrace:
 download_img("http://www.skai.gr/files/temp//EB781F6D184CEA406BD9C29F5D34E793....") # line   68, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\crawler.php
 
 
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 305, at February 1, 2013, 9:27 pm
+Showing backtrace:
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 27, at February 1, 2013, 9:27 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null, "14") # line  305, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: query_image_histogram_sum
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 239, at February 1, 2013, 9:32 pm
+Showing backtrace:
+
+
+
+ERRNO: 256
+TEXT: The two histograms must be of equal size in: fcn -> euclidean()!
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\core\DistanceMetrics.php, line 94, at February 1, 2013, 9:32 pm
+Showing backtrace:
+trigger_error("The two histograms must be of equal size in: fcn -&gt; euclidean()!", "256") # line   94, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.euclidean(null, Array[64]) # line  202, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php
+PopulateImages.computeRgbImages(null, true) # line  239, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 2
+TEXT: array_combine(): Both parameters should have at least 1 element
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 209, at February 1, 2013, 9:34 pm
+Showing backtrace:
+array_combine(Array[0], Array[0]) # line  209, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php
+PopulateImages.computeRgbImages(Array[64], true) # line  204, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 305, at February 1, 2013, 9:44 pm
+Showing backtrace:
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 27, at February 1, 2013, 9:44 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null, "14") # line  305, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 306, at February 1, 2013, 9:44 pm
+Showing backtrace:
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 27, at February 1, 2013, 9:44 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null, "14") # line  306, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 305, at February 1, 2013, 9:47 pm
+Showing backtrace:
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 27, at February 1, 2013, 9:47 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null, "14") # line  305, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 270, at February 1, 2013, 9:59 pm
+Showing backtrace:
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 27, at February 1, 2013, 9:59 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null, "14") # line  270, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 305, at February 1, 2013, 10:00 pm
+Showing backtrace:
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 27, at February 1, 2013, 10:00 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null, "14") # line  305, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 305, at February 2, 2013, 10:56 am
+Showing backtrace:
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 27, at February 2, 2013, 10:56 am
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null, "14") # line  305, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 361, at February 2, 2013, 11:03 am
+Showing backtrace:
+retrieval_results() # line  247, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 27, at February 2, 2013, 11:03 am
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null, "14") # line  361, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+retrieval_results() # line  247, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 380, at February 2, 2013, 11:05 am
+Showing backtrace:
+retrieval_results() # line  214, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 27, at February 2, 2013, 11:05 am
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null, "14") # line  380, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+retrieval_results() # line  214, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 382, at February 2, 2013, 11:07 am
+Showing backtrace:
+retrieval_results() # line  214, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 27, at February 2, 2013, 11:07 am
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null, "14") # line  382, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+retrieval_results() # line  214, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 388, at February 2, 2013, 11:09 am
+Showing backtrace:
+retrieval_results() # line  217, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 27, at February 2, 2013, 11:09 am
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null, "14") # line  388, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+retrieval_results() # line  217, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combRGB
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php, line 388, at February 2, 2013, 11:10 am
+Showing backtrace:
+retrieval_results() # line  217, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\includes\PopulateImages.php, line 27, at February 2, 2013, 11:10 am
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null, "14") # line  388, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+retrieval_results() # line  217, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\gallery.php
+
+
+
+ERRNO: 2
+TEXT: getimagesize(files/1/Boxes/e-shopReady.jpg): failed to open stream: No such file or directory
+LOCATION: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\misc\download_from_url.php, line 38, at February 2, 2013, 11:14 am
+Showing backtrace:
+getimagesize("files/1/Boxes/e-shopReady.jpg") # line   38, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\misc\download_from_url.php
+download_img("files/1/Boxes/e-shopReady.jpg") # line   65, file: C:\Program Files\PostgreSQL\EnterpriseDB-ApachePHP\apache\www\cbires\crawler.php
+
+
