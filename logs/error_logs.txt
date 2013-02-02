@@ -14346,3 +14346,68 @@ file_put_contents("../cbires/img/crawler/4DF5F298FBDC827ADDA3F9E887D68F8D.jpg", 
 download_img("http://www.skai.gr/files/temp//4DF5F298FBDC827ADDA3F9E887D68F8D....") # line   65, file: C:\wamp\www\cbires\crawler.php
 
 
+
+ERRNO: 8
+TEXT: Undefined variable: query_image_histogram_sum
+LOCATION: C:\wamp\www\cbires\gallery.php, line 257, at February 2, 2013, 2:34 pm
+Showing backtrace:
+
+
+
+ERRNO: 256
+TEXT: The two histograms must be of equal size in: fcn -> euclidean()!
+LOCATION: C:\wamp\www\cbires\core\DistanceMetrics.php, line 94, at February 2, 2013, 2:34 pm
+Showing backtrace:
+trigger_error("The two histograms must be of equal size in: fcn -&gt; euclidean()!", "256") # line   94, file: C:\wamp\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.euclidean(null, Array[64]) # line  202, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.computeRgbImages(null, true) # line  257, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: query_image_histogram_sum
+LOCATION: C:\wamp\www\cbires\gallery.php, line 257, at February 2, 2013, 4:12 pm
+Showing backtrace:
+
+
+
+ERRNO: 256
+TEXT: The two histograms must be of equal size in: fcn -> euclidean()!
+LOCATION: C:\wamp\www\cbires\core\DistanceMetrics.php, line 94, at February 2, 2013, 4:12 pm
+Showing backtrace:
+trigger_error("The two histograms must be of equal size in: fcn -&gt; euclidean()!", "256") # line   94, file: C:\wamp\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.euclidean(null, Array[64]) # line  202, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.computeRgbImages(null, true) # line  257, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: query_image_histogram_sum
+LOCATION: C:\wamp\www\cbires\gallery.php, line 247, at February 2, 2013, 4:34 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: query_image_histogram_sum
+LOCATION: C:\wamp\www\cbires\gallery.php, line 246, at February 2, 2013, 4:35 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: query_image_histogram_sum
+LOCATION: C:\wamp\www\cbires\gallery.php, line 258, at February 2, 2013, 4:49 pm
+Showing backtrace:
+
+
+
+ERRNO: 256
+TEXT: The two histograms must be of equal size in: fcn -> euclidean()!
+LOCATION: C:\wamp\www\cbires\core\DistanceMetrics.php, line 94, at February 2, 2013, 4:49 pm
+Showing backtrace:
+trigger_error("The two histograms must be of equal size in: fcn -&gt; euclidean()!", "256") # line   94, file: C:\wamp\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.euclidean(null, Array[64]) # line  202, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.computeRgbImages(null, true) # line  258, file: C:\wamp\www\cbires\gallery.php
+
+

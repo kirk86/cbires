@@ -30,20 +30,20 @@
                         <div class="control-group">
                           <label class="control-label" for="focusedInput">Nummer of results shown</label>
                           <div class="controls">
-                            <input class="input-xlarge focused" id="focusedInput" name="topk" type="text" value="14" />
+                            <input class="input-xlarge focused" id="focusedInput" name="topk" type="text" value="<?php echo $threshold = (isset($_SESSION['threshold']) && !empty($_SESSION['threshold'])) ? $_SESSION['threshold'] : 14; ?>" />
                           </div>
                         </div>
                         <div class="control-group">
                           <label class="control-label" for="selectError3">Distance function</label>
                           <div class="controls">
                             <select id="selectError3" name="distanceFunction">
-                              <option>L2</option>
-                              <option>L1</option>
-                              <option>JDV</option>
-                              <option>ChiSquare</option>
-                              <option>Chebychev</option>
-                              <option>Tanimoto</option>
-                              <option>Cosine</option>
+                              <option <?php echo $Lp = (isset($_SESSION['distanceFunction']) && ($_SESSION['distanceFunction'] == "L2"))        ? "selected='L2'"        : ""; ?>>L2</option>
+                              <option <?php echo $Lp = (isset($_SESSION['distanceFunction']) && ($_SESSION['distanceFunction'] == "L1"))        ? "selected='L1'"        : ""; ?>>L1</option>
+                              <option <?php echo $Lp = (isset($_SESSION['distanceFunction']) && ($_SESSION['distanceFunction'] == "JDV"))       ? "selected='JDV'"       : ""; ?>>JDV</option>
+                              <option <?php echo $Lp = (isset($_SESSION['distanceFunction']) && ($_SESSION['distanceFunction'] == "ChiSquare")) ? "selected='ChiSquare'" : ""; ?>>ChiSquare</option>
+                              <option <?php echo $Lp = (isset($_SESSION['distanceFunction']) && ($_SESSION['distanceFunction'] == "Chebychev")) ? "selected='Chebychev'" : ""; ?>>Chebychev</option>
+                              <option <?php echo $Lp = (isset($_SESSION['distanceFunction']) && ($_SESSION['distanceFunction'] == "Tanimoto"))  ? "selected='Tanimoto'"  : ""; ?>>Tanimoto</option>
+                              <option <?php echo $Lp = (isset($_SESSION['distanceFunction']) && ($_SESSION['distanceFunction'] == "Cosine"))    ? "selected='Cosine'"    : ""; ?>>Cosine</option>
                             </select>
                           </div>
                         </div>
@@ -51,11 +51,11 @@
                           <label class="control-label">Color Space</label>
 						   <div class="controls">
 						     <label class="radio">
-							   <input type="radio" name="colorSpace" id="colorSpace" value="RGB" checked="" /> RGB
+							   <input type="radio" name="colorSpace" id="colorSpace" value="RGB" <?php echo $colorSpace = (isset($_SESSION['colorSpace']) && ($_SESSION['colorSpace'] == "RGB")) ? "checked=''" : "checked=''"; ?> /> RGB
 				             </label>
 				             <div style="clear:both"></div>
                              <label class="radio">
-								<input type="radio" name="colorSpace" id="colorSpace" value="HSV" /> HSV
+								<input type="radio" name="colorSpace" id="colorSpace" value="HSV" <?php echo $colorSpace = (isset($_SESSION['colorSpace']) && ($_SESSION['colorSpace'] == "HSV")) ? "checked=''" : ""; ?> /> HSV
 						     </label>
                            </div>
 					    </div>
@@ -75,7 +75,7 @@
                         </div>
                         <div class="modal-footer">
                             <a href="#" class="btn" data-dismiss="modal">Close</a>
-                            <button type="submit" class="btn btn-primary">Save changes</button>
+                            <button type="submit" class="btn btn-primary" id="settings" name="settings" value="save_settings">Save changes</button>
                             <!--<a href="#" class="btn btn-primary" id="btn-save-changes">Save changes</a>-->
                         </div>
                     </fieldset>

@@ -22,6 +22,7 @@
 					</div>
 					<div class="box-content">
                     <?php
+                    //var_dump($_POST);
                     if ( Tools::getIsset('topk')             && 
                          Tools::getIsset('distanceFunction') && 
                          Tools::getIsset('colorSpace')       && 
@@ -260,10 +261,6 @@
 								retrieval_results($combRGB);
 							}
 						}
-						
-						//echo "<pre>comborgb";
-						//print_r($combRGB);
-						//echo "</pre>";
 					}
                  //session_unset();
                  ?> 

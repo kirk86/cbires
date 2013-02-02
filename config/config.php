@@ -88,3 +88,12 @@ $MESSAGE_NO_RELEVANCE_FEEDBACK_SELECTED = "<div class='box-content alerts'>
                                         </div>";
 
 define('MESSAGE_NO_RELEVANCE_FEEDBACK_SELECTED', $MESSAGE_NO_RELEVANCE_FEEDBACK_SELECTED);
+
+$MESSAGE_EMPTY_FILE_UPLOAD = "<div class='box-content alerts'>
+                                <div class='alert alert-error'>
+                                   <button type='button' class='close' data-dismiss='alert'>×</button>
+                                   <strong class='center'>Oh snap!</strong> Please provide a query image.
+                                </div>
+                             </div>";
+
+define('MESSAGE_EMPTY_FILE_UPLOAD', $MESSAGE_EMPTY_FILE_UPLOAD);
