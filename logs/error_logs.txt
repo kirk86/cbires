@@ -856,3 +856,18 @@ Showing backtrace:
 PopulateImages.populateColorSpaceImages(null) # line  299, file: C:\wamp\www\cbires\gallery.php
 
 
+
+ERRNO: 8
+TEXT: Undefined variable: combHSV
+LOCATION: C:\wamp\www\cbires\gallery.php, line 299, at January 21, 2013, 4:01 am
+Showing backtrace:
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 27, at January 21, 2013, 4:01 am
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(null) # line  299, file: C:\wamp\www\cbires\gallery.php
+
+
