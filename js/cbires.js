@@ -81,6 +81,15 @@ $(document).ready(function(){
 		$clink.parent('li').addClass('active');	
 	});
 	
+	//delete user
+	$('a.btn-danger').click(function(e){
+		e.preventDefault(); 
+		if (confirm("Are you sure you want to delete this user?"))
+		{
+			document.location = $(this).attr('href');
+		}
+	});
+	
 	//animating menus on hover
 	$('ul.main-menu li:not(.nav-header)').hover(function(){
 		$(this).animate({'margin-left':'+=5'},300);
@@ -516,12 +525,16 @@ function docReady(){
 
 	//pie chart
 	var data = [
-	{ label: "Internet Explorer",  data: 12},
-	{ label: "Mobile",  data: 27},
-	{ label: "Safari",  data: 85},
-	{ label: "Opera",  data: 64},
-	{ label: "Firefox",  data: 90},
-	{ label: "Chrome",  data: 112}
+	{ label: "Monuments",  data: 100},
+	{ label: "Buses",  data: 100},
+	{ label: "Elephants",  data: 100},
+	{ label: "Flowers",  data: 100},
+	{ label: "Horses",  data: 100},
+	{ label: "Mountains",  data: 100},
+	{ label: "Beach",  data: 100},
+	{ label: "Dinosours",  data: 100},
+	{ label: "Africa",  data: 100},
+	{ label: "Food",  data: 100}
 	];
 	
 	if($("#piechart").length)

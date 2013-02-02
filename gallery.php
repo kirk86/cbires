@@ -173,6 +173,10 @@
 											$stdRGB      = DistanceMetrics::std($normHistRGB);
 											
 											$combRGB = PopulateImages::computeRgbImages($normHistRGB);
+											
+											// Retrieval Results
+											retrieval_results($combRGB);
+											
 											break;
 										}
                                         
@@ -187,6 +191,10 @@
 											$stdHSV      = DistanceMetrics::std($normHistHSV);
 											
 											$combHSV = PopulateImages::computeHsvImages($normHistHSV);
+											
+											// Retrieval Results
+											retrieval_results($combHSV);
+											
 											break;
 										}
                                     }
@@ -201,6 +209,9 @@
 									$stdRGB      = DistanceMetrics::std($normHistRGB);
 									
 									$combRGB = PopulateImages::computeRgbImages($normHistRGB, true);
+									
+									// Retrieval Results
+									retrieval_results($combRGB);
 								}
                                 unset($img);
 							}
@@ -222,6 +233,10 @@
 									case 'RGB':
 									{
 										$combRGB = PopulateImages::computeRgbImages($query_image_histogram_sum);
+										
+										// Retrieval Results
+										retrieval_results($combRGB);
+										
 										break;
 									}
 									
@@ -229,6 +244,10 @@
 									{
 										$normHistHSV = DistanceMetrics::normalize($query_image_histogram_sum);
 										$combHSV = PopulateImages::computeHsvImages($normHistHSV);
+										
+										// Retrieval Results
+										retrieval_results($combHSV);
+						
 										break;
 									}
 								}
@@ -236,83 +255,15 @@
 							else 
 							{
 								$combRGB = PopulateImages::computeRgbImages($query_image_histogram_sum, true);
+								
+								// Retrieval Results
+								retrieval_results($combRGB);
 							}
 						}
 						
 						//echo "<pre>comborgb";
 						//print_r($combRGB);
 						//echo "</pre>";
-						
-						?>
-						
-						<!-- START OF: fullscreen button -->
-							<p class="center">
-								<button id="toggle-fullscreen" class="btn btn-large btn-primary visible-desktop" data-toggle="button">Toggle Fullscreen</button>
-							</p>
-						<!-- END OF: fullscreen button -->
-						
-						<!-- START OF: query message 1 -->    
-							<div class="alert alert-info">
-								<h2><p class="center">Query Image</p></h2>
-							</div>
-						<!-- END OF: query message 1 -->
-						
-							<ul class="thumbnails gallery">
-								<li id="image-query" class="thumbnail">
-									<a style="background:url(img/gallery/thumbs/query_image.jpg);background-size:100px 100px;background-repeat:no-repeat;" title="Sample Image query_image.jpg" href="img/gallery/query_image.jpg">
-										<img src="img/gallery/thumbs/query_image.jpg" alt="Sample Image query_image.jpg" />
-									</a>
-								</li>
-							</ul>
-							
-						<!-- START OF: info message 1 -->    
-							<div class="alert alert-info">
-								<p class="center" style="color: blue; font-size: x-large;">Retrieval Results</p>
-							</div>
-						<!-- END OF: info message 1 -->
-						<form class="form-horizontal" action="gallery.php" method="post">
-							<fieldset>
-									<ul class="thumbnails gallery">
-									<!-- Query image -->
-									<!--
-										<li id="image-query" class="thumbnail">
-											<a style="background:url(img/gallery/thumbs/query_image.jpg)" title="Sample Image Query" href="img/gallery/query_image.jpg">
-												<img src="img/gallery/thumbs/query_image.jpg" alt="Sample Image Query" />
-											</a>
-										</li>
-										-->
-									<!-- Query image -->
-										<table id="results_images_table">
-											<tr>
-										<?php
-										if ( isset($_SESSION['threshold']) && !empty($_SESSION['threshold']) && 
-											 isset($_SESSION['colorSpace']) && !empty($_SESSION['colorSpace'])
-										   )
-										{
-												switch ($_SESSION['colorSpace'])
-												{
-													case 'RGB':
-													PopulateImages::populateColorSpaceImages($combRGB);
-													break;
-													 
-													case 'HSV':
-													PopulateImages::populateColorSpaceImages($combHSV);
-													break;
-												}
-												//session_unset();
-												//session_destroy();
-										 }
-										 else { PopulateImages::populateColorSpaceImages($combRGB, 14); }
-										?>
-										</table>
-									</ul>
-									<p style="text-align: center;">
-										<button class="btn btn-warning btn-round" type="submit" name="submit" value="relevance_feedback">Requery</button>
-									</p>
-							  </fieldset>
-						</form>
-						<?php
-						
 					}
                  //session_unset();
                  ?> 
@@ -363,5 +314,81 @@ function difference_arrays($array1, $array2)
 		$temp[$i] = $array1[$i] - $array2[$i];
 	}
 	return $temp;
+}
+
+function retrieval_results($comb)
+{
+	?>
+	
+	<!-- START OF: fullscreen button -->
+		<p class="center">
+			<button id="toggle-fullscreen" class="btn btn-large btn-primary visible-desktop" data-toggle="button">Toggle Fullscreen</button>
+		</p>
+	<!-- END OF: fullscreen button -->
+	
+	<!-- START OF: query message 1 -->    
+		<div class="alert alert-info">
+			<h2><p class="center">Query Image</p></h2>
+		</div>
+	<!-- END OF: query message 1 -->
+	
+		<ul class="thumbnails gallery">
+			<li id="image-query" class="thumbnail">
+				<a style="background:url(img/gallery/thumbs/query_image.jpg);background-size:100px 100px;background-repeat:no-repeat;" title="Sample Image query_image.jpg" href="img/gallery/query_image.jpg">
+					<img src="img/gallery/thumbs/query_image.jpg" alt="Sample Image query_image.jpg" />
+				</a>
+			</li>
+		</ul>
+		
+	<!-- START OF: info message 1 -->    
+		<div class="alert alert-info">
+			<p class="center" style="color: blue; font-size: x-large;">Retrieval Results</p>
+		</div>
+	<!-- END OF: info message 1 -->
+	<form class="form-horizontal" action="gallery.php" method="post">
+		<fieldset>
+				<ul class="thumbnails gallery">
+				<!-- Query image -->
+				<!--
+					<li id="image-query" class="thumbnail">
+						<a style="background:url(img/gallery/thumbs/query_image.jpg)" title="Sample Image Query" href="img/gallery/query_image.jpg">
+							<img src="img/gallery/thumbs/query_image.jpg" alt="Sample Image Query" />
+						</a>
+					</li>
+					-->
+				<!-- Query image -->
+					<table id="results_images_table">
+						<tr>
+					<?php
+					if ( isset($_SESSION['threshold']) && !empty($_SESSION['threshold']) && 
+						 isset($_SESSION['colorSpace']) && !empty($_SESSION['colorSpace'])
+					   )
+					{
+							switch ($_SESSION['colorSpace'])
+							{
+								case 'RGB':
+								PopulateImages::populateColorSpaceImages($comb);
+								break;
+								 
+								case 'HSV':
+								PopulateImages::populateColorSpaceImages($comb);
+								break;
+							}
+							//session_unset();
+							//session_destroy();
+					}
+					else
+					{
+						PopulateImages::populateColorSpaceImages($comb, 14);
+					}
+					?>
+					</table>
+				</ul>
+				<p style="text-align: center;">
+					<button class="btn btn-warning btn-round" type="submit" name="submit" value="relevance_feedback">Requery</button>
+				</p>
+		  </fieldset>
+	</form>
+	<?php
 }
 ?>
