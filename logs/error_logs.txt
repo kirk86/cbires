@@ -14508,3 +14508,103 @@ trigger_error("The 2 vectors must be of equal size in: fcn -&gt; sumVectors()!",
 DistanceMetrics.sumVectors(Array[64], "0") # line  121, file: C:\wamp\www\cbires\gallery.php
 
 
+
+ERRNO: 8
+TEXT: Undefined variable: sql_image
+LOCATION: C:\wamp\www\cbires\gallery.php, line 75, at February 4, 2013, 10:24 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 0
+LOCATION: C:\wamp\www\cbires\gallery.php, line 76, at February 4, 2013, 10:24 pm
+Showing backtrace:
+
+
+
+ERRNO: 256
+TEXT: The 2 vectors must be of equal size in: fcn -> sumVectors()!
+LOCATION: C:\wamp\www\cbires\core\DistanceMetrics.php, line 352, at February 4, 2013, 10:24 pm
+Showing backtrace:
+trigger_error("The 2 vectors must be of equal size in: fcn -&gt; sumVectors()!", "256") # line  352, file: C:\wamp\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.sumVectors(null, Array[64]) # line   80, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: sql_image
+LOCATION: C:\wamp\www\cbires\gallery.php, line 75, at February 4, 2013, 10:26 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 0
+LOCATION: C:\wamp\www\cbires\gallery.php, line 76, at February 4, 2013, 10:26 pm
+Showing backtrace:
+
+
+
+ERRNO: 256
+TEXT: The 2 vectors must be of equal size in: fcn -> sumVectors()!
+LOCATION: C:\wamp\www\cbires\core\DistanceMetrics.php, line 352, at February 4, 2013, 10:26 pm
+Showing backtrace:
+trigger_error("The 2 vectors must be of equal size in: fcn -&gt; sumVectors()!", "256") # line  352, file: C:\wamp\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.sumVectors(null, Array[64]) # line   80, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: sql_image
+LOCATION: C:\wamp\www\cbires\gallery.php, line 75, at February 4, 2013, 10:27 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined offset: 0
+LOCATION: C:\wamp\www\cbires\gallery.php, line 76, at February 4, 2013, 10:27 pm
+Showing backtrace:
+
+
+
+ERRNO: 256
+TEXT: The 2 vectors must be of equal size in: fcn -> sumVectors()!
+LOCATION: C:\wamp\www\cbires\core\DistanceMetrics.php, line 352, at February 4, 2013, 10:27 pm
+Showing backtrace:
+trigger_error("The 2 vectors must be of equal size in: fcn -&gt; sumVectors()!", "256") # line  352, file: C:\wamp\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.sumVectors(null, Array[64]) # line   80, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 57, at February 4, 2013, 10:32 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 57, at February 5, 2013, 12:49 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: query_image_histogram_sum
+LOCATION: C:\wamp\www\cbires\gallery.php, line 285, at February 5, 2013, 12:49 am
+Showing backtrace:
+
+
+
+ERRNO: 256
+TEXT: The two histograms must be of equal size in: fcn -> euclidean()!
+LOCATION: C:\wamp\www\cbires\core\DistanceMetrics.php, line 94, at February 5, 2013, 12:49 am
+Showing backtrace:
+trigger_error("The two histograms must be of equal size in: fcn -&gt; euclidean()!", "256") # line   94, file: C:\wamp\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.euclidean(null, Array[64]) # line  202, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.computeRgbImages(null, true) # line  285, file: C:\wamp\www\cbires\gallery.php
+
+

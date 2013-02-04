@@ -52,17 +52,30 @@
 						$sum_image_histogram_sum = array_fill(0, 64, '0');
 						$difference_image_histogram_sum = array_fill(0, 64, '0');
                         
-                        var_dump($_POST);
-
+                        //var_dump($_POST);
+                        //var_dump($_SESSION);
+                        //echo $_SESSION['rgb_histogram'];
 						foreach ($_POST as $key => $id) :
 							if($key != "submit")
 							{
 		                          echo "test 2 <br />";
-								$sql_image = "SELECT array_to_json(color_histogram) AS rgb_histogram 
+                                  //var_dump($_SESSION);
+                                if (isset($_SESSION['rgb_histogram']) && !empty($_SESSION['rgb_histogram']))
+                                {
+                                    echo "rgb query <br />";
+                                    $sql_image = "SELECT array_to_json(color_histogram) AS image_histogram 
 											  FROM tbl_image
 											  WHERE id_image = ".$key;
+                                }
+                                if (isset($_SESSION['hsv_histogram']) && !empty($_SESSION['hsv_histogram']))
+                                {
+                                    echo "hsv query <br />";
+                                    $sql_image = "SELECT array_to_json(hsv_histogram) AS image_histogram 
+											  FROM tbl_image
+											  WHERE id_image = ".$key;
+                                }
 								$qresult_image = DB::getAll($sql_image);
-								$image_histogram = json_decode($qresult_image[0]['rgb_histogram']);				
+								$image_histogram = json_decode($qresult_image[0]['image_histogram']);				
 								if($id == 1)
 								{
 								    echo "test 3 <br />";
@@ -173,6 +186,7 @@
 											$histoRGB    = $objRGB->generateHistogram();
 											$normHistRGB = DistanceMetrics::computeHistogram($histoRGB, 64, min($histoRGB), max($histoRGB));
 											$_SESSION['rgb_histogram'] = $normHistRGB;
+                                            session_write_close();
 											$meanRGB     = DistanceMetrics::mean($normHistRGB);
 											$stdRGB      = DistanceMetrics::std($normHistRGB);
 											
@@ -192,6 +206,7 @@
 											$binHistHSV  = DistanceMetrics::computeHistogram($histoHSV, 64, min($histoHSV), max($histoHSV), false);
 											$normHistHSV = DistanceMetrics::normalize($binHistHSV);
 											$_SESSION['hsv_histogram'] = $normHistHSV;
+                                            session_write_close();
 											$meanHSV     = DistanceMetrics::mean($normHistHSV);
 											$stdHSV      = DistanceMetrics::std($normHistHSV);
 											
@@ -211,6 +226,7 @@
 									$histoRGB    = $objRGB->generateHistogram();
 									$normHistRGB = DistanceMetrics::computeHistogram($histoRGB, 64, min($histoRGB), max($histoRGB));
 									$_SESSION['rgb_histogram'] = $normHistRGB;
+                                    session_write_close();
 									$meanRGB     = DistanceMetrics::mean($normHistRGB);
 									$stdRGB      = DistanceMetrics::std($normHistRGB);
 									
@@ -265,11 +281,16 @@
 							}
 							else 
 							{
-							 echo "test 19 <br />";
-								$combRGB = PopulateImages::computeRgbImages($query_image_histogram_sum, true);
-								
-								// Retrieval Results
-								PopulateImages::retrievalResults($combRGB);
+							     echo "test 19 <br />";
+    							 if ( empty( $_FILES['fileInput']['name'] ) && empty( $_FILES['fileInput']['type'] ) && empty( $_FILES['fileInput']['tmp_name'] ))
+                                    echo MESSAGE_EMPTY_FILE_UPLOAD;
+                                 else
+                                 {
+                                    $combRGB = PopulateImages::computeRgbImages($query_image_histogram_sum, true);
+    								
+    								// Retrieval Results
+    								PopulateImages::retrievalResults($combRGB);
+                                 }
 							}
 						}
 					}
