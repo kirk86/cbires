@@ -22,7 +22,6 @@
 					</div>
 					<div class="box-content">
                     <?php
-                    //var_dump($_POST);
                     if ( Tools::getIsset('topk')             && 
                          Tools::getIsset('distanceFunction') && 
                          Tools::getIsset('colorSpace')       && 
@@ -45,6 +44,7 @@
                     }					
                     if (Tools::isSubmit('submit') && Tools::getIsset('submit'))
                     {
+                        echo "test 1 <br />";
 						/* rocchio algorimthm start */
 
 						$sum_nr = 0;
@@ -52,32 +52,27 @@
 						$sum_image_histogram_sum = array_fill(0, 64, '0');
 						$difference_image_histogram_sum = array_fill(0, 64, '0');
                         
-                        //var_dump($_POST);
+                        var_dump($_POST);
 
 						foreach ($_POST as $key => $id) :
 							if($key != "submit")
 							{
-							 //var_dump($_POST);
-								//echo $key." = ".$id."<br />";
+		                          echo "test 2 <br />";
 								$sql_image = "SELECT array_to_json(color_histogram) AS rgb_histogram 
 											  FROM tbl_image
 											  WHERE id_image = ".$key;
 								$qresult_image = DB::getAll($sql_image);
-								
-								$image_histogram = json_decode($qresult_image[0]['rgb_histogram']);
-								
-								//echo "<pre>";
-								//print_r($image_histogram);
-								//echo "</pre>";
-																
+								$image_histogram = json_decode($qresult_image[0]['rgb_histogram']);				
 								if($id == 1)
 								{
-									$sum_image_histogram_sum = sum_arrays($image_histogram, $sum_image_histogram_sum);
+								    echo "test 3 <br />";
+									$sum_image_histogram_sum = DistanceMetrics::sumVectors($image_histogram, $sum_image_histogram_sum);
 									$sum_nr++;
 								}
 								elseif($id == -1)
 								{
-									$difference_image_histogram_sum = sum_arrays($image_histogram, $difference_image_histogram_sum);
+								    echo "test 4 <br />";
+									$difference_image_histogram_sum = DistanceMetrics::sumVectors($image_histogram, $difference_image_histogram_sum);
 									$difference_nr++;
 								}
 
@@ -86,7 +81,8 @@
 												
 						if($sum_nr != 0)
 						{
-							for ($i=0;$i<count($sum_image_histogram_sum);$i++)
+						  echo "test 5 <br />";
+							for ($i = 0; $i < count($sum_image_histogram_sum); $i++)
 							{
 								$sum_image_histogram_sum[$i] = $sum_image_histogram_sum[$i] / $sum_nr * 0.75;
 							}
@@ -99,7 +95,8 @@
 						
 						if($difference_nr != 0)
 						{
-							for ($i=0;$i<count($difference_image_histogram_sum);$i++)
+						  echo "test 6 <br />";
+							for ($i = 0; $i < count($difference_image_histogram_sum); $i++)
 							{
 								$difference_image_histogram_sum[$i] = $difference_image_histogram_sum[$i] / $difference_nr * 0.25;
 							}
@@ -112,16 +109,19 @@
 
 						if(isset($_SESSION['rgb_histogram']))
 						{
+						  echo "test 7 <br />";
 							$original_image_histogram = $_SESSION['rgb_histogram'];
 							
 							//echo "<pre>original_image_histogram<br />";
 							//print_r($original_image_histogram);
 							//echo "</pre>";
 							
-							$query_image_histogram_sum = 0;
-							$query_image_histogram_sum = sum_arrays($original_image_histogram, $query_image_histogram_sum);
-							$query_image_histogram_sum = sum_arrays($sum_image_histogram_sum, $query_image_histogram_sum);
-							$query_image_histogram_sum = difference_arrays($query_image_histogram_sum, $difference_image_histogram_sum);
+                            $query_image_histogram_sum = array_fill(0, 64, 0);
+							//$query_image_histogram_sum = 0;
+							$query_image_histogram_sum = DistanceMetrics::sumVectors($original_image_histogram, $query_image_histogram_sum);
+							$query_image_histogram_sum = DistanceMetrics::sumVectors($sum_image_histogram_sum, $query_image_histogram_sum);
+                            //$query_image_histogram_sum = DistanceMetrics::sumVectors($sum_image_histogram_sum, $original_image_histogram);
+							$query_image_histogram_sum = DistanceMetrics::diffVectors($query_image_histogram_sum, $difference_image_histogram_sum);
 							
 							//echo "<pre>query_histogram<br />";
 							//print_r($query_image_histogram_sum);
@@ -139,6 +139,7 @@
                              !empty( $_FILES['fileInput']['type'] ) && 
                              !empty( $_FILES['fileInput']['tmp_name'] ) )
                         {
+                            echo "test 8 <br />";
                             $tempFile = $_FILES['fileInput']['tmp_name'];
                             $targetPath = $_SERVER['DOCUMENT_ROOT'] . $targetFolder;
                             $galleryPath = $_SERVER['DOCUMENT_ROOT'] . $galleryFolder;
@@ -149,12 +150,12 @@
                             
                             if ( in_array( Tools::strtolower( $fileParts['extension'] ), $fileTypes ) )
                             {
+                                echo "test 9 <br />";
                                 $img = new Image($tempFile);
                                 $img->save($galleryPath, false);
                                 $img->resize(300, 0); // Lower quality image created using width ratio otherwise $img->resize(300, 0, false); for quality not speed
                                 $img->save($targetPath);
                                 $resized_img = $img->file_name;
-                                $_SESSION['resized_img'] = $resized_img;
                                  
                                 //$filemime = 'image/'.$fileParts['extension'];
                                 if ( isset($_SESSION['colorSpace'])       && !empty($_SESSION['colorSpace'])       &&
@@ -162,10 +163,12 @@
                                      isset($_SESSION['threshold'])        && !empty($_SESSION['threshold'])
                                    )
                                 {
+                                    echo "test 10 <br />";
                                     switch ($_SESSION['colorSpace'])
                                     {
                                         case 'RGB':
 										{
+										  echo "test 11 <br />";
 											$objRGB      = new Histogram($resized_img);
 											$histoRGB    = $objRGB->generateHistogram();
 											$normHistRGB = DistanceMetrics::computeHistogram($histoRGB, 64, min($histoRGB), max($histoRGB));
@@ -176,13 +179,14 @@
 											$combRGB = PopulateImages::computeRgbImages($normHistRGB);
 											
 											// Retrieval Results
-											retrieval_results($combRGB);
+											PopulateImages::retrievalResults($combRGB);
 											
 											break;
 										}
                                         
                                         case 'HSV':
 										{
+										  echo "test 12 <br />";
 											$objHSV      = new Histogram($resized_img);
 											$histoHSV    = $objHSV->generateHistogram(true);
 											$binHistHSV  = DistanceMetrics::computeHistogram($histoHSV, 64, min($histoHSV), max($histoHSV), false);
@@ -194,7 +198,7 @@
 											$combHSV = PopulateImages::computeHsvImages($normHistHSV);
 											
 											// Retrieval Results
-											retrieval_results($combHSV);
+											PopulateImages::retrievalResults($combHSV);
 											
 											break;
 										}
@@ -202,6 +206,7 @@
                                 }
                                 else 
 								{
+								    echo "test 13 <br />";
 									$objRGB      = new Histogram($resized_img);
 									$histoRGB    = $objRGB->generateHistogram();
 									$normHistRGB = DistanceMetrics::computeHistogram($histoRGB, 64, min($histoRGB), max($histoRGB));
@@ -212,42 +217,47 @@
 									$combRGB = PopulateImages::computeRgbImages($normHistRGB, true);
 									
 									// Retrieval Results
-									retrieval_results($combRGB);
+									PopulateImages::retrievalResults($combRGB);
 								}
                                 unset($img);
 							}
                         	else
 							{
+							 echo "test 14 <br />";
 								echo MESSAGE_INVALID_FILE_TYPE;
 							}
                         }
 						else
 						{
+						  echo "test 15 <br />";
 							//$combRGB = PopulateImages::computeRgbImages($query_image_histogram_sum);
 							if ( isset($_SESSION['colorSpace'])       && !empty($_SESSION['colorSpace'])       &&
                                      isset($_SESSION['distanceFunction']) && !empty($_SESSION['distanceFunction']) &&
                                      isset($_SESSION['threshold'])        && !empty($_SESSION['threshold'])
                                    )
 							{
+							 echo "test 16 <br />";
 								switch ($_SESSION['colorSpace'])
 								{
 									case 'RGB':
 									{
+									   echo "test 17 <br />";
 										$combRGB = PopulateImages::computeRgbImages($query_image_histogram_sum);
 										
 										// Retrieval Results
-										retrieval_results($combRGB);
+										PopulateImages::retrievalResults($combRGB);
 										
 										break;
 									}
 									
 									case 'HSV':
 									{
+									   echo "test 18 <br />";
 										$normHistHSV = DistanceMetrics::normalize($query_image_histogram_sum);
 										$combHSV = PopulateImages::computeHsvImages($normHistHSV);
 										
 										// Retrieval Results
-										retrieval_results($combHSV);
+										PopulateImages::retrievalResults($combHSV);
 						
 										break;
 									}
@@ -255,15 +265,16 @@
 							}
 							else 
 							{
+							 echo "test 19 <br />";
 								$combRGB = PopulateImages::computeRgbImages($query_image_histogram_sum, true);
 								
 								// Retrieval Results
-								retrieval_results($combRGB);
+								PopulateImages::retrievalResults($combRGB);
 							}
 						}
 					}
                  //session_unset();
-                 ?> 
+                 ?>
                     
                     <legend class="center"></legend>
                     
@@ -292,100 +303,3 @@
 			</div><!--/row-->
     
 <?php require_once('footer.php'); ?>
-
-<?php
-// functions
-function sum_arrays($array1, $array2)
-{
-	for ($i = 0; $i <= (count($array1) -1); $i++)
-	{
-		$temp[$i] = $array1[$i] + $array2[$i];
-	}
-	return $temp;
-}
-
-function difference_arrays($array1, $array2)
-{
-	for ($i = 0; $i <= (count($array1) -1); $i++)
-	{
-		$temp[$i] = $array1[$i] - $array2[$i];
-	}
-	return $temp;
-}
-
-function retrieval_results($comb)
-{
-	?>
-	
-	<!-- START OF: fullscreen button -->
-		<p class="center">
-			<button id="toggle-fullscreen" class="btn btn-large btn-primary visible-desktop" data-toggle="button">Toggle Fullscreen</button>
-		</p>
-	<!-- END OF: fullscreen button -->
-	
-	<!-- START OF: query message 1 -->    
-		<div class="alert alert-info">
-			<h2><p class="center">Query Image</p></h2>
-		</div>
-	<!-- END OF: query message 1 -->
-	
-		<ul class="thumbnails gallery">
-			<li id="image-query" class="thumbnail">
-				<a style="background:url(img/gallery/thumbs/query_image.jpg);background-size:100px 100px;background-repeat:no-repeat;" title="Sample Image query_image.jpg" href="img/gallery/query_image.jpg">
-					<img src="img/gallery/thumbs/query_image.jpg" alt="Sample Image query_image.jpg" />
-				</a>
-			</li>
-		</ul>
-		
-	<!-- START OF: info message 1 -->    
-		<div class="alert alert-info">
-			<p class="center" style="color: blue; font-size: x-large;">Retrieval Results</p>
-		</div>
-	<!-- END OF: info message 1 -->
-	<form class="form-horizontal" action="gallery.php" method="post">
-		<fieldset>
-				<ul class="thumbnails gallery">
-				<!-- Query image -->
-				<!--
-					<li id="image-query" class="thumbnail">
-						<a style="background:url(img/gallery/thumbs/query_image.jpg)" title="Sample Image Query" href="img/gallery/query_image.jpg">
-							<img src="img/gallery/thumbs/query_image.jpg" alt="Sample Image Query" />
-						</a>
-					</li>
-					-->
-				<!-- Query image -->
-					<table id="results_images_table">
-						<tr>
-					<?php
-					if ( isset($_SESSION['threshold']) && !empty($_SESSION['threshold']) && 
-						 isset($_SESSION['colorSpace']) && !empty($_SESSION['colorSpace'])
-					   )
-					{
-							switch ($_SESSION['colorSpace'])
-							{
-								case 'RGB':
-								PopulateImages::populateColorSpaceImages($comb);
-								break;
-								 
-								case 'HSV':
-								PopulateImages::populateColorSpaceImages($comb);
-								break;
-							}
-							//session_unset();
-							//session_destroy();
-					}
-					else
-					{
-						PopulateImages::populateColorSpaceImages($comb, 14);
-					}
-					?>
-					</table>
-				</ul>
-				<p style="text-align: center;">
-					<button class="btn btn-warning btn-round" type="submit" name="submit" value="relevance_feedback">Requery</button>
-				</p>
-		  </fieldset>
-	</form>
-	<?php
-}
-?>

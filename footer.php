@@ -51,7 +51,7 @@
                           <label class="control-label">Color Space</label>
 						   <div class="controls">
 						     <label class="radio">
-							   <input type="radio" name="colorSpace" id="colorSpace" value="RGB" <?php echo $colorSpace = (isset($_SESSION['colorSpace']) && ($_SESSION['colorSpace'] == "RGB")) ? "checked=''" : "checked=''"; ?> /> RGB
+							   <input type="radio" name="colorSpace" id="colorSpace" value="RGB" checked="" /> RGB
 				             </label>
 				             <div style="clear:both"></div>
                              <label class="radio">

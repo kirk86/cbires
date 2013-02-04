@@ -338,4 +338,41 @@ class DistanceMetrics
         
         return $hist;        
     }
+    
+    /**
+     * Sum two 1-D vectors
+     * 
+     * @param $a First vector
+     * @param $b Second vector
+     * @return $sum Sum of individual values of 2 1-D vectors
+     */
+     public static function sumVectors($a, $b)
+     {
+        if (count($a) != count($b))
+            trigger_error("The 2 vectors must be of equal size in: fcn -> sumVectors()!", E_USER_ERROR);
+            
+        for ($i = 0; $i < count($a); $i++)
+        {
+            $sum[$i] = $a[$i] + $b[$i];
+        }
+        return $sum;
+     }
+     
+     /**
+      * Difference of two 1-D vectors
+      * @param $a First vector
+      * @param $b Second vector
+      * @return $diff Difference of invidvidual values of 2 1-D vectors
+      */
+      public static function diffVectors($a, $b)
+      {
+        if (count($a) != count($b))
+            trigger_error("The 2 vectors must be of equal size in: fcn -> diffVectors()!", E_USER_ERROR);
+        
+        for ($i = 0; $i < count($a); $i++)
+        {
+            $diff[$i] = $a[$i] - $b[$i];
+        }
+        return $diff;
+      }
 }
