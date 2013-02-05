@@ -38,6 +38,7 @@ if (!empty($_FILES))
     {
         $filemime = 'image/'.$fileParts['extension'];
         
+        set_time_limit(0);
         // Image class example
         $img = new Image($tempFile);
         $img->resize(300, 0, true); // Lower quality image created using width ratio
@@ -72,7 +73,10 @@ if (!empty($_FILES))
         $img->save($targetFile);
         unset($histRGB);  unset($normHistRGB);   unset($pg_arrayRGB);
         unset($histHSV);  unset($normHistHSV);   unset($pg_arrayHSV);
-        unset($img);       unset($objRGB);        unset($objHSV);
+        unset($img);      unset($objRGB);        unset($objHSV);
+        ob_flush();
+        flush();
+        set_time_limit(30);
 		echo 'file uploaded successfully '.$rowCount;
     }
 	else
