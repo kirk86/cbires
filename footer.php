@@ -14,7 +14,7 @@
 				<h3>Settings</h3>
 			</div>
             <?php
-            $sql = "SELECT COUNT(*) AS total_images FROM tbl_image";
+            $sql = "SELECT COUNT(*) AS total_images FROM ". DB_PREFIX ."image";
             $total_images = DB::getOne($sql);
             ?>
 			<div class="modal-body">
@@ -164,7 +164,7 @@
 	<!-- application script for CBIRES demo -->
     <script src="js/cbires.js"></script>
 	
-	<?php //Google Analytics code for tracking cbires demo site, you can remove this.
+	<?php //Google Analytics code for tracking cbires demo site when launches online, you can remove this.
 		if($_SERVER['HTTP_HOST']=='cbires.com') { ?>
 		<script>
 			var _gaq = _gaq || [];

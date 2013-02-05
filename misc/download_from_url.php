@@ -72,7 +72,7 @@ function download_img($img_url)
 				$stdHSV = DistanceMetrics::std($normHistHSV);
 				$pg_arrayHSV = Tools::phpArray2PostgressSQL($normHistHSV);
 				
-				$sql = "INSERT INTO tbl_image(id_image, filename, filepath, filemime, filesize, 
+				$sql = "INSERT INTO ". DB_PREFIX ."image(id_image, filename, filepath, filemime, filesize, 
 											  timestamp, filename_hash, color_histogram, mean, std, 
 											  hsv_histogram, hsv_mean, hsv_std)
 						VALUES(DEFAULT, '{$fileParts['basename']}', '{$filepath}', '{$filemime}', 

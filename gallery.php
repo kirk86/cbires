@@ -29,7 +29,7 @@
                          Validate::isUnsignedInt(Tools::getValue('topk'))
                         )
                     {
-                        $sqlThres = "SELECT COUNT(*) AS total_images FROM tbl_image";
+                        $sqlThres = "SELECT COUNT(*) AS total_images FROM ". DB_PREFIX ."image";
                         $imageThres = DB::getOne($sqlThres);
                         if (Tools::getValue('topk') <= 0 || Tools::getValue('topk') > $imageThres[0])
                             echo MESSAGE_INVALID_TOPK;
@@ -59,13 +59,13 @@
                                 if (isset($_SESSION['rgb_histogram']) && !empty($_SESSION['rgb_histogram']))
                                 {
                                     $sql_image = "SELECT array_to_json(color_histogram) AS image_histogram 
-											  FROM tbl_image
+											  FROM ". DB_PREFIX ."image
 											  WHERE id_image = ".$key;
                                 }
                                 if (isset($_SESSION['hsv_histogram']) && !empty($_SESSION['hsv_histogram']))
                                 {
                                     $sql_image = "SELECT array_to_json(hsv_histogram) AS image_histogram 
-											  FROM tbl_image
+											  FROM ". DB_PREFIX ."image
 											  WHERE id_image = ".$key;
                                 }
 								$qresult_image = DB::getAll($sql_image);

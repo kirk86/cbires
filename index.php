@@ -13,13 +13,13 @@
 			<?php
 				// member
 				$sql_total_members = "SELECT count(*) AS count_member
-                                      FROM public.tbl_user, public.tbl_user_role
-                                      WHERE tbl_user_role.id_user_role = tbl_user.id_user_role";
+                                      FROM public.". DB_PREFIX ."user, public.". DB_PREFIX ."user_role
+                                      WHERE ". DB_PREFIX ."user_role.id_user_role = ". DB_PREFIX ."user.id_user_role";
 				$total_members = DB::getOne($sql_total_members);
 				$member_info = DB::getAll($sql_total_members); 
 				$sql_new_members = "SELECT count(*) AS new_member
-                                    FROM public.tbl_user, public.tbl_user_role
-                                    WHERE tbl_user_role.id_user_role = tbl_user.id_user_role
+                                    FROM public.". DB_PREFIX ."user, public.". DB_PREFIX ."user_role
+                                    WHERE ". DB_PREFIX ."user_role.id_user_role = ". DB_PREFIX ."user.id_user_role
                                     AND date_registered > now()::date - 1";
 				$new_members = DB::getOne($sql_new_members);
 				
@@ -29,17 +29,17 @@
 				$total_categories = DB::getOne($sql_total_categories);
                 $categories_info = DB::getAll($sql_total_categories); 
                 $sql_new_categories = "SELECT count(*) AS new_categories
-										FROM public.tbl_categories
+										FROM public.". DB_PREFIX ."categories
 										WHERE date_created > now()::date - 1";
                 $new_categories = DB::getOne($sql_new_categories);
 				
 				// images
 				$sql_total_images = "SELECT count(*) AS count_image
-										FROM public.tbl_image";
+										FROM public.". DB_PREFIX ."image";
 				$total_images = DB::getOne($sql_total_images);
                 $image_info = DB::getAll($sql_total_images); 
                 $sql_new_images = "SELECT count(*) AS new_image
-										FROM public.tbl_image
+										FROM public.". DB_PREFIX ."image
 										WHERE timestamp::date > now()::date - 1";
                 $new_images = DB::getOne($sql_new_images);
 				
@@ -111,8 +111,8 @@
 						</div>
 					</div>
                     <?php $sql_member_info = "SELECT *
-                                             FROM public.tbl_user, public.tbl_user_role
-                                             WHERE tbl_user_role.id_user_role = tbl_user.id_user_role
+                                             FROM public.". DB_PREFIX ."user, public.". DB_PREFIX ."user_role
+                                             WHERE ". DB_PREFIX ."user_role.id_user_role = ". DB_PREFIX ."user.id_user_role
                                              ORDER BY date_registered DESC
                                              LIMIT 4";
                           $member_info = DB::getAll($sql_member_info);
@@ -156,7 +156,7 @@
 						</div>
 					</div>
 					<?php $sql_category_info = "SELECT *
-                                             FROM public.tbl_categories
+                                             FROM public.". DB_PREFIX ."categories
                                              ORDER BY RANDOM()
                                              LIMIT 4";
                           $category_info = DB::getAll($sql_category_info);

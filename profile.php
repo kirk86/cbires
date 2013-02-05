@@ -14,7 +14,7 @@
 			<?php
 			if(isset($_GET['id']))
 			{
-				$sql = "SELECT * FROM public.tbl_user
+				$sql = "SELECT * FROM public.". DB_PREFIX ."user
 						WHERE tbl_user.id_user = ".$_GET['id'];
 				$result = DB::getAll($sql);
 			}

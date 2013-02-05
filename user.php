@@ -3,13 +3,13 @@
 if(isset($_POST['savebtn']))
 {
     $date_registered = implode("-", array_reverse( explode("/", $_POST['date01']) ) );
-    $sql = "UPDATE tbl_user SET username = ?, password = ?, id_user_role = ?, status = ?, date_registered = ? WHERE id_user = ?";
+    $sql = "UPDATE ". DB_PREFIX ."user SET username = ?, password = ?, id_user_role = ?, status = ?, date_registered = ? WHERE id_user = ?";
     $params = array($_POST['username'], $_POST['password'], $_POST['optionsRadios'], $_POST['selectStaus'], $date_registered, $_POST['userid']);
 	$result = DB::execute($sql, array_values($params));   
 }
 elseif(isset($_GET['id']))
 {
-	$sql = "DELETE FROM tbl_user WHERE id_user = ".$_GET['id'];
+	$sql = "DELETE FROM ". DB_PREFIX ."user WHERE id_user = ".$_GET['id'];
 	$result = DB::execute($sql);
 }
 ?>
@@ -46,8 +46,8 @@ elseif(isset($_GET['id']))
 							</thead>
 							
 							<?php
-							$sql = "SELECT * FROM public.tbl_user, public.tbl_user_role
-									WHERE tbl_user_role.id_user_role = tbl_user.id_user_role";
+							$sql = "SELECT * FROM public.". DB_PREFIX ."user, public.". DB_PREFIX ."user_role
+									WHERE ". DB_PREFIX ."user_role.id_user_role = ". DB_PREFIX ."user.id_user_role";
 							$result = DB::getAll($sql);
 							?>
 							

@@ -33,7 +33,7 @@ class PopulateImages
         }
         $pg_array_filename = Tools::phpArray2PostgressSQL($img_filaname_hash);
         $sql = "SELECT id_image, filename_hash
-                FROM tbl_image 
+                FROM ". DB_PREFIX. "image 
                 WHERE filename_hash = ANY('$pg_array_filename'::text[])
                 ORDER BY id_image ASC";
         $result = DB::getAll($sql);
@@ -166,7 +166,7 @@ class PopulateImages
 		
 		$sql         = "SELECT id_image, filename, filepath, filemime, filename_hash,
                         array_to_json(color_histogram) AS rgb_histogram 
-                        FROM tbl_image";
+                        FROM ". DB_PREFIX. "image";
         $qresult = DB::getAll($sql);
         $distArrayRGB = array();
         $img_ids      = array();
@@ -229,7 +229,7 @@ class PopulateImages
 		
         $sql         = "SELECT id_image, filename, filepath, filemime, filename_hash,
                         array_to_json(hsv_histogram) AS hsv_histogram 
-                        FROM tbl_image";
+                        FROM ". DB_PREFIX ."image";
         $qresult = DB::getAll($sql);
         $distArrayHSV = array();
         $img_ids      = array();
