@@ -56,44 +56,6 @@
 										<input type="text" class="input-xlarge datepicker" id="date01" name="date01" value="<?php echo $date;?>" />
 									</div>
 								</div>
-                            
-								<!--
-								<div class="control-group">
-									<label class="control-label">Uneditable input</label>
-									<div class="controls">
-										<span class="input-xlarge uneditable-input">Some value here</span>
-									</div>
-								</div>
-								<div class="control-group">
-									<label class="control-label" for="disabledInput">Disabled input</label>
-									<div class="controls">
-										<input class="input-xlarge disabled" id="disabledInput" type="text" placeholder="Disabled input here…" disabled="" />
-									</div>
-								</div>
-								-->
-								<!--
-								<div class="control-group warning">
-									<label class="control-label" for="inputWarning">Input with warning</label>
-									<div class="controls">
-										<input type="text" id="inputWarning">
-										<span class="help-inline">Something may have gone wrong</span>
-									</div>
-								</div>
-								<div class="control-group error">
-									<label class="control-label" for="inputError">Input with error</label>
-									<div class="controls">
-										<input type="text" id="inputError">
-										<span class="help-inline">Please correct the error</span>
-									</div>
-								</div>
-								<div class="control-group success">
-									<label class="control-label" for="inputSuccess">Input with success</label>
-									<div class="controls">
-										<input type="text" id="inputSuccess">
-										<span class="help-inline">Woohoo!</span>
-									</div>
-								</div>
-								-->
 								<div class="control-group">
 									<label class="control-label">Role</label>
 									<div class="controls">

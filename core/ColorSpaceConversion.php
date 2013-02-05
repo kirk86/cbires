@@ -8,62 +8,6 @@
 
 class ColorSpaceConversion
 {
-    // Here's a little simpler version, that also returns HSV values as degrees and percentages, similar to what Photoshop'
-    //    s color picker uses . //
-    // Note that the return values are not rounded, you can do that yourself if required. 
-    // Keep in mind that H values of 359.5 and greater, round around to 0
-    //
-    // Heavily documented for learning purposes.
-
-    public function RGBtoHSV($R, $G, $B) // RGB values:    0-255, 0-255, 0-255
-    { // HSV values:    0-360, 0-100, 0-100
-        // Convert the RGB byte-values to percentages
-        $R = ($R / 255);
-        $G = ($G / 255);
-        $B = ($B / 255);
-
-        // Calculate a few basic values, the maximum value of R,G,B, the
-        //   minimum value, and the difference of the two (chroma).
-        $maxRGB = max($R, $G, $B);
-        $minRGB = min($R, $G, $B);
-        $chroma = $maxRGB - $minRGB;
-
-        // Value (also called Brightness) is the easiest component to calculate,
-        //   and is simply the highest value among the R,G,B components.
-        // We multiply by 100 to turn the decimal into a readable percent value.
-        $computedV = 100 * $maxRGB;
-
-        // Special case if hueless (equal parts RGB make black, white, or grays)
-        // Note that Hue is technically undefined when chroma is zero, as
-        //   attempting to calculate it would cause division by zero (see
-        //   below), so most applications simply substitute a Hue of zero.
-        // Saturation will always be zero in this case, see below for details.
-        if ($chroma == 0)
-            return array( 0, 0, $computedV);
-
-        // Saturation is also simple to compute, and is simply the chroma
-        //   over the Value (or Brightness)
-        // Again, multiplied by 100 to get a percentage.
-        $computedS = 100 * ($chroma / $maxRGB);
-
-        // Calculate Hue component
-        // Hue is calculated on the "chromacity plane", which is represented
-        //   as a 2D hexagon, divided into six 60 degree sectors. We calculate
-        //   the bisecting angle as a value 0 <= x < 6, that represents which
-        //   portion of which sector the line falls on.
-        if ($R == $minRGB)
-            $h = 3 - (($G - $B) / $chroma);
-        elseif ($B == $minRGB)
-            $h = 1 - (($R - $G) / $chroma);
-        else
-            $h = 5 - (($B - $R) / $chroma);
-
-        // After we have the sector position, we multiply it by the size of
-        //   each sector's arc (60 degrees) to obtain the angle in degrees.
-        $computedH = 60 * $h;
-
-        return array($computedH, $computedS, $computedV);
-    }
     
     /**
      *
@@ -76,20 +20,32 @@ class ColorSpaceConversion
      */
     public function rgb2hsv($R, $G, $B) // RGB Values:Number 0-255
     {
+        // Keep in mind that H values of 359.5 and greater, round around to 0
         // HSV Results:Number 0-1
         $HSL = array();
-
+        
+        // Convert the RGB byte-values to percentages
         $var_R = ($R / 255);
         $var_G = ($G / 255);
         $var_B = ($B / 255);
-
+        
+        // Calculate a few basic values, the maximum value of R,G,B, the
+        //   minimum value, and the difference of the two (chroma).
         $var_Min = min($var_R, $var_G, $var_B);
         $var_Max = max($var_R, $var_G, $var_B);
-        
-        $V = $var_Max;
         $del_Max = $var_Max - $var_Min; //Delta RGB value
         
+        // Value (also called Brightness) is the easiest component to calculate,
+        //   and is simply the highest value among the R,G,B components.
+        // We can multiply by 100 to turn the decimal into a readable percent value. 100*$var_Max;
+        $V = $var_Max;
+        
         // This is a gray, no chroma...
+        // Special case if hueless (equal parts RGB make black, white, or grays)
+        // Note that Hue is technically undefined when chroma is zero, as
+        // attempting to calculate it would cause division by zero (see
+        // below), so most applications simply substitute a Hue of zero.
+        // Saturation will always be zero in this case, see below for details.
         if ($del_Max == 0)
         {
             // HSV results = 0 Γ· 1
@@ -99,12 +55,21 @@ class ColorSpaceConversion
         else
         {
             // Chromatic data...
+            // Saturation is also simple to compute, and is simply the chroma
+            // over the Value (or Brightness)
+            // Again, it can be multiplied by 100 to get a percentage.
+            // 100 * ($del_Max / $var_Max)
             $S = $del_Max / $var_Max;
-
+            
             $del_R = ((($var_Max - $var_R) / 6) + ($del_Max / 2)) / $del_Max;
             $del_G = ((($var_Max - $var_G) / 6) + ($del_Max / 2)) / $del_Max;
             $del_B = ((($var_Max - $var_B) / 6) + ($del_Max / 2)) / $del_Max;
-
+            
+            // Calculate Hue component
+            // Hue is calculated on the "chromacity plane", which is represented
+            // as a 2D hexagon, divided into six 60 degree sectors. We calculate
+            // the bisecting angle as a value 0 <= x < 6, that represents which
+            // portion of which sector the line falls on.
             if ($var_R == $var_Max)
                 $H = $del_B - $del_G;
             elseif ($var_G == $var_Max)
@@ -121,6 +86,9 @@ class ColorSpaceConversion
         $HSL['H'] = $H;
         $HSL['S'] = $S;
         $HSL['V'] = $V;
+        
+        // After we have the sector position, we can multiply it by the size of
+        // each sector's arc (60 degrees) to obtain the angle in degrees.
         
         // Returns agnostic values.
         // Range will depend on the application: e.g. $H*360, $S*100, $V*100.
@@ -208,116 +176,4 @@ class ColorSpaceConversion
 
         return $RGB;
     }
-    /**
-     * -----------------------------------------------------------------------------------------------------
-     */
-    public function toHSV($R, $G, $B) // Convert to hsv according to photoshop, H in degrees, S in %, V in %
-    {
-        $HSV = array();
-        
-        $red   = $R / 255;
-        $green = $G / 255;
-        $blue  = $B / 255;
-
-
-        $min = min($red, $green, $blue);
-        $max = max($red, $green, $blue);
-
-        $V = $max;
-        $delta = $max - $min;
-
-        if ($delta == 0) {
-            $H = 0;
-            $S = 0;
-            $V = $V * 100;
-        }
-
-        $S = 0;
-
-        if ($max != 0) {
-            $S = $delta / $max;
-        } else {
-            $S = 0;
-            $H = -1;
-            $V = $V;
-        }
-        if ($red == $max) {
-            $H = ($green - $blue) / $delta;
-        } else {
-            if ($green == $max) {
-                $H = 2 + ($blue - $red) / $delta;
-            } else {
-                $H = 4 + ($red - $green) / $delta;
-            }
-        }
-        $H *= 60;
-        if ($H < 0) {
-            $H += 360;
-        }
-        
-        $HSV['H'] = $H;
-        $HSV['S'] = $S * 100;
-        $HSV['V'] = $V * 100;
-
-        return $HSV;
-    }
-    
-    public function toRGB($H, $S, $V)
-    {
-        $RGB = array();
-        
-        $hue        = $H / 360;
-        $saturation = $S / 100;
-        $value      = $V / 100;
-        
-        if ($saturation == 0) {
-            $red = $value * 255;
-            $green = $value * 255;
-            $blue = $value * 255;
-        } else {
-            $var_h = $hue * 6;
-            $var_i = floor($var_h);
-            $var_1 = $value * (1 - $saturation);
-            $var_2 = $value * (1 - $saturation * ($var_h - $var_i));
-            $var_3 = $value * (1 - $saturation * (1 - ($var_h - $var_i)));
-
-            if ($var_i == 0) {
-                $var_r = $value;
-                $var_g = $var_3;
-                $var_b = $var_1;
-            } elseif ($var_i == 1) {
-                $var_r = $var_2;
-                $var_g = $value;
-                $var_b = $var_1;
-            } elseif ($var_i == 2) {
-                $var_r = $var_1;
-                $var_g = $value;
-                $var_b = $var_3;
-            } elseif ($var_i == 3) {
-                $var_r = $var_1;
-                $var_g = $var_2;
-                $var_b = $value;
-            } else {
-                if ($var_i == 4) {
-                    $var_r = $var_3;
-                    $var_g = $var_1;
-                    $var_b = $value;
-                } else {
-                    $var_r = $value;
-                    $var_g = $var_1;
-                    $var_b = $var_2;
-                }
-            }
-
-            $red = $var_r * 255;
-            $green = $var_g * 255;
-            $blue = $var_b * 255;
-        }
-        $RGB['R'] = $red;
-        $RGB['G'] = $green;
-        $RGB['B'] = $blue;
-        
-        return $RGB;
-    }
-
 }

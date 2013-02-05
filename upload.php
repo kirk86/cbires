@@ -1,6 +1,5 @@
 <?php require_once('header.php'); ?>
 
-		
 			<div>
 				<ul class="breadcrumb">
 					<li>
@@ -33,7 +32,6 @@
 					</div>	
 				</div><!--/span-->
 				
-			</div><!--/row-->
-			
+			</div><!--/row-->	
 		
 <?php require_once('footer.php'); ?>

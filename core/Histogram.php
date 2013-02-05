@@ -191,7 +191,7 @@ class Histogram extends ColorSpaceConversion
     }
     
     /**
-     * Generate alternate imge histogram
+     * Generate alternate image histogram
      * 
      * @param
      * @return
