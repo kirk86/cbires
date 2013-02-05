@@ -3,8 +3,9 @@
 if(isset($_POST['savebtn']))
 {
     $date_registered = implode("-", array_reverse( explode("/", $_POST['date01']) ) );
-	$sql = "UPDATE tbl_user SET username = '".$_POST['username']."', password = '".$_POST['password']."', id_user_role = ".$_POST['optionsRadios'].", status = '".$_POST['selectStaus']."', date_registered = '".$date_registered."' WHERE id_user = ".$_POST['userid'];
-	$result = DB::execute($sql);   
+    $sql = "UPDATE tbl_user SET username = ?, password = ?, id_user_role = ?, status = ?, date_registered = ? WHERE id_user = ?";
+    $params = array($_POST['username'], $_POST['password'], $_POST['optionsRadios'], $_POST['selectStaus'], $date_registered, $_POST['userid']);
+	$result = DB::execute($sql, array_values($params));   
 }
 elseif(isset($_GET['id']))
 {
