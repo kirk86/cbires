@@ -516,12 +516,16 @@ function docReady(){
 
 	//pie chart
 	var data = [
-	{ label: "Internet Explorer",  data: 12},
-	{ label: "Mobile",  data: 27},
-	{ label: "Safari",  data: 85},
-	{ label: "Opera",  data: 64},
-	{ label: "Firefox",  data: 90},
-	{ label: "Chrome",  data: 112}
+	{ label: "Africa",  data: 10},
+	{ label: "Beach",  data: 10},
+	{ label: "Monuments",  data: 10},
+	{ label: "Buses",  data: 10},
+	{ label: "Dinosaurs",  data: 10},
+	{ label: "Elephants",  data: 10},
+    { label: "Flowers",  data: 10},
+    { label: "Horses",  data: 10},
+    { label: "Mountains",  data: 10},
+    { label: "Food",  data: 10}
 	];
 	
 	if($("#piechart").length)
