@@ -79,3 +79,115 @@ file_get_html("http://www.multirama.com") # line   21, file: C:\wamp\www\cbires\
 CrawlImagesFromUrl("http://www.multirama.com") # line   56, file: C:\wamp\www\cbires\crawler.php
 
 
+
+ERRNO: 2
+TEXT: getimagesize(http://www.multirama.gr/images/dd-prod.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+
+LOCATION: C:\wamp\www\cbires\misc\download_from_url.php, line 27, at February 5, 2013, 8:30 pm
+Showing backtrace:
+getimagesize("http://www.multirama.gr/images/dd-prod.jpg") # line   27, file: C:\wamp\www\cbires\misc\download_from_url.php
+download_img("http://www.multirama.gr/images/dd-prod.jpg") # line   67, file: C:\wamp\www\cbires\crawler.php
+
+
+
+ERRNO: 2
+TEXT: getimagesize(http://www.multirama.gr/images/dd-prod.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+
+LOCATION: C:\wamp\www\cbires\misc\download_from_url.php, line 27, at February 5, 2013, 8:34 pm
+Showing backtrace:
+getimagesize("http://www.multirama.gr/images/dd-prod.jpg") # line   27, file: C:\wamp\www\cbires\misc\download_from_url.php
+download_img("http://www.multirama.gr/images/dd-prod.jpg") # line   67, file: C:\wamp\www\cbires\crawler.php
+
+
+
+ERRNO: 2
+TEXT: Cannot modify header information - headers already sent by (output started at C:\wamp\www\cbires\header.php:71)
+LOCATION: C:\wamp\www\cbires\misc\download_from_url.php, line 79, at February 5, 2013, 8:51 pm
+Showing backtrace:
+header("Content-Description: File Transfer") # line   79, file: C:\wamp\www\cbires\misc\download_from_url.php
+download_img("http://www.multirama.gr//mlrimages/images/general/mlr-logo.jpg") # line   67, file: C:\wamp\www\cbires\crawler.php
+
+
+
+ERRNO: 2
+TEXT: Cannot modify header information - headers already sent by (output started at C:\wamp\www\cbires\header.php:71)
+LOCATION: C:\wamp\www\cbires\misc\download_from_url.php, line 79, at February 5, 2013, 8:52 pm
+Showing backtrace:
+header("Content-Description: Image") # line   79, file: C:\wamp\www\cbires\misc\download_from_url.php
+download_img("http://www.multirama.gr//mlrimages/images/general/mlr-logo.jpg") # line   67, file: C:\wamp\www\cbires\crawler.php
+
+
+
+ERRNO: 2
+TEXT: Cannot modify header information - headers already sent by (output started at C:\wamp\www\cbires\header.php:71)
+LOCATION: C:\wamp\www\cbires\misc\download_from_url.php, line 80, at February 5, 2013, 8:52 pm
+Showing backtrace:
+header("Content-Type: image/jpeg") # line   80, file: C:\wamp\www\cbires\misc\download_from_url.php
+download_img("http://www.multirama.gr//mlrimages/images/general/mlr-logo.jpg") # line   67, file: C:\wamp\www\cbires\crawler.php
+
+
+
+ERRNO: 8
+TEXT: ob_clean() [<a href='ref.outcontrol'>ref.outcontrol</a>]: failed to delete buffer. No buffer to delete
+LOCATION: C:\wamp\www\cbires\misc\download_from_url.php, line 86, at February 5, 2013, 8:53 pm
+Showing backtrace:
+ob_clean() # line   86, file: C:\wamp\www\cbires\misc\download_from_url.php
+download_img("http://www.multirama.gr//mlrimages/images/general/mlr-logo.jpg") # line   67, file: C:\wamp\www\cbires\crawler.php
+
+
+
+ERRNO: 8
+TEXT: ob_clean() [<a href='ref.outcontrol'>ref.outcontrol</a>]: failed to delete buffer. No buffer to delete
+LOCATION: C:\wamp\www\cbires\misc\download_from_url.php, line 86, at February 5, 2013, 8:53 pm
+Showing backtrace:
+ob_clean() # line   86, file: C:\wamp\www\cbires\misc\download_from_url.php
+download_img("http://www.multirama.gr//mlrimages/images/banners/techg-new.jpg") # line   67, file: C:\wamp\www\cbires\crawler.php
+
+
+
+ERRNO: 8
+TEXT: ob_clean() [<a href='ref.outcontrol'>ref.outcontrol</a>]: failed to delete buffer. No buffer to delete
+LOCATION: C:\wamp\www\cbires\misc\download_from_url.php, line 86, at February 5, 2013, 8:53 pm
+Showing backtrace:
+ob_clean() # line   86, file: C:\wamp\www\cbires\misc\download_from_url.php
+download_img("http://assets.multirama.gr/images/static/diktioFront.jpg") # line   67, file: C:\wamp\www\cbires\crawler.php
+
+
+
+ERRNO: 8
+TEXT: ob_clean() [<a href='ref.outcontrol'>ref.outcontrol</a>]: failed to delete buffer. No buffer to delete
+LOCATION: C:\wamp\www\cbires\misc\download_from_url.php, line 86, at February 5, 2013, 8:53 pm
+Showing backtrace:
+ob_clean() # line   86, file: C:\wamp\www\cbires\misc\download_from_url.php
+download_img("http://assets.multirama.gr/images/banners/mlrclub-new-1.jpg") # line   67, file: C:\wamp\www\cbires\crawler.php
+
+
+
+ERRNO: 8
+TEXT: ob_clean() [<a href='ref.outcontrol'>ref.outcontrol</a>]: failed to delete buffer. No buffer to delete
+LOCATION: C:\wamp\www\cbires\misc\download_from_url.php, line 86, at February 5, 2013, 8:53 pm
+Showing backtrace:
+ob_clean() # line   86, file: C:\wamp\www\cbires\misc\download_from_url.php
+download_img("http://assets.multirama.gr/images/sales-2013/multirama_sales.jpg") # line   67, file: C:\wamp\www\cbires\crawler.php
+
+
+
+ERRNO: 2
+TEXT: getimagesize(http://www.multirama.gr/images/dd-prod.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+
+LOCATION: C:\wamp\www\cbires\misc\download_from_url.php, line 27, at February 5, 2013, 8:56 pm
+Showing backtrace:
+getimagesize("http://www.multirama.gr/images/dd-prod.jpg") # line   27, file: C:\wamp\www\cbires\misc\download_from_url.php
+download_img("http://www.multirama.gr/images/dd-prod.jpg") # line   67, file: C:\wamp\www\cbires\crawler.php
+
+
+
+ERRNO: 2
+TEXT: file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: php_network_getaddresses: getaddrinfo failed: The requested name is valid, but no data of the requested type was found. 
+LOCATION: C:\wamp\www\cbires\core\simple_html_dom.php, line 75, at February 5, 2013, 8:59 pm
+Showing backtrace:
+file_get_contents("http://www.multirama.com", false, null, "-1") # line   75, file: C:\wamp\www\cbires\core\simple_html_dom.php
+file_get_html("http://www.multirama.com") # line   21, file: C:\wamp\www\cbires\includes\Crawler.php
+CrawlImagesFromUrl("http://www.multirama.com") # line   56, file: C:\wamp\www\cbires\crawler.php
+
+

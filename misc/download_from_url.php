@@ -75,11 +75,9 @@ function download_img($img_url)
                 unset($img);      unset($objRGB);        unset($objHSV);
 				//echo 'file uploaded successfully '.$rowCount;
 				
-				?>
-				<div style="float:left;padding:10px;">
-					<img src="<?php echo $img_url;?>" width="100" height="100" />
-				</div>
-				<?php
+                echo "<div style='float:left;padding:10px;'>
+                <img src='$img_url' width='100' height='100' />
+				</div>";
 
 				// delete image
 				unlink($tempFile);
