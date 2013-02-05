@@ -55,7 +55,7 @@ elseif(isset($_GET['id']))
 								<?php foreach ($result as $key => $value) : ?>
 								<tr>
 									<td><?php echo ucfirst($result[$key]['username']); ?></td>
-									<td class="center"><?php echo $result[$key]['date_registered']; ?></td>
+									<td class="center"><?php echo date("d/m/Y", strtotime($result[$key]['date_registered'])); ?></td>
 									<td class="center"><?php echo ucfirst($result[$key]['role']); ?></td>
 									<td class="center">
 										<span class="<?php if ($result[$key]['status'] == 'active') echo 'label label-success';

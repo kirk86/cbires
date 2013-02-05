@@ -126,7 +126,7 @@
 										<img class="dashboard-avatar" alt="<?php echo $member_info[$key]['username']; ?>" src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "kirk86@walla.com" ) ) ); ?>.png?s=50" /></a>
 										<strong>Name:</strong> <a href="#"><?php echo ucfirst($member_info[$key]['username']); ?>
 									</a><br />
-									<strong>Since:</strong> <?php echo $member_info[$key]['date_registered']; ?> <br />
+									<strong>Since:</strong> <?php echo date("d/m/Y", strtotime($member_info[$key]['date_registered'])); ?> <br />
 									<strong>Status:</strong> <span class="<?php if ($member_info[$key]['status'] == 'active') echo 'label label-success';
                                                        elseif ($member_info[$key]['status'] == 'pending') echo 'label label-warning';
                                                        elseif ($member_info[$key]['status'] == 'banned') echo 'label label-important';
@@ -170,7 +170,7 @@
 										<img class="dashboard-avatar" alt="<?php echo ucfirst($category_info[$key]['category_name']); ?>" src="img/categories/<?php echo ucfirst($category_info[$key]['category_image']);?>" /></a>
 										<strong>Name:</strong> <a href="#"><?php echo ucfirst($category_info[$key]['category_name']); ?>
 									</a><br />
-									<strong>Created:</strong> <?php echo $category_info[$key]['date_created']; ?> <br />                                  
+									<strong>Created:</strong> <?php echo date("d/m/Y", strtotime($category_info[$key]['date_created'])); ?> <br />                                  
 									<div style="clear:both;"></div>
 								</li>
                             <?php endforeach; ?>
