@@ -40,7 +40,7 @@
                 $image_info = DB::getAll($sql_total_images); 
                 $sql_new_images = "SELECT count(*) AS new_image
 										FROM public.tbl_image
-										WHERE timestamp > now()::date - 1";
+										WHERE timestamp::date > now()::date - 1";
                 $new_images = DB::getOne($sql_new_images);
 				
 				// logs				
