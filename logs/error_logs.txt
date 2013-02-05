@@ -39,3 +39,43 @@ Showing backtrace:
 ob_flush() # line   68, file: C:\wamp\www\cbires\crawler.php
 
 
+
+ERRNO: 2
+TEXT: file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: php_network_getaddresses: getaddrinfo failed: The requested name is valid, but no data of the requested type was found. 
+LOCATION: C:\wamp\www\cbires\core\simple_html_dom.php, line 75, at February 5, 2013, 7:47 pm
+Showing backtrace:
+file_get_contents("http://www.multirama.com", false, null, "-1") # line   75, file: C:\wamp\www\cbires\core\simple_html_dom.php
+file_get_html("http://www.multirama.com") # line   21, file: C:\wamp\www\cbires\includes\Crawler.php
+CrawlImagesFromUrl("http://www.multirama.com") # line   56, file: C:\wamp\www\cbires\crawler.php
+
+
+
+ERRNO: 2
+TEXT: getimagesize(http://www.multirama.gr/images/dd-prod.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+
+LOCATION: C:\wamp\www\cbires\misc\download_from_url.php, line 27, at February 5, 2013, 7:48 pm
+Showing backtrace:
+getimagesize("http://www.multirama.gr/images/dd-prod.jpg") # line   27, file: C:\wamp\www\cbires\misc\download_from_url.php
+download_img("http://www.multirama.gr/images/dd-prod.jpg") # line   66, file: C:\wamp\www\cbires\crawler.php
+
+
+
+ERRNO: 2
+TEXT: getimagesize(http://www.multirama.gr/images/dd-prod.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+
+LOCATION: C:\wamp\www\cbires\misc\download_from_url.php, line 27, at February 5, 2013, 7:53 pm
+Showing backtrace:
+getimagesize("http://www.multirama.gr/images/dd-prod.jpg") # line   27, file: C:\wamp\www\cbires\misc\download_from_url.php
+download_img("http://www.multirama.gr/images/dd-prod.jpg") # line   66, file: C:\wamp\www\cbires\crawler.php
+
+
+
+ERRNO: 2
+TEXT: file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: php_network_getaddresses: getaddrinfo failed: The requested name is valid, but no data of the requested type was found. 
+LOCATION: C:\wamp\www\cbires\core\simple_html_dom.php, line 75, at February 5, 2013, 8:02 pm
+Showing backtrace:
+file_get_contents("http://www.multirama.com", false, null, "-1") # line   75, file: C:\wamp\www\cbires\core\simple_html_dom.php
+file_get_html("http://www.multirama.com") # line   21, file: C:\wamp\www\cbires\includes\Crawler.php
+CrawlImagesFromUrl("http://www.multirama.com") # line   56, file: C:\wamp\www\cbires\crawler.php
+
+

@@ -60,13 +60,12 @@
 							if(isset($images))
 							{
 								//print the result
+                                set_time_limit(0);
 								foreach ($images as $value)
 								{
-								    set_time_limit(0);
+								    //set_time_limit(0);
 									download_img($value);
 								}
-                                ob_flush();
-                                flush();
                                 set_time_limit(30);
 							}
 						}

@@ -337,45 +337,4 @@ class PopulateImages
     		  </fieldset>
     	</form>";
     }
-    
-    public static function insertHistValuesToDB($tempFile, $galleryFile, $targetFile, 
-                                                $fileParts, $filepath, $filemime, 
-                                                $filesize, $timestamp, $filename_hash)
-    {
-        // Image class example
-        $img = new Image($tempFile);
-        $img->resize(300, 0, true); // Lower quality image created using width ratio
-        $resized_img = $img->file_name;
-        
-        $objRGB = new Histogram($resized_img);
-        $objHSV = new Histogram($resized_img);
-        
-        # Generate RGB histogram
-        $histRGB = $objRGB->generateHistogram();
-        $normHistRGB = DistanceMetrics::computeHistogram($histRGB, 64, min($histRGB), max($histRGB));
-        $meanRGB = DistanceMetrics::mean($normHistRGB);
-        $stdRGB = DistanceMetrics::std($normHistRGB);
-        $pg_arrayRGB = Tools::phpArray2PostgressSQL($normHistRGB);
-        
-        # Generate HSV histogram
-        $histHSV = $objHSV->generateHistogram(true);
-        $binHistHSV = DistanceMetrics::computeHistogram($histHSV, 64, min($histHSV), max($histHSV), false);
-        $normHistHSV = DistanceMetrics::normalize($binHistHSV);
-        $meanHSV = DistanceMetrics::mean($normHistHSV);
-        $stdHSV = DistanceMetrics::std($normHistHSV);
-        $pg_arrayHSV = Tools::phpArray2PostgressSQL($normHistHSV);
-        
-        $sql = "INSERT INTO ". DB_PREFIX ."image(id_image, filename, filepath, filemime, filesize, 
-                                      timestamp, filename_hash, color_histogram, mean, std, 
-                                      hsv_histogram, hsv_mean, hsv_std)
-                VALUES(DEFAULT, '{$fileParts['basename']}', '{$filepath}', '{$filemime}', 
-                                '{$filesize}', '{$timestamp}', '{$filename_hash}', '$pg_arrayRGB', 
-                                '{$meanRGB}', '{$stdRGB}', '$pg_arrayHSV', '{$meanHSV}', '{$stdHSV}')";
-        $rowCount = DB::execute($sql);
-        copy($tempFile, $galleryFile);
-        $img->save($targetFile);
-        unset($histRGB);  unset($normHistRGB);   unset($pg_arrayRGB);
-        unset($histHSV);  unset($normHistHSV);   unset($pg_arrayHSV);
-        unset($img);      unset($objRGB);        unset($objHSV);
-    }
 }
