@@ -14608,3 +14608,915 @@ DistanceMetrics.euclidean(null, Array[64]) # line  202, file: C:\wamp\www\cbires
 PopulateImages.computeRgbImages(null, true) # line  285, file: C:\wamp\www\cbires\gallery.php
 
 
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 57, at February 5, 2013, 1:29 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: query_image_histogram_sum
+LOCATION: C:\wamp\www\cbires\gallery.php, line 299, at February 5, 2013, 1:29 am
+Showing backtrace:
+
+
+
+ERRNO: 256
+TEXT: The two histograms must be of equal size in: fcn -> euclidean()!
+LOCATION: C:\wamp\www\cbires\core\DistanceMetrics.php, line 94, at February 5, 2013, 1:29 am
+Showing backtrace:
+trigger_error("The two histograms must be of equal size in: fcn -&gt; euclidean()!", "256") # line   94, file: C:\wamp\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.euclidean(null, Array[64]) # line  202, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.computeRgbImages(null, true) # line  299, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at February 5, 2013, 1:40 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 57, at February 5, 2013, 1:46 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at February 5, 2013, 1:46 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 57, at February 5, 2013, 1:46 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at February 5, 2013, 1:46 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at February 5, 2013, 1:47 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at February 5, 2013, 1:47 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at February 5, 2013, 1:48 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at February 5, 2013, 1:51 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at February 5, 2013, 1:55 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 57, at February 5, 2013, 1:55 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at February 5, 2013, 1:55 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 57, at February 5, 2013, 1:55 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at February 5, 2013, 1:55 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at February 5, 2013, 1:56 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at February 5, 2013, 1:57 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 58, at February 5, 2013, 2:01 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:04 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:04 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:05 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:06 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:06 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:06 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:07 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:07 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: query_image_histogram_sum
+LOCATION: C:\wamp\www\cbires\gallery.php, line 286, at February 5, 2013, 2:07 am
+Showing backtrace:
+
+
+
+ERRNO: 256
+TEXT: The two histograms must be of equal size in: fcn -> euclidean()!
+LOCATION: C:\wamp\www\cbires\core\DistanceMetrics.php, line 94, at February 5, 2013, 2:07 am
+Showing backtrace:
+trigger_error("The two histograms must be of equal size in: fcn -&gt; euclidean()!", "256") # line   94, file: C:\wamp\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.euclidean(null, Array[64]) # line  242, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.computeHsvImages(null) # line  287, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:13 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:16 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:17 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:18 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:19 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:19 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:19 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:19 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:20 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:20 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:20 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:21 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:21 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:22 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:22 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:22 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: query_image_histogram_sum
+LOCATION: C:\wamp\www\cbires\gallery.php, line 286, at February 5, 2013, 2:22 am
+Showing backtrace:
+
+
+
+ERRNO: 256
+TEXT: The two histograms must be of equal size in: fcn -> euclidean()!
+LOCATION: C:\wamp\www\cbires\core\DistanceMetrics.php, line 94, at February 5, 2013, 2:22 am
+Showing backtrace:
+trigger_error("The two histograms must be of equal size in: fcn -&gt; euclidean()!", "256") # line   94, file: C:\wamp\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.euclidean(null, Array[64]) # line  242, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.computeHsvImages(null) # line  287, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:27 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:27 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:27 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:27 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:29 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:31 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:32 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:33 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:34 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:34 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:34 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:34 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:34 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:34 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:37 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:37 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:37 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:38 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:38 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:38 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:38 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:38 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:39 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:39 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:40 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:40 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:40 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:41 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:42 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:42 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:42 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:43 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:45 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:45 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:46 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:47 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:47 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:47 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:48 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:48 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:48 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:48 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:49 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:49 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:50 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:50 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:50 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:51 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:51 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:51 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:51 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:52 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:52 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:52 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:53 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:53 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:54 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:54 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:54 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:55 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:55 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:55 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:56 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:56 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:57 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:57 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:57 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:58 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:59 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 2:59 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 2:59 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 3:00 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: rgb_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 59, at February 5, 2013, 3:01 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 3:01 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 3:01 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 3:01 am
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined index: hsv_histogram
+LOCATION: C:\wamp\www\cbires\gallery.php, line 60, at February 5, 2013, 3:03 am
+Showing backtrace:
+
+
