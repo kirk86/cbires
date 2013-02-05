@@ -45,6 +45,7 @@ define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'postgres');
 define('DB_PASSWORD', 'root');
 define('DB_NAME', 'cbires');
+//define('DB_NAME', 'cbires_bad_example');
 define('DB_PORT', '5432');
 define('PDO_DSN', 'pgsql:dbname='.DB_NAME.';user='.DB_USERNAME.';password='.DB_PASSWORD.';host='.DB_SERVER.';port='.DB_PORT);
 define('DB_PREFIX', 'tbl_'); // define the databse table prefix
