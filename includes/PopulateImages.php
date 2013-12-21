@@ -11,7 +11,6 @@ class PopulateImages
     
     public static function populateColorSpaceImages($sortedImageArray, $threshold = false)
     {
-        //var_dump($imgIdsArray);
         $counter = 0;
         $i = 0;
         $maxcols = 7;
@@ -22,16 +21,17 @@ class PopulateImages
         $remainder = floor($_SESSION['threshold'] / 7);
         $images_remaind = ($_SESSION['threshold'] - (7 * $remainder) );
         
-        $img_filaname_hash = array();
         $count = 0;
+        
         foreach ($sortedImageArray as $key => $value)
         {
             if ($count < $_SESSION['threshold'])
-                $img_filaname_hash[] = $value;
+                $combDistAndFilenames[$key] = $value;
                 
             $count++;
         }
-        $pg_array_filename = Tools::phpArray2PostgressSQL($img_filaname_hash);
+        
+        $pg_array_filename = Tools::phpArray2PostgressSQL($combDistAndFilenames);
         $sql = "SELECT id_image, filename_hash
                 FROM ". DB_PREFIX. "image 
                 WHERE filename_hash = ANY('$pg_array_filename'::text[])
@@ -40,29 +40,31 @@ class PopulateImages
         
         $distances = array();
         $img_ids = array();
-        $ids = array();
         foreach ($result as $key => $value)
         {
             $distances[] = array_search($result[$key]['filename_hash'], $sortedImageArray);
             $img_ids[] = $result[$key]['id_image'];
         }
         unset($sortedImageArray);
-        $combDistAndFilenames = array_combine($distances, $img_filaname_hash); // Combine distances and filenames
-        unset($distances);
-        $good = ksort($combDistAndFilenames); // Sort them based on distance
+        $distAndImgIds = array_combine($distances, $img_ids); // Combine distances and filenames shuffled      
+        unset($distances); unset($img_ids);
+        $good = ksort($distAndImgIds); // Sort them based on distance
+        
+        //var_dump($combDistAndFilenames);
+        //var_dump($distances);
+        //var_dump($distAndImgIds);
         
         $sortedFilenames = array_values($combDistAndFilenames); // Extract sorted filenames based on distance
-        $combIdsAndFilenames = array_combine($img_ids, $img_filaname_hash); // Transform the 2-D assoc $result array to 1-D for simplicity
-        unset($img_ids); unset($img_filaname_hash); unset($combDistAndFilenames);
+        unset($combDistAndFilenames);
         
-        for ($p = 0; $p < count($sortedFilenames); $p++)
-            $ids[] = array_search($sortedFilenames[$p], $combIdsAndFilenames);
+        //var_dump($sortedFilenames);
         
-        $combSortedIdsAndFilenames = array_combine($ids, $sortedFilenames);
-        unset($ids); unset($sortedFilenames); unset($combIdsAndFilenames);
+        $combIdsAndFilenames = array_combine($distAndImgIds, $sortedFilenames); // Cobmine ids and filenames sorted
         
-        $sorted_ids = array_keys($combSortedIdsAndFilenames);
-        foreach ($combSortedIdsAndFilenames as $key => $value)
+        //var_dump($combIdsAndFilenames);
+        
+        $sorted_ids = array_keys($combIdsAndFilenames);
+        foreach ($combIdsAndFilenames as $key => $value)
         {
             if ($counter < $_SESSION['threshold'])
             {
@@ -97,7 +99,7 @@ class PopulateImages
                         </li>
                       </td>";
                 
-                if ( ($image == $_SESSION['threshold']) && ($_SESSION['threshold'] % 7 == 0) ) // execute on 14, 21, 28, 35, 42...
+                if ( ($image == $_SESSION['threshold']) && ($_SESSION['threshold'] % 7 == 0) )  //execute on 14, 21, 28, 35, 42...
                 {
                     echo "</tr><tr>";
                     for ($l = 0; $l < 7; $l++)
@@ -207,7 +209,8 @@ class PopulateImages
         }
         
         $combRGB = array_combine($distArrayRGB, $img_filename);
-        $ok = ksort($combRGB);        
+        $ok = ksort($combRGB);
+        //var_dump($combRGB);      
         unset($objRGB); unset($histoRGB); unset($normHistRGB);
         unset($qresult); unset($distArrayRGB); unset($img_ids);
         unset($img_filename);

@@ -191,3 +191,1872 @@ file_get_html("http://www.multirama.com") # line   21, file: C:\wamp\www\cbires\
 CrawlImagesFromUrl("http://www.multirama.com") # line   56, file: C:\wamp\www\cbires\crawler.php
 
 
+
+ERRNO: 2
+TEXT: getimagesize(http://www.multirama.gr/images/dd-prod.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+
+LOCATION: C:\wamp\www\cbires\misc\download_from_url.php, line 27, at February 9, 2013, 8:17 pm
+Showing backtrace:
+getimagesize("http://www.multirama.gr/images/dd-prod.jpg") # line   27, file: C:\wamp\www\cbires\misc\download_from_url.php
+download_img("http://www.multirama.gr/images/dd-prod.jpg") # line   67, file: C:\wamp\www\cbires\crawler.php
+
+
+
+ERRNO: 2
+TEXT: filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for http://www.multirama.gr//mlrimages/images/general/mlr-logo.jpg
+LOCATION: C:\wamp\www\cbires\misc\download_from_url.php, line 27, at February 9, 2013, 8:24 pm
+Showing backtrace:
+filesize("http://www.multirama.gr//mlrimages/images/general/mlr-logo.jpg") # line   27, file: C:\wamp\www\cbires\misc\download_from_url.php
+download_img("http://www.multirama.gr//mlrimages/images/general/mlr-logo.jpg") # line   67, file: C:\wamp\www\cbires\crawler.php
+
+
+
+ERRNO: 2
+TEXT: file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+LOCATION: C:\wamp\www\cbires\core\simple_html_dom.php, line 75, at February 9, 2013, 8:26 pm
+Showing backtrace:
+file_get_contents("http://www.multirama.com", false, null, "-1") # line   75, file: C:\wamp\www\cbires\core\simple_html_dom.php
+file_get_html("http://www.multirama.com") # line   21, file: C:\wamp\www\cbires\includes\Crawler.php
+CrawlImagesFromUrl("http://www.multirama.com") # line   56, file: C:\wamp\www\cbires\crawler.php
+
+
+
+ERRNO: 2
+TEXT: file_get_contents(http://www.multirama.gr/images/dd-prod.jpg) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+
+LOCATION: C:\wamp\www\cbires\misc\download_from_url.php, line 27, at February 9, 2013, 8:33 pm
+Showing backtrace:
+file_get_contents("http://www.multirama.gr/images/dd-prod.jpg") # line   27, file: C:\wamp\www\cbires\misc\download_from_url.php
+download_img("http://www.multirama.gr/images/dd-prod.jpg") # line   67, file: C:\wamp\www\cbires\crawler.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: data1
+LOCATION: C:\wamp\www\cbires\core\DistanceMetrics.php, line 250, at February 10, 2013, 7:46 pm
+Showing backtrace:
+DistanceMetrics.computeHistogram(Array[381024], "64", "0", "255") # line  204, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 2
+TEXT: Invalid argument supplied for foreach()
+LOCATION: C:\wamp\www\cbires\core\DistanceMetrics.php, line 250, at February 10, 2013, 7:46 pm
+Showing backtrace:
+DistanceMetrics.computeHistogram(Array[381024], "64", "0", "255") # line  204, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 68, at February 10, 2013, 10:17 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  325, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 70, at February 10, 2013, 10:22 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  327, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 70, at February 10, 2013, 10:22 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  327, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 70, at February 10, 2013, 10:22 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  327, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 70, at February 10, 2013, 10:22 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  327, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 70, at February 10, 2013, 10:22 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  327, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 70, at February 10, 2013, 10:22 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  327, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 70, at February 10, 2013, 10:22 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  327, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 70, at February 10, 2013, 10:22 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  327, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 70, at February 10, 2013, 10:22 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  327, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 70, at February 10, 2013, 10:22 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  327, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 70, at February 10, 2013, 10:22 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  327, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 70, at February 10, 2013, 10:22 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  327, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 70, at February 10, 2013, 10:22 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  327, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 70, at February 10, 2013, 10:22 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  327, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:25 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:25 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:25 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:25 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:25 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:25 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:25 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:25 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:25 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:25 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:25 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:25 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:25 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:25 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:26 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:26 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:26 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:26 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:26 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:26 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:26 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:26 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:26 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:26 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:26 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:26 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:26 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 73, at February 10, 2013, 10:26 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  330, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 77, at February 10, 2013, 10:32 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  334, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 77, at February 10, 2013, 10:32 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  334, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 77, at February 10, 2013, 10:32 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  334, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 77, at February 10, 2013, 10:32 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  334, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 77, at February 10, 2013, 10:32 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  334, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 77, at February 10, 2013, 10:32 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  334, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 77, at February 10, 2013, 10:32 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  334, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 77, at February 10, 2013, 10:32 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  334, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 77, at February 10, 2013, 10:32 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  334, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 77, at February 10, 2013, 10:32 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  334, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 77, at February 10, 2013, 10:32 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  334, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 77, at February 10, 2013, 10:32 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  334, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 77, at February 10, 2013, 10:32 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  334, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 77, at February 10, 2013, 10:32 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  334, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 78, at February 10, 2013, 10:37 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  335, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 78, at February 10, 2013, 10:37 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  335, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 78, at February 10, 2013, 10:37 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  335, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 78, at February 10, 2013, 10:37 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  335, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 78, at February 10, 2013, 10:37 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  335, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 78, at February 10, 2013, 10:37 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  335, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 78, at February 10, 2013, 10:37 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  335, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 78, at February 10, 2013, 10:37 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  335, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 78, at February 10, 2013, 10:37 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  335, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 78, at February 10, 2013, 10:37 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  335, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 78, at February 10, 2013, 10:37 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  335, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 78, at February 10, 2013, 10:37 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  335, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 78, at February 10, 2013, 10:37 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  335, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 78, at February 10, 2013, 10:37 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  335, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 2
+TEXT: array_combine() [<a href='function.array-combine'>function.array-combine</a>]: Both parameters should have at least 1 element
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 66, at February 10, 2013, 10:46 pm
+Showing backtrace:
+array_combine(Array[0], Array[0]) # line   66, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.populateColorSpaceImages(Array[126]) # line  336, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 2
+TEXT: array_combine() [<a href='function.array-combine'>function.array-combine</a>]: Both parameters should have an equal number of elements
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 69, at February 10, 2013, 10:54 pm
+Showing backtrace:
+array_combine(Array[14], Array[0]) # line   69, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.populateColorSpaceImages(Array[126]) # line  339, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 87, at February 10, 2013, 11:02 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  344, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 87, at February 10, 2013, 11:02 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  344, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 87, at February 10, 2013, 11:02 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  344, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 87, at February 10, 2013, 11:02 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  344, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 87, at February 10, 2013, 11:02 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  344, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 87, at February 10, 2013, 11:02 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  344, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 87, at February 10, 2013, 11:02 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  344, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 87, at February 10, 2013, 11:02 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  344, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 87, at February 10, 2013, 11:02 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  344, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 87, at February 10, 2013, 11:02 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  344, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 87, at February 10, 2013, 11:02 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  344, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 87, at February 10, 2013, 11:02 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  344, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 87, at February 10, 2013, 11:02 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  344, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 87, at February 10, 2013, 11:02 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  344, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:05 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:05 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:05 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:05 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:05 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:05 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:05 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:05 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:05 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:05 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:05 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:05 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:05 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:05 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:07 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:07 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:07 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:07 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:07 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:07 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:07 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:07 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:07 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:07 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:07 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:07 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:07 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:07 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:09 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:09 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:09 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:09 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:09 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:09 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:09 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:09 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:09 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:09 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:09 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:09 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:09 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:09 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combIdsAndFilenames
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 86, at February 10, 2013, 11:14 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 2
+TEXT: array_keys() expects parameter 1 to be array, null given
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 86, at February 10, 2013, 11:14 pm
+Showing backtrace:
+array_keys(null) # line   86, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: combIdsAndFilenames
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 86, at February 10, 2013, 11:15 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 2
+TEXT: array_keys() expects parameter 1 to be array, null given
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 86, at February 10, 2013, 11:15 pm
+Showing backtrace:
+array_keys(null) # line   86, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:16 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:16 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:16 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:16 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:16 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:16 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:16 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:16 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:16 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:16 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:16 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:16 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:16 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: image_id
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 90, at February 10, 2013, 11:16 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  347, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: remainder
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: images_remaind
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: remainder
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: images_remaind
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: remainder
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: images_remaind
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: remainder
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: images_remaind
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: remainder
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: images_remaind
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: remainder
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: images_remaind
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: remainder
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: images_remaind
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: remainder
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: images_remaind
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: remainder
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: images_remaind
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: remainder
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: images_remaind
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: remainder
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: images_remaind
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: remainder
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: images_remaind
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: remainder
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: images_remaind
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: remainder
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: images_remaind
+LOCATION: C:\wamp\www\cbires\includes\PopulateImages.php, line 142, at February 10, 2013, 11:18 pm
+Showing backtrace:
+PopulateImages.populateColorSpaceImages(Array[126]) # line  340, file: C:\wamp\www\cbires\includes\PopulateImages.php
+PopulateImages.retrievalResults(Array[126]) # line  174, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 2
+TEXT: is_nan() expects parameter 1 to be double, array given
+LOCATION: C:\wamp\www\cbires\core\DistanceMetrics.php, line 255, at February 11, 2013, 11:00 am
+Showing backtrace:
+is_nan(Array[98304]) # line  255, file: C:\wamp\www\cbires\core\DistanceMetrics.php
+DistanceMetrics.computeHistogram(Array[98304], "64", "5", "241") # line  164, file: C:\wamp\www\cbires\gallery.php
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: test
+LOCATION: C:\wamp\www\cbires\index.php, line 14, at February 13, 2013, 5:35 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: test
+LOCATION: C:\wamp\www\cbires\index.php, line 14, at February 13, 2013, 5:36 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: test
+LOCATION: C:\wamp\www\cbires\index.php, line 14, at February 13, 2013, 5:36 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: test
+LOCATION: C:\wamp\www\cbires\index.php, line 14, at February 13, 2013, 5:36 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: test
+LOCATION: C:\wamp\www\cbires\index.php, line 14, at February 13, 2013, 5:36 pm
+Showing backtrace:
+
+
+
+ERRNO: 8
+TEXT: Undefined variable: test
+LOCATION: C:\wamp\www\cbires\index.php, line 14, at February 13, 2013, 5:36 pm
+Showing backtrace:
+
+
+
+ERRNO: 256
+TEXT: SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 5432?
+LOCATION: C:\wamp\www\cbires\db\DB.php, line 49, at May 20, 2013, 3:02 pm
+Showing backtrace:
+trigger_error("SQLSTATE[08006] [7] could not connect to server: Connection refu...", "256") # line   49, file: C:\wamp\www\cbires\db\DB.php
+DB.getInstance() # line  156, file: C:\wamp\www\cbires\db\DB.php
+DB.getOne("SELECT count(*) AS count_member
+                               ...") # line   18, file: C:\wamp\www\cbires\index.php
+
+

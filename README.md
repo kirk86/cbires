@@ -26,4 +26,4 @@ Contact
 * kirk86@walla.com
 * marioshtika@gmail.com 
 
-[See Live Demo](http://mycompany.com.gr/cbires "") [It hasn't been uplodaded yet!]
+[See Live Demo](http:/83.212.99.182/vhosts/cbires.com/htdocs "")

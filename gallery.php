@@ -43,7 +43,8 @@
                             session_write_close();
                             echo MESSAGE_SUCCESS_SETTINGS;
                         }
-                    }					
+                    }
+                    set_time_limit(0);			
                     if (Tools::isSubmit('submit') && Tools::getIsset('submit'))
                     {
 						/* rocchio algorimthm start */
@@ -88,7 +89,7 @@
 						{
 							for ($i = 0; $i < count($sum_image_histogram_sum); $i++)
 							{
-								$sum_image_histogram_sum[$i] = $sum_image_histogram_sum[$i] / $sum_nr * 0.75;
+								$sum_image_histogram_sum[$i] = $sum_image_histogram_sum[$i] / $sum_nr * 0.70;
 							}
 						}
 						
@@ -274,6 +275,7 @@
 							}
 						}
 					}
+                    set_time_limit(30);
                  //session_unset();
                  ?>
                     

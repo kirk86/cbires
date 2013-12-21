@@ -25,7 +25,8 @@ class Image
 	private $info;
 	private $width;
 	private $height;
-	private $image;
+	//private $image;
+    public $image;
 	private $org_image;
 
 	/** 
@@ -127,7 +128,7 @@ class Image
 	 * Example: $img -> resize(60, 0, false); // Better quality image created using width ratio
 	 * 			$img -> resize(120, 300);
 	 */
-	public function resize($new_width,$new_height, $use_resize = true) {
+	public function resize($new_width, $new_height, $use_resize = true) {
 		if(!$this->image) return false;
 		if(!$new_height and !$new_width) return false; //Both width and height is 0
 		
@@ -139,7 +140,7 @@ class Image
 		if($new_height and !$new_width) $new_width	= $width  * $new_height/ $height;//Get the new width in the correct ratio
 
 		//Create the image
-		$new_image = imagecreatetruecolor($new_width,$new_height);
+		$new_image = imagecreatetruecolor($new_width, $new_height);
 		imagealphablending($new_image, false);
 		if($use_resize) imagecopyresized($new_image, $this->image, 0, 0, 0, 0, $new_width, $new_height, $width, $height);
 		else imagecopyresampled($new_image, $this->image, 0, 0, 0, 0, $new_width, $new_height, $width, $height);

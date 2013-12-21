@@ -126,12 +126,14 @@ class Histogram extends ColorSpaceConversion
                 if ($convertToHsv == true)
                 {
                     $hsv = $this->rgb2hsv($r, $g, $b);
-                    $value = (8 * $hsv['H'] + 4 * $hsv['S'] + 4 * $hsv['V']);
+                    //$value = (8 * $hsv['H'] + 4 * $hsv['S'] + 4 * $hsv['V']);
+                    //$value = round( ($hsv['H'] + $hsv['S'] + $hsv['V']) / 3 );
+                    $value = ($hsv['H'] + $hsv['S'] + $hsv['V']);
                 }
                 else
                 {
                     // get the Value from the RGB value and convert to greyscale
-                    $value = round(( $r + $g + $b) / 3);
+                    $value = round( ($r + $g + $b) / 3 );
                 }
                 //$histo[$value]++;
                 $histo[] = $value;
@@ -173,7 +175,8 @@ class Histogram extends ColorSpaceConversion
                 if ($convertToHsv == true)
                 {
                     $hsv = $this->rgb2hsv($r, $g, $b);
-                    $value = (16 * $hsv['H'] + 4 * $hsv['S'] + 4 * $hsv['V']);
+                    //$value = (16 * $hsv['H'] + 4 * $hsv['S'] + 4 * $hsv['V']);
+                    $value = ($hsv['H'] + $hsv['S'] + $hsv['V']);
                 }
                 else
                 {   

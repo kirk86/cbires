@@ -246,7 +246,7 @@ class DistanceMetrics
         $binrange = ($histMaxVal - $minval) / $histBins;
         $binnum;
         $count = 0;
-
+                
         foreach ($data as $key => $value)
         {
             if (!is_nan($value))
@@ -329,9 +329,10 @@ class DistanceMetrics
      */
      public static function normalize($hist)
      {
-        $max = 0;
-        for ($i = 0; $i < count($hist); $i++)
-            $max = max($hist[$i], $max);
+        //$max = 0;
+        //for ($i = 0; $i < count($hist); $i++)
+        //    $max = max($hist[$i], $max);
+        $max = max($hist);
         
         for ($i = 0; $i < count($hist); $i++)
             $hist[$i] = ($hist[$i] * 256) / $max;
