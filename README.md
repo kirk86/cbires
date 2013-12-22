@@ -26,4 +26,4 @@ Contact
 * kirk86@walla.com
 * marioshtika@gmail.com 
 
-[See Live Demo](http:/83.212.99.182/vhosts/cbires.com/htdocs "")
+[See Live Demo](http:/snf-217944.vm.okeanos.grnet.gr "")
