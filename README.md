@@ -26,4 +26,4 @@ Contact
 * kirk86@walla.com
 * marioshtika@gmail.com 
 
-[See Live Demo](http:/snf-217944.vm.okeanos.grnet.gr "")
+[See Live Demo](http://snf-217944.vm.okeanos.grnet.gr "")
